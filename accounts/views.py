@@ -17,4 +17,8 @@ def signup(request):
         # 비밀번호 해싱
         user.set_password(request.data.get('password'))
         user.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        response_data = {
+            'name' : request.data.get('name'),
+            'username': request.data.get('username'),
+        }
+        return Response(response_data, status=status.HTTP_201_CREATED)
