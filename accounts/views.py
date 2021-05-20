@@ -8,14 +8,6 @@ from .serializers import UserSerializer
 @authentication_classes([])
 @permission_classes([])
 def signup(request):
-    # client에서 보낸 정보 변수로 저장
-    password = request.data.get('password')
-    password_confirmation = request.data.get('passwordConfirmation')
-    
-    # 패스워드 일치 여부 확인
-    if password != password_confirmation:
-        return Response({'error': '비밀번호가 일치하지 않습니다.'}, status=status.HTTP_400_BAD_REQUEST)
-    
     # UserSerializer 이용 데이터 직렬화
     serializer = UserSerializer(data=request.data)
 
