@@ -1,10 +1,12 @@
 from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.response import Response
 from .serializers import UserSerializer
 
 # Create your views here.
 @api_view(['POST'])
+@authentication_classes([])
+@permission_classes([])
 def signup(request):
     # client에서 보낸 정보 변수로 저장
     password = request.data.get('password')
@@ -21,6 +23,6 @@ def signup(request):
     if serializer.is_valid(raise_exception=True):
         user = serializer.save()
         # 비밀번호 해싱
-        user.set_password(password)
+        user.set_password(request.data.get('password'))
         user.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
