@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('signup/', views.signup),
-    # api-token-auth
     path('login/', obtain_jwt_token),
+    path('profile/', views.profile)
 ]
