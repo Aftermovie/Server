@@ -11,6 +11,9 @@ from .serializers import (MovieSerializer, MoviesListSerializer,
                             ReviewCommentSerializer, ReviewCommentsListSerializer)
 from .models import Movie, Review, MovieComment, ReviewComment
 
+import requests
+from tmdb import URLMaker
+
 # Create your views here.
 @api_view(['GET'])
 def movie_list(request):
@@ -102,3 +105,53 @@ def movie_comment_edit(request, comment_pk):
         return Response(context, status=204)
 
 
+@api_view(['GET','POST'])
+def review_comments(request, review_pk):
+    review = get_object_or_404(Review, pk=review_pk)
+    if request.method == 'GET':
+        comments = review.comment_set.all()
+        serializer = ReviewCommentsListSerializer(comments, many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = ReviewCommentSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save(review_id=review)
+            return Response(serializer.data)
+
+
+@api_view(['PUT','DELETE'])
+def review_comment_edit(request, comment_pk):
+    comment = get_object_or_404(ReviewComment, pk=comment_pk)
+    if request.method == 'PUT':
+        serializer = ReviewCommentSerializer(comment, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)
+    elif request.method == 'DELETE':
+        comment.delete()
+        context = {
+            'success': True,
+            'message': f'{comment_pk}번 댓글 삭제'
+        }
+        return Response(context, status=204)
+
+        
+# def get_data(request):
+#     TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
+#     my_url = URLMaker(TMDB_API_KEY)
+#     for i in range(1,100):
+#         target = my_url.get_url(page=i, language='ko-KR')
+#         res = requests.get(target)
+#         movies = res.json().get('results')
+#         for movie in movies:
+#             if movie.get('vote_average') >= 8 and movie.get('vote_count') >= 100 and movie.get('overview'):
+#                 data={
+#                     'title' : movie.get('title'),
+#                     'overview' : movie.get('overview'),
+#                     'release_date' : movie.get('release_date'),
+#                     'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
+#                 }
+#                 serializer = MoviesListSerializer(data=data)
+#                 if serializer.is_valid(raise_exception=True):
+#                     serializer.save()
+#     return Response(data)

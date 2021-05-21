@@ -1,0 +1,937 @@
+[
+{
+    "model": "movies.movie",
+    "pk": 1,
+    "fields": {
+        "title": "°íÁú¶ó VS. Äá",
+        "overview": "Äá°ú º¸È£ÀÚµéÀº Á¤ÂøÇÒ ¼ö ÀÖ´Â °÷À» Ã£¾Æ Æ¯º°ÇÏ°í °­·ÂÇÑ À¯´ë°¨À» Çü¼ºÇÏ°í ÀÖ´Â Áö¾Æ¿Í ÇÔ²² ¿©Á¤À» ¶°³ª°Ô µÈ´Ù. ±×·¯´ø Áß Áö±¸ ÆÄ±«¸¦ À§ÇÑ È¸½ÉÀÇ ³¯À» ÈÖµÎ¸£´Â °íÁú¶ó¿Í ¸¶ÁÖÇÏ°Ô µÇ°í, º¸ÀÌÁö ¾Ê´Â Èû¿¡ ÀÇÇØ ¸ÂºÙ°Ô µÈ µÎ Àü¼³ÀÇ ´ë°áÀº Áö±¸ ±íÀº °÷¿¡ µµ»ç¸° ¼ö¼ö²²³¢ÀÇ ½ÃÀÛ¿¡ ºÒ°úÇÒ »ÓÀÌ¾ú´Âµ¥¡¦",
+        "release_date": "2021-03-24",
+        "poster_path": "https://www.themoviedb.org/t/p/original/sqo672rKMXiLRC5kVcGvBRebkp.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 2,
+    "fields": {
+        "title": "³ë¹Ùµð",
+        "overview": "ºñ¹üÇÑ °ú°Å¸¦ ¼û±ä Ã¤ ³²µé°ú ´Ù¸¦ ¹Ù ¾ø´Â Æò¹üÇÑ ÀÏ»óÀ» »ç´Â ÇÑ °¡Á¤ÀÇ °¡Àå ¡®ÇãÄ¡¡¯ ¸ÅÀÏ Ãâ±ÙÀ» ÇÏ°í, ºÐ¸®¼ö°Å¸¦ ÇÏ°í ÀÏ°ú °¡Á¤ ¸ðµÎ ³ª¸§ ÃÖ¼±À» ´ÙÇÏÁö¸¸ ¾ÆµéÇÑÅ×´Â ¹«½Ã´çÇÏ°í ¾Æ³»¿ÍÀÇ °ü°èµµ ¼Ò¿øÇÏ´Ù. ±×·¯´ø ¾î´À ³¯, Áý¾È¿¡ °­µµ°¡ µé°í ÇãÄ¡´Â ÇÑ ¹øÀÇ ¹ÝÇ×µµ ÇÏÁö ¸øÇÏ°í ´çÇÑ´Ù. ´õ Å« À§ÇèÀ¸·ÎºÎÅÍ °¡Á·À» ÁöÅ°±â À§ÇÑ ¼±ÅÃÀÌ¾ú´Âµ¥ ¸ðµÎ ¹«´É·ÂÇÏ´Ù°í ¡®ÇãÄ¡¡¯¸¦ ºñ³­ÇÏ°í, °á±¹ ±×µ¿¾È Âü°í ¾ï´­·¶´ø ºÐ³ë°¡ Æø¹ßÇÏ°í ¸¸´Ù.",
+        "release_date": "2021-03-26",
+        "poster_path": "https://www.themoviedb.org/t/p/original/oXQtH8O7pCvXaDKGB8OAjiPVDi5.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 3,
+    "fields": {
+        "title": "±ØÀåÆÇ ±Í¸êÀÇ Ä®³¯: ¹«ÇÑ¿­Â÷ Æí",
+        "overview": "Ç÷±Í·Î º¯ÇØ¹ö¸° ¿©µ¿»ý ¡®³×ÁîÄÚ¡¯¸¦ ÀÎ°£À¸·Î µÇµ¹¸± ´Ü¼­¸¦ Ã£¾Æ ºñ¹ÐÁ¶Á÷ ±Í»ì´ë¿¡ µé¾î°£ ¡®ÅºÁö·Î.¡¯ ¡®Á¨ÀÌÃ÷¡¯, ¡®ÀÌ³ë½ºÄÉ¡¯¿Í »õ·Î¿î ÀÓ¹« ¼öÇàÀ» À§ÇØ ¹«ÇÑ¿­Â÷¿¡ Å¾½Â ÈÄ ±Í»ì´ë ÃÖ°­ °Ë»ç ¿°ÁÖ ¡®·»°íÄí¡¯¿Í ÇÕ·ùÇÑ´Ù. ´Þ¸®´Â ¹«ÇÑ¿­Â÷¿¡¼­ ½Â°´µéÀÌ ÇÏ³ª µÑ ÈçÀû ¾øÀÌ »ç¶óÁöÀÚ ¼û¾îÀÖ´Â ½ÄÀÎ Ç÷±ÍÀÇ Á¸Àç¸¦ Á÷°¨ÇÏ´Â ¡®·»°íÄí¡¯. ±Í»ì´ë ¡®ÅºÁö·Î¡¯ ÀÏÇà°ú ÃÖ°­ °Ë»ç ¿°ÁÖ ¡®·»°íÄí¡¯´Â ¾îµÒ ¼ÓÀ» ´Þ¸®´Â ¹«ÇÑ¿­Â÷¿¡¼­ ¸ðµÎÀÇ ¸ñ¼ûÀ» ±¸ÇÏ±â À§ÇØ ¿¹ÃøºÒ°¡´ÉÇÑ ´É·ÂÀ» °¡Áø Ç÷±Í¿Í ¸ñ¼ûÀ» °Ç Ç÷ÀüÀ» ½ÃÀÛÇÏ´Âµ¥¡¦",
+        "release_date": "2020-10-16",
+        "poster_path": "https://www.themoviedb.org/t/p/original/tDAQALgC407eg3SVAgehbiMwqo0.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 4,
+    "fields": {
+        "title": "Àè ½º³ªÀÌ´õÀÇ Àú½ºÆ¼½º ¸®±×",
+        "overview": "½´ÆÛ¸ÇÀÌ Á×°í Áö±¸¿¡ ¾îµÒÀÇ ±×¸²ÀÚ°¡ µå¸®¿î´Ù. ¸¶´õ¹Ú½º¸¦ Â÷ÁöÇÏ±â À§ÇØ ºô·± ½ºÅ×ÇÂ¿ïÇÁ°¡ ÆÄ¶óµ¥¸ó ±º´ÜÀ» ÀÌ²ø°í Áö±¸¿¡ ¿Â °ÍÀÌ´Ù. Áö±¸¸¦ ÁöÅ°±â À§ÇØ ¸ñ¼ûÀ» ¹ÙÄ£ ½´ÆÛ¸ÇÀÇ Èñ»ýÀÌ ÇêµÇÁö ¾Êµµ·Ï ÇÏ±â À§ÇØ ºê·ç½º ¿þÀÎÀº ´ÙÀÌ¾Ö³ª ÇÁ¸°½º¿Í Àû¿¡ ¸Â¼­±â·Î ÇÑ´Ù. ¹èÆ®¸Ç°ú ¿ø´õ ¿ì¸ÕÀº »õ·ÎÀÌ µîÀåÇÑ À§Çù¿¡ ¸Â¼­ ½Î¿ì±â À§ÇØ Æ¯º°ÇÑ ´É·ÂÀ» °¡Áø ¸ÞÅ¸ÈÞ¸Õ, ¾ÆÄí¾Æ¸Ç°ú »çÀÌº¸±×, ÇÃ·¡½Ã¸¦ Ã£¾Æ°¡ ¼³µæÇÏ¿© ÈûÀ» ÇÕÄ£´Ù. µåµð¾î ÇÑ ÆÀÀÌ µÈ Àú½ºÆ¼½º ¸®±×. È¤½Ã ½ºÅ×ÇÂ¿ïÇÁ¿Í µ¥»çµå ±×¸®°í ´ÙÅ©»çÀÌµå¸¦ ¹°¸®Ä¡±â¿¡ ³Ê¹« ´Ê¾î¹ö¸° °ÍÀÌ ¾Æ´Ò±î?",
+        "release_date": "2021-03-18",
+        "poster_path": "https://www.themoviedb.org/t/p/original/qd7iPB26bwMPZqRcnflzAeDkMn.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 5,
+    "fields": {
+        "title": "¶ó¾ß¿Í ¸¶Áö¸· µå·¡°ï",
+        "overview": "ÀÎ°£°ú µå·¡°ïÀÌ ÆòÈ­·Ó°Ô °øÁ¸ÇÏ´ø ½ÅºñÀÇ ¶¥, Äí¸¸µå¶ó ¿Õ±¹. ¾ÇÀÇ ¼¼·Â µå·éÀÌ µéÀÌ´ÚÄ¡ÀÚ, µå·¡°ïµéÀº ÀÎ°£À» ±¸ÇÏ±â À§ÇØ ½º½º·Î¸¦ Èñ»ýÇÏ°í »ç¶óÁø´Ù. 500³â ÈÄ ºÎÈ°ÇÑ µå·éÀÌ ¼¼»óÀ» °øÆ÷¿¡ ºü¶ß¸®ÀÚ, Àü»ç ¶ó¾ß´Â ºÐ¿­µÈ Äí¸¸µå¶ó¸¦ ±¸ÇÏ±â À§ÇØ Àü¼³ ¼Ó ¸¶Áö¸· µå·¡°ïÀ» Ã£¾Æ ¸ðÇèÀ» ¶°³­´Ù. ¶ó¾ß´Â Çè³­ÇÑ ¿©Á¤À» °ÞÀ¸¸ç ¼¼»óÀ» ±¸ÇÏ±â À§ÇØ¼­´Â Àü¼³ ¼Ó µå·¡°ïº¸´Ù ´õ Áß¿äÇÑ °ÍÀÌ ÀÖ´Ù´Â °ÍÀ» ±ú´Ý°Ô µÇ´Âµ¥¡¦",
+        "release_date": "2021-03-03",
+        "poster_path": "https://www.themoviedb.org/t/p/original/oAlenJMD8DgsLNDRzWsdK6674e6.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 6,
+    "fields": {
+        "title": "¼Ò¿ï",
+        "overview": "´º¿å¿¡¼­ À½¾Ç ¼±»ý´ÔÀ¸·Î ÀÏÇÏ´ø Á¶´Â ²Þ¿¡ ±×¸®´ø ÃÖ°íÀÇ ¹êµå¿Í ÀçÁî Å¬·´¿¡¼­ ¿¬ÁÖÇÏ°Ô µÈ ±× ³¯, ¿¹±âÄ¡ ¸øÇÑ »ç°í·Î ¿µÈ¥ÀÌ µÇ¾î ÅÂ¾î³ª±â Àü ¼¼»ó¿¡ ¶³¾îÁø´Ù. Åº»ý Àü ¿µÈ¥µéÀÌ ¸àÅä¿Í ÇÔ²² ÀÚ½ÅÀÇ °ü½É»ç¸¦ ¹ß°ßÇÏ¸é Áö±¸ ÅëÇàÁõÀ» ¹ß±ÞÇÏ´Â ÅÂ¾î³ª±â Àü ¼¼»ó. Á¶´Â ±× °÷¿¡¼­ À¯ÀÏÇÏ°Ô Áö±¸¿¡ °¡°í ½Í¾îÇÏÁö ¾Ê´Â ½Ã´ÏÄÃÇÑ ¿µÈ¥ 22ÀÇ ¸àÅä°¡ µÈ´Ù. ¸µÄÁ, °£µð, Å×·¹»ç ¼ö³àµµ ¸àÅäµÇ±æ Æ÷±âÇÑ ¿µÈ¥ 22, ²ÞÀÇ ¹«´ë¿¡ ¼­·Á¸é 22ÀÇ Áö±¸ ÅëÇàÁõÀÌ ÇÊ¿äÇÑ Á¶. ±×´Â ´Ù½Ã Áö±¸·Î µ¹¾Æ°¡ ²ÞÀÇ ¹«´ë¿¡ ¼³ ¼ö ÀÖÀ»±î?",
+        "release_date": "2020-12-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/qJiaB4RJMM5Oh6A4rqrEOHQUJbu.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 7,
+    "fields": {
+        "title": "°íÁú¶ó VS. Äá",
+        "overview": "Äá°ú º¸È£ÀÚµéÀº Á¤ÂøÇÒ ¼ö ÀÖ´Â °÷À» Ã£¾Æ Æ¯º°ÇÏ°í °­·ÂÇÑ À¯´ë°¨À» Çü¼ºÇÏ°í ÀÖ´Â Áö¾Æ¿Í ÇÔ²² ¿©Á¤À» ¶°³ª°Ô µÈ´Ù. ±×·¯´ø Áß Áö±¸ ÆÄ±«¸¦ À§ÇÑ È¸½ÉÀÇ ³¯À» ÈÖµÎ¸£´Â °íÁú¶ó¿Í ¸¶ÁÖÇÏ°Ô µÇ°í, º¸ÀÌÁö ¾Ê´Â Èû¿¡ ÀÇÇØ ¸ÂºÙ°Ô µÈ µÎ Àü¼³ÀÇ ´ë°áÀº Áö±¸ ±íÀº °÷¿¡ µµ»ç¸° ¼ö¼ö²²³¢ÀÇ ½ÃÀÛ¿¡ ºÒ°úÇÒ »ÓÀÌ¾ú´Âµ¥¡¦",
+        "release_date": "2021-03-24",
+        "poster_path": "https://www.themoviedb.org/t/p/original/sqo672rKMXiLRC5kVcGvBRebkp.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 8,
+    "fields": {
+        "title": "³ë¹Ùµð",
+        "overview": "ºñ¹üÇÑ °ú°Å¸¦ ¼û±ä Ã¤ ³²µé°ú ´Ù¸¦ ¹Ù ¾ø´Â Æò¹üÇÑ ÀÏ»óÀ» »ç´Â ÇÑ °¡Á¤ÀÇ °¡Àå ¡®ÇãÄ¡¡¯ ¸ÅÀÏ Ãâ±ÙÀ» ÇÏ°í, ºÐ¸®¼ö°Å¸¦ ÇÏ°í ÀÏ°ú °¡Á¤ ¸ðµÎ ³ª¸§ ÃÖ¼±À» ´ÙÇÏÁö¸¸ ¾ÆµéÇÑÅ×´Â ¹«½Ã´çÇÏ°í ¾Æ³»¿ÍÀÇ °ü°èµµ ¼Ò¿øÇÏ´Ù. ±×·¯´ø ¾î´À ³¯, Áý¾È¿¡ °­µµ°¡ µé°í ÇãÄ¡´Â ÇÑ ¹øÀÇ ¹ÝÇ×µµ ÇÏÁö ¸øÇÏ°í ´çÇÑ´Ù. ´õ Å« À§ÇèÀ¸·ÎºÎÅÍ °¡Á·À» ÁöÅ°±â À§ÇÑ ¼±ÅÃÀÌ¾ú´Âµ¥ ¸ðµÎ ¹«´É·ÂÇÏ´Ù°í ¡®ÇãÄ¡¡¯¸¦ ºñ³­ÇÏ°í, °á±¹ ±×µ¿¾È Âü°í ¾ï´­·¶´ø ºÐ³ë°¡ Æø¹ßÇÏ°í ¸¸´Ù.",
+        "release_date": "2021-03-26",
+        "poster_path": "https://www.themoviedb.org/t/p/original/oXQtH8O7pCvXaDKGB8OAjiPVDi5.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 9,
+    "fields": {
+        "title": "±ØÀåÆÇ ±Í¸êÀÇ Ä®³¯: ¹«ÇÑ¿­Â÷ Æí",
+        "overview": "Ç÷±Í·Î º¯ÇØ¹ö¸° ¿©µ¿»ý ¡®³×ÁîÄÚ¡¯¸¦ ÀÎ°£À¸·Î µÇµ¹¸± ´Ü¼­¸¦ Ã£¾Æ ºñ¹ÐÁ¶Á÷ ±Í»ì´ë¿¡ µé¾î°£ ¡®ÅºÁö·Î.¡¯ ¡®Á¨ÀÌÃ÷¡¯, ¡®ÀÌ³ë½ºÄÉ¡¯¿Í »õ·Î¿î ÀÓ¹« ¼öÇàÀ» À§ÇØ ¹«ÇÑ¿­Â÷¿¡ Å¾½Â ÈÄ ±Í»ì´ë ÃÖ°­ °Ë»ç ¿°ÁÖ ¡®·»°íÄí¡¯¿Í ÇÕ·ùÇÑ´Ù. ´Þ¸®´Â ¹«ÇÑ¿­Â÷¿¡¼­ ½Â°´µéÀÌ ÇÏ³ª µÑ ÈçÀû ¾øÀÌ »ç¶óÁöÀÚ ¼û¾îÀÖ´Â ½ÄÀÎ Ç÷±ÍÀÇ Á¸Àç¸¦ Á÷°¨ÇÏ´Â ¡®·»°íÄí¡¯. ±Í»ì´ë ¡®ÅºÁö·Î¡¯ ÀÏÇà°ú ÃÖ°­ °Ë»ç ¿°ÁÖ ¡®·»°íÄí¡¯´Â ¾îµÒ ¼ÓÀ» ´Þ¸®´Â ¹«ÇÑ¿­Â÷¿¡¼­ ¸ðµÎÀÇ ¸ñ¼ûÀ» ±¸ÇÏ±â À§ÇØ ¿¹ÃøºÒ°¡´ÉÇÑ ´É·ÂÀ» °¡Áø Ç÷±Í¿Í ¸ñ¼ûÀ» °Ç Ç÷ÀüÀ» ½ÃÀÛÇÏ´Âµ¥¡¦",
+        "release_date": "2020-10-16",
+        "poster_path": "https://www.themoviedb.org/t/p/original/tDAQALgC407eg3SVAgehbiMwqo0.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 10,
+    "fields": {
+        "title": "Àè ½º³ªÀÌ´õÀÇ Àú½ºÆ¼½º ¸®±×",
+        "overview": "½´ÆÛ¸ÇÀÌ Á×°í Áö±¸¿¡ ¾îµÒÀÇ ±×¸²ÀÚ°¡ µå¸®¿î´Ù. ¸¶´õ¹Ú½º¸¦ Â÷ÁöÇÏ±â À§ÇØ ºô·± ½ºÅ×ÇÂ¿ïÇÁ°¡ ÆÄ¶óµ¥¸ó ±º´ÜÀ» ÀÌ²ø°í Áö±¸¿¡ ¿Â °ÍÀÌ´Ù. Áö±¸¸¦ ÁöÅ°±â À§ÇØ ¸ñ¼ûÀ» ¹ÙÄ£ ½´ÆÛ¸ÇÀÇ Èñ»ýÀÌ ÇêµÇÁö ¾Êµµ·Ï ÇÏ±â À§ÇØ ºê·ç½º ¿þÀÎÀº ´ÙÀÌ¾Ö³ª ÇÁ¸°½º¿Í Àû¿¡ ¸Â¼­±â·Î ÇÑ´Ù. ¹èÆ®¸Ç°ú ¿ø´õ ¿ì¸ÕÀº »õ·ÎÀÌ µîÀåÇÑ À§Çù¿¡ ¸Â¼­ ½Î¿ì±â À§ÇØ Æ¯º°ÇÑ ´É·ÂÀ» °¡Áø ¸ÞÅ¸ÈÞ¸Õ, ¾ÆÄí¾Æ¸Ç°ú »çÀÌº¸±×, ÇÃ·¡½Ã¸¦ Ã£¾Æ°¡ ¼³µæÇÏ¿© ÈûÀ» ÇÕÄ£´Ù. µåµð¾î ÇÑ ÆÀÀÌ µÈ Àú½ºÆ¼½º ¸®±×. È¤½Ã ½ºÅ×ÇÂ¿ïÇÁ¿Í µ¥»çµå ±×¸®°í ´ÙÅ©»çÀÌµå¸¦ ¹°¸®Ä¡±â¿¡ ³Ê¹« ´Ê¾î¹ö¸° °ÍÀÌ ¾Æ´Ò±î?",
+        "release_date": "2021-03-18",
+        "poster_path": "https://www.themoviedb.org/t/p/original/qd7iPB26bwMPZqRcnflzAeDkMn.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 11,
+    "fields": {
+        "title": "¶ó¾ß¿Í ¸¶Áö¸· µå·¡°ï",
+        "overview": "ÀÎ°£°ú µå·¡°ïÀÌ ÆòÈ­·Ó°Ô °øÁ¸ÇÏ´ø ½ÅºñÀÇ ¶¥, Äí¸¸µå¶ó ¿Õ±¹. ¾ÇÀÇ ¼¼·Â µå·éÀÌ µéÀÌ´ÚÄ¡ÀÚ, µå·¡°ïµéÀº ÀÎ°£À» ±¸ÇÏ±â À§ÇØ ½º½º·Î¸¦ Èñ»ýÇÏ°í »ç¶óÁø´Ù. 500³â ÈÄ ºÎÈ°ÇÑ µå·éÀÌ ¼¼»óÀ» °øÆ÷¿¡ ºü¶ß¸®ÀÚ, Àü»ç ¶ó¾ß´Â ºÐ¿­µÈ Äí¸¸µå¶ó¸¦ ±¸ÇÏ±â À§ÇØ Àü¼³ ¼Ó ¸¶Áö¸· µå·¡°ïÀ» Ã£¾Æ ¸ðÇèÀ» ¶°³­´Ù. ¶ó¾ß´Â Çè³­ÇÑ ¿©Á¤À» °ÞÀ¸¸ç ¼¼»óÀ» ±¸ÇÏ±â À§ÇØ¼­´Â Àü¼³ ¼Ó µå·¡°ïº¸´Ù ´õ Áß¿äÇÑ °ÍÀÌ ÀÖ´Ù´Â °ÍÀ» ±ú´Ý°Ô µÇ´Âµ¥¡¦",
+        "release_date": "2021-03-03",
+        "poster_path": "https://www.themoviedb.org/t/p/original/oAlenJMD8DgsLNDRzWsdK6674e6.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 12,
+    "fields": {
+        "title": "¼Ò¿ï",
+        "overview": "´º¿å¿¡¼­ À½¾Ç ¼±»ý´ÔÀ¸·Î ÀÏÇÏ´ø Á¶´Â ²Þ¿¡ ±×¸®´ø ÃÖ°íÀÇ ¹êµå¿Í ÀçÁî Å¬·´¿¡¼­ ¿¬ÁÖÇÏ°Ô µÈ ±× ³¯, ¿¹±âÄ¡ ¸øÇÑ »ç°í·Î ¿µÈ¥ÀÌ µÇ¾î ÅÂ¾î³ª±â Àü ¼¼»ó¿¡ ¶³¾îÁø´Ù. Åº»ý Àü ¿µÈ¥µéÀÌ ¸àÅä¿Í ÇÔ²² ÀÚ½ÅÀÇ °ü½É»ç¸¦ ¹ß°ßÇÏ¸é Áö±¸ ÅëÇàÁõÀ» ¹ß±ÞÇÏ´Â ÅÂ¾î³ª±â Àü ¼¼»ó. Á¶´Â ±× °÷¿¡¼­ À¯ÀÏÇÏ°Ô Áö±¸¿¡ °¡°í ½Í¾îÇÏÁö ¾Ê´Â ½Ã´ÏÄÃÇÑ ¿µÈ¥ 22ÀÇ ¸àÅä°¡ µÈ´Ù. ¸µÄÁ, °£µð, Å×·¹»ç ¼ö³àµµ ¸àÅäµÇ±æ Æ÷±âÇÑ ¿µÈ¥ 22, ²ÞÀÇ ¹«´ë¿¡ ¼­·Á¸é 22ÀÇ Áö±¸ ÅëÇàÁõÀÌ ÇÊ¿äÇÑ Á¶. ±×´Â ´Ù½Ã Áö±¸·Î µ¹¾Æ°¡ ²ÞÀÇ ¹«´ë¿¡ ¼³ ¼ö ÀÖÀ»±î?",
+        "release_date": "2020-12-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/qJiaB4RJMM5Oh6A4rqrEOHQUJbu.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 13,
+    "fields": {
+        "title": "½Å½Å¹æ: ³ªÅ¸Áß»ý",
+        "overview": "¿ÀÅä¹ÙÀÌ ·¹ÀÌ¼­ÀÌÀÚ ¹è´Þ¿ø°ú Áö¿ªÀ¯ÁöÀÇ ¾Æµé »çÀÌ¿¡¼­ »ý±ä °¥µîÀ¸·Î ÀÎÇØ »ïÃµ³âÀü ±×µéÀÌ °¡¹®°£ ¿ø¼öÁö°£ÀÌ¾ú´Ù´Â »ç½ÇÀÌ ¹àÇôÁö¸é¼­ ÀÏ¾î³ª´Â ÀÌ¾ß±â",
+        "release_date": "2021-02-06",
+        "poster_path": "https://www.themoviedb.org/t/p/original/a8AwGuBb99TU45jxh6dKyuJ0uvf.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 14,
+    "fields": {
+        "title": "¸ðÅ» ÄÄ¹î ·¹Àüµå: ½ºÄÝÇÇ¿ÂÀÇ º¹¼ö",
+        "overview": "ÇÑ ¼¼´ë¿¡ ÇÑ ¹ø ²Ã·Î °³ÃÖµÇ´Â ¿Ü°è¿Í Áö±¸ÀÇ Ã¨ÇÇ¾ðµé °£ÀÇ Åä³Ê¸ÕÆ®¸¦ ÅëÇØ ¼¼°èÀÇ ¿î¸íÀ» °áÁ¤Áþ°Ô µÇ´Â ÀÌ¾ß±â. Áö±¸ÀÇ ¼öÈ£ÀÚÀÎ ¶óÀÌµ§ °æÀº Áö±¸¿¡¼­ °¡Àå °­·ÂÇÑ ÆÄÀÌÅÍµéÀ» ¸ð¾Æ ÃÖÈÄÀÇ ´ë°áÀÎ, ¸ðÅ» ÄÄ¹î¿¡¼­ »ç¾ÇÇÑ ºô·± »ó®ZÀ¸·ÎºÎÅÍ Áö±¸¸¦ ÁöÄÑ¾ß ÇÏ´Âµ¥...",
+        "release_date": "2020-04-12",
+        "poster_path": "https://www.themoviedb.org/t/p/original/4VlXER3FImHeFuUjBShFamhIp9M.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 15,
+    "fields": {
+        "title": "Á¶Ä¿",
+        "overview": "È¦¾î¸Ó´Ï¿Í »ç´Â ¾Æ¼­ ÇÃ·ºÀº ÄÚ¹Ìµð¾ðÀ» ²Þ²ÙÁö¸¸ ±×ÀÇ »îÀº ÁÂÀý°ú Àý¸ÁÀ¸·Î °¡µæ Â÷ ÀÖ´Ù. ±¤´ë ¾Æ¸£¹ÙÀÌÆ®´Â ±×¿¡°Ô ¸ð¿åÀ» °¡Á®´ÙÁÖ±â ÀÏ¾¥°í, ±äÀåÇÏ¸é ¿ôÀ½À» ÅëÁ¦ÇÒ ¼ö ¾ø´Â ½Å°æº´ Áõ¼¼´Â ±×¸¦ ´õ¿í °í¸³½ÃÅ²´Ù. Á¤ºÎ ¿¹»ê ±äÃàÀ¸·Î ÀÎÇØ Á¤½Å°ú ¾à¹°À» Áö¿øÇÏ´ø °ø°øÀÇ·á ¼­ºñ½º¸¶Àú ¾ø¾îÁ® ¹ö¸° ¾î´À ³¯, ¾Æ¼­´Â ÁöÇÏÃ¶¿¡¼­ ½Ãºñ¸¦ °É¾î¿Â Áõ±Ç»ç Á÷¿øµé¿¡°Ô ¾ò¾î¸Â´ø ¿ÍÁß¿¡ µ¿·á°¡ °Ç³×ÁØ ±ÇÃÑÀ¸·Î ±×µéÀ» ½÷ ¹ö¸®°í ¸¸´Ù. ±ºÁßµéÀº Áö¹è°è±Þ¿¡ ´ëÇÑ ÀúÇ×ÀÇ ¾ÆÀÌÄÜÀÌ µÈ ±×¸¦ ÃßÁ¾ÇÏ±â ½ÃÀÛÇÏ¸ç ±¤´ë ¸¶½ºÅ©·Î ¾ó±¼À» °¡¸®°í °Å¸®·Î ½ñ¾ÆÁ® ³ª¿À±â ½ÃÀÛÇÏ´Âµ¥...",
+        "release_date": "2019-10-02",
+        "poster_path": "https://www.themoviedb.org/t/p/original/wrCwH6WOvXQvVuqcKNUrLDCDxdw.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 16,
+    "fields": {
+        "title": "³ªÀÇ È÷¾î·Î ¾ÆÄ«µ¥¹Ì¾Æ ´õ ¹«ºñ: È÷¾î·ÎÁî ¶óÀÌÂ¡",
+        "overview": "´«ÀÌ °è¼Ó ³»¸®´Â °Ü¿ï ¾î´À ¹ã, È÷¾î·Î »çÈ¸¸¦ ÆÄ±«ÇÏ·Á°í °èÈ¹ÇÏ´Â ½Ã°¡¶óÅ° Åä¹«¶ó°¡ ÀÎ¼ÖÇÏ´Â ºô·± ¿¬ÇÕ°ú ±× ¿òÁ÷ÀÓÀ» »çÀü¿¡ Æ÷ÂøÇÑ È÷¾î·ÎµéÀÇ ÀüÅõ°¡ Àü°³µÇ´Â °¡¿îµ¥, ³²¸ð¸£°Ô Á¶¿ëÈ÷ ²ÞÆ²°Å¸®´Â \"¹º°¡\"°¡ ÀÏ¾î³ª°í, ±× ÀÚ¸®¸¦ ¶°³µ´Ù. ¸¶Ä§ ÀÌÁîÄí ÀÏÇàÀÇ À¯¿¡ÀÌ °í±³ È÷¾î·Î°ú 1ÇÐ³â A¹ÝÀÌ ÀºÅðÇÑ No.1 È÷¾î·Î ¿Ã¸¶ÀÌÆ®ÀÇ µÚ¸¦ ÀÌ¾î \"Â÷¼¼´ë ¿µ¿õ À°¼º ÇÁ·ÎÁ§Æ®\"ÀÇ ÀÏÈ¯À¸·Î ÇÐ±Þ Àü¿ø¿¡¼­ ±â°£ ÇÑÁ¤ÀÇ ±³¿Ü È÷¾î·Î È°µ¿À» À§ÇØ ÀÏº»ÀÇ ÈÎ¾À ³²ÂÊ¿¡ À§Ä¡ÇÑ ¿Üµý ¼¶ \"³ªºÎ ¼¶\"À» Ã£¾Ò´Ù. ¾ó¸¶ Àü Å« »ç°ÇÀÌ ÀÏ¾î³ªÁö ¾Ê¾Ò´ø ÆòÈ­·Î¿î ¼¶¿¡¼­ ÀÌµéÀº ÁÖÀç ¿µ¿õÀ¸·Î¼­ ¼¶»ç¶÷µéÀÇ »ýÈ°À» µµ¿ì¸ç ºÐÁÖÇß°í, ±×·¯¸é¼­µµ ÇÑ°¡ÇÑ ½Ã°£À» º¸³»°í ÀÖ¾ú´Ù. ±×·¯³ª ±× Á¤ÀûÀ» ºÎ¼öµíÀÌ, °©ÀÚ±â ºô·±µéÀÌ ³ªºÎ ¼¶À» µ¤ÃÄ, Â÷·ÊÂ÷·Ê·Î ¼¶ÀÇ ½Ã¼³À» ÆÄ±«ÇØ °£´Ù. ±×µéÀ» ÁöÈÖÇÏ´Â °ÍÀº, \"³ªÀÎ\". ±×³¯ ¹ã, ´«À» ¶á \"¹º°¡\"±× ÀÚÃ¼¿´´Ù. ÀÌÁîÄí¿Í ¹ÙÄí°í µîÀÇ 1ÇÐ³â A¹ÝÀÇ ¸â¹ö´Â ÈûÀ» ¸ð¾Æ ºô·±¿¡ ¸Â¼±´Ù! °ú¿¬ ¼¶À» µ¤Ä¡´Â ³ªÀÎÀÇ ¸ñÀûÀÌ¶õ!? ±×¸®°í ÀÌÁîÄí ÀÏÇàÀÇ 1ÇÐ³â A¹ÝÀÇ \"´º È÷¾î·Î\"µéÀº ÀÌ °¡Àå Èä¾ÇÇÑ ºô·±À¸·ÎºÎÅÍ ¼¶ÀÇ »ç¶÷µéÀ» ÁöÅ³ ¼ö ÀÖÀ»±î!?",
+        "release_date": "2019-12-20",
+        "poster_path": "https://www.themoviedb.org/t/p/original/y56HkHAbSZQJjQaxlqCaRI3lIHu.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 17,
+    "fields": {
+        "title": "¾îº¥Á®½º: ÀÎÇÇ´ÏÆ¼ ¿ö",
+        "overview": "Å¸³ë½º´Â 6°³ÀÇ ÀÎÇÇ´ÏÆ¼ ½ºÅæÀ» È¹µæÇØ ½ÅÀ¸·Î ±º¸²ÇÏ·Á ÇÑ´Ù. ±×°ÍÀº °ð ÀÎ·ùÀÇ Àý¹ÝÀ» ÇÐ»ìÇØ ¿ìÁÖÀÇ ±ÕÇüÀ» ¸ÂÃß°Ú´Ù´Â ¶æ. Å¸³ë½º´Â ´ÚÅÍ ½ºÆ®·¹ÀÎÁö°¡ ¼ÒÀ¯ÇÑ Å¸ÀÓ ½ºÅæ, ºñÀüÀÇ ÀÌ¸¶¿¡ ¹ÚÇô ÀÖ´Â ¸¶ÀÎµå ½ºÅæÀ» Â÷ÁöÇÏ±â À§ÇØ Áö±¸¸¦ Ä§·«ÇÑ´Ù. ¾ÆÀÌ¾ð¸Ç°ú ½ºÆÄÀÌ´õ¸ÇÀº °¡µð¾ðÁî ¿Àºê °¶·°½ÃÀÇ ¸â¹öµé°ú Å¸³ë½º¸¦ »ó´ëÇÑ´Ù. Áö±¸¿¡¼± Ä¸Æ¾ ¾Æ¸Þ¸®Ä«, ¿Ï´Ù, ºí·¢ À§µµ¿ì, ºí·¢ ÆÒ¼­ µîÀÌ ºñÀüÀ» ÁöÅ°±â À§ÇØ ¹¶Ä£´Ù.",
+        "release_date": "2018-04-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 18,
+    "fields": {
+        "title": "¾îº¥Á®½º: ¿£µå°ÔÀÓ",
+        "overview": "¾îº¥Á®½ºÀÇ ÆÐ¹è ÀÌÈÄ Áö±¸´Â ÃÊÅäÈ­µÆ°í ³²Àº Àý¹ÝÀÇ »ç¶÷µéÀº Á¤½ÅÀû °íÅëÀ» È£¼ÒÇÏ¸ç ÇÏ·çÇÏ·ç¸¦ ±Ù±ÙÀÌ ¹öÅß³ª°£´Ù. ¿ÍÄ­´Ù¿¡¼­ ½Î¿ì´Ù »ýÁ¸ÇÑ È÷¾î·Îµé°ú ¿ìÁÖÀÇ Å¸ÀÌÅº Çà¼º¿¡¼­ ½Î¿ì´Ù »ýÁ¸ÇÑ È÷¾î·ÎµéÀÌ »Ô»ÔÀÌ Èð¾îÁ³´Âµ¥, ¾ÆÀÌ¾ð¸Ç°ú ³×ºæ¶ó´Â ¿ìÁÖ¸¦ ¶°µ¹°í ÀÖ°í Áö±¸¿¡ ³²¾Æ ÀÖ´Â ¾îº¥Á®½º ¸â¹öµéÀº ´Ð Ç»¸®°¡ ¸¶Áö¸·¿¡ ½ÅÈ£¸¦ º¸³»´Ù ¸¸ ¼Û½Å±â¸¸ µé¿©´Ùº¸¸ç È¤½Ã ¸ð¸¦ ¿ìÁÖÀÇ ÀÀ´äÀ» ±â´Ù¸®´Â ÁßÀÌ´Ù. ¾ÖÃÊ È÷¾î·ÎÀÇ »îÀ» Àá½Ã ³»·Á³õ°í °¡Á·°ú ½Ã°£À» º¸³»´ø È£Å©¾ÆÀÌ ¿ª½Ã Çì¾Æ¸± ¼ö ¾ø´Â ¸¶À½ÀÇ »óÃ³¸¦ ÀÔÀº Ã¤ »ç¶óÁö°í ¸¶´Âµ¥...",
+        "release_date": "2019-04-24",
+        "poster_path": "https://www.themoviedb.org/t/p/original/n78LK2t1uQP68Ud0VXHRe0HmKOp.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 19,
+    "fields": {
+        "title": "¹ÌÃ¿ °¡Á·°ú ±â°è ÀüÀï",
+        "overview": "ÀÚµ¿Â÷¸¦ Å¸°í ±¹Åä¸¦ È¾´ÜÇÒ±î Çß´Âµ¥, ÀÌ°Ô ¹«½¼ ³¯º­¶ô. ·Îº¿µéÀÌ ¼¼»óÀ» Á¡·ÉÇÏ´Ù´Ï. ÀÌÁ¦ ÀÌ»óÇÏ±â·Î´Â ¼¼°è ÃÖ°­, ¹ÌÃ¿ °¡Á·ÀÌ ³ª¼³ ¼ö¹Û¿¡. ÀÎ·ù´Â ¿ì¸®°¡ ±¸ÇÑ´Ù. ¾î¶»°Ôµç µÇ°ÚÁö!",
+        "release_date": "2021-04-22",
+        "poster_path": "https://www.themoviedb.org/t/p/original/4e7QytwEHQUGnWxOXdwjEQExvZH.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 20,
+    "fields": {
+        "title": "±ØÀåÆÇ ±âºì",
+        "overview": "°íµîÇÐ»ý ¿ì¿¡³ë¾ß¸¶ ¸®Ã÷Ä«´Â »çÅä ¸¶ÈÄÀ¯ÀÇ ³ë·§¼Ò¸®¿¡ Ãæ°ÝÀ» ¹Þ¾Æ ³ªÄ«¾ß¸¶ ÇÏ·çÅ°, Ä«Áö ¾ÆÅ°È÷ÄÚ¿Í ÇÔ²² È°µ¿ÇÏ´Â ¹êµå¿¡ º¸ÄÃ·Î ¸¶ÈÄÀ¯¸¦ ¿µÀÔÇÑ´Ù. ¸¶ÈÄÀ¯ ¿µÀÔ ÈÄ Ã¹ °ø¿¬À» ¼º°ø½ÃÅ°¸é¼­ ¹êµå '±âºì'ÀÇ È°µ¿À» ½ÃÀÛÇÏ·Á´Â ¿ÍÁß¿¡ ¸¶ÈÄÀ¯¸¦ ÇâÇÑ ¸¶À½À» ÀÚ°¢ÇÑ ¸®Ã÷Ä«´Â ±×¿Í »ç±Í±â ½ÃÀÛÇÑ´Ù. ÇÑÆí, ÇÏ·çÅ°´Â ¿À·§µ¿¾È Ç°°í ÀÖ´ø ¾ÆÅ°È÷ÄÚ¿¡ ´ëÇÑ È£°¨ÀÌ Ä¿Á®¸¸ °¡°í ¾ÆÅ°È÷ÄÚ´Â µ¿°ÅÀÎÀÎ ¹ÙÀÌ¿Ã¸®´Ï½ºÆ® ¿ì°ÔÃ÷¿Í °ü°è¸¦ °è¼Ó À¯ÁöÇÏ·Á ÇÏ´Âµ¥... ÇÏ·çÅ°¿Í ¾ÆÅ°È÷ÄÚ, ¿ì°ÔÃ÷ÀÇ »ç¶ûÀÌ ½ºÅ©¸°¿¡¼­ »ß°Æ´ë¸ç ¿òÁ÷ÀÎ´Ù!",
+        "release_date": "2020-08-22",
+        "poster_path": "https://www.themoviedb.org/t/p/original/tVP1DjnljT1it6cAnn353cdVXDe.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 21,
+    "fields": {
+        "title": "³ªÀÇ È÷¾î·Î ¾ÆÄ«µ¥¹Ì¾Æ ´õ ¹«ºñ : µÎ ¸íÀÇ È÷¾î·Î",
+        "overview": "¸ðµÎ°¡ ¡®°³¼º¡¯ÀÌ¶ó´Â ÃÊ´É·ÂÀ» °¡Áø ¼¼°è, ¿©±â¿¡ ¡®¹«°³¼º¡¯ÀÇ ¼Ò³âÀÌ ÀÖ¾ú´Ù! ÇÏÁö¸¸ ¼Ò³âÀº ¡®°³¼º¡¯ ´ë½Å È÷¾î·Î°¡ µÉ Á¶°ÇÀ» °¡Áö°í ÀÖ¾ú´Âµ¥¡¦ NO.1 È÷¾î·Î ¡®¿Ã¸¶ÀÌÆ®¡¯ÀÇ µÚ¸¦ ÀÕ´Â »õ·Î¿î ¿µ¿õ Åº»ý! °³¼ºÀÌ ¾ø¾îµµ, ³Í ¼¼»óÀ» ºû³¾ È÷¾î·Î°¡ µÉ ¼ö ÀÖ´Ù! 5¿ù ¸ðµÎ ´Ù°°ÀÌ ÀÔÇÐ~!",
+        "release_date": "2018-08-03",
+        "poster_path": "https://www.themoviedb.org/t/p/original/3coOIbsmeYwhLshMXHUrwtdhzDa.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 22,
+    "fields": {
+        "title": "ÀÌ ¸ÚÁø ¼¼°è¿¡ Ãàº¹À»! ºÓÀº Àü¼³",
+        "overview": "±³Åë»ç°í(!?)·Î Çã¹«ÇÏ°Ô ÀÎ»ýÀÇ ¸·À» ³»¸± ¿¹Á¤ÀÌ¾ú´ø °ÔÀÓÀ» »ç¶ûÇÏ´Â ÀºµÐÇü ¿ÜÅçÀÌ »çÅä Ä«Áî¸¶´Â, ¾îÂ¼´Ù º¸´Ï ¿©½Å ¾ÆÄí¾Æ¸¦ ±æµ¿¹« »ï¾Æ¼­ ÀÌ¼¼°è·Î Àü»ýÇÏ°Ô µÈ´Ù. \"RPG °ÔÀÓ °°Àº ÀÌ¼¼°è¿¡¼­ µ¿°æÇÏ´ø ¸ðÇè°¡ »ýÈ° ¿£Á¶ÀÌ! ¸ñÇ¥´Â ¿ë»ç!\" ÇÏÁö¸¸ ½Å³ª´Â ±âºÐÀº Àá±ñÀÌ°í, Àü»ýÇÑ Ä«Áî¸¶¿¡°Ô´Â °ñÄ¡ ¾ÆÇÂ ÀÏ¸¸ °è¼ÓµÈ´Ù. Æ®·¯ºí ¸ÞÀÌÄ¿ À×¿©½Å ¾ÆÄí¾Æ, Áß2º´À» Àß¸ø ¾ÎÀº ¸¶¹ý»ç ¸Þ±¸¹Ö, ¸Á»ó ³í½ºÅé ¿©±â»ç ´ÙÅ©´Ï½º¶ó´Â, ´É·ÂÄ¡´Â ³ôÀºµ¥ ³ª»ç°¡ ½ÉÇÏ°Ô ºüÁø ¼¼ »ç¶÷°ú ÆÄÆ¼¸¦ Â¥°Ô µÇ°í, ºú ¶§¹®¿¡ ¿ÈÂ¦´Þ½Ï ¸øÇÏ°Ô µÇ°í, ±¹°¡ ¹Ý¿ªÁËÀÇ ÇøÀÇ·Î ÀçÆÇ¿¡ È¸ºÎµÇ°í, ¸¶¿Õ±ºÀÇ °£ºÎ¸¦ Åä¹úÇÏ°í, ¶§·Î´Â Á×±âµµ ÇÑ´Ù¡¦¡¦. ±×·¯´ø ¾î´À ³¯, ´Ù±ÞÇÏ°Ô Ã£¾Æ¿Â È«¸¶Á· ¼Ò³à À¶À¶ÀÇ ÆøÅº ¹ß¾ðÀ¸·Î Ä«Áî¸¶ ÀÏÇàÀº ¾ó¾îºÙ°í ¸¸´Ù. 'Àú¿ä, Ä«Áî¸¶ ¾¾ÀÇ ¾ÆÀÌ¸¦ ¿øÇØ¿ä!' »çÁ¤À» µé¾îº¸´Ï, ¸Þ±¸¹Ö°ú À¶À¶ÀÇ °íÇâÀÎ 'È«¸¶ÀÇ ¸¶À»'ÀÌ ¸ê¸ÁÀÇ À§±â¿¡ Ã³Çß´Ù°í ÇÑ´Ù. ¸¶À»À» ±¸ÇÏ±â À§ÇØ ¸ÕÀú Ãâ¹ßÇÑ À¶À¶À» ÂÑ¾Æ¼­ È«¸¶ÀÇ ¸¶À»·Î ÇâÇÑ Ä«Áî¸¶ ÀÏÇàÀÌ¾úÁö¸¸--!? Ä«Áî¸¶ ÆÄÆ¼¸¦ µ¤Ä£, ÃÖ´ëÀÇ À§±â! Æò¹üÇÑ ¸ðÇè°¡ Ä«Áî¸¶°¡ »ì¾Æ°¡´Â ÀÌ¼¼°è ¶óÀÌÇÁÀÇ ¹Ì·¡´Â ¾îµð·Î!?",
+        "release_date": "2019-08-30",
+        "poster_path": "https://www.themoviedb.org/t/p/original/hrE3lJtYnozIENA738mzQI65Avb.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 23,
+    "fields": {
+        "title": "ÄÚÄÚ",
+        "overview": "¹Ì±¸¿¤Àº ¸ß½ÃÄÚÀÇ ÀÚ¶ûÀÎ ¿¡¸£³×½ºÅä µ¨¶ó Å©·çÁî °°Àº ¹ÂÁö¼ÇÀÌ µÇ±æ ²Þ²ÙÁö¸¸ ¹Ì±¸¿¤ Áý¾È »ç¶÷µé¿¡°Ô À½¾ÇÀº ±Ý±â´Ù. ¸Õ ¿¾³¯ Á¶»ó Áß¿¡ À½¾Ç ¶§¹®¿¡ °¡Á·À» ¹ö¸° ÀÎ¹°ÀÌ ÀÖ¾ú±â ¶§¹®. ¹Ì±¸¿¤Àº Á×Àº ÀÚÀÇ ³¯ÀÌ µÇÀÚ ½Ç·ÂÀ¸·Î ÀÎÁ¤¹Þ°Ú´Ù´Â °á½ÉÀ» ÇÏ°í °æ¿¬ ¹«´ë¿¡ ¿À¸£·Á ÇÏ´Âµ¥, ¿ì¿¬È÷ ¿¡¸£³×½ºÅäÀÇ ±âÅ¸¿¡ ¼ÕÀ» ´ò´Ù°¡ Á×Àº ÀÚµéÀÇ ¼¼»ó¿¡ µé¾î¼­°Ô µÈ´Ù. ÀÌ½Â°ú Àú½ÂÀ» ÀÌ¾îÁÖ´Â ¸¶¸®°ñµå ²É±æÀ» °Ç³Ê Á×Àº ÀÚµéÀÇ ¼¼»ó¿¡ µµÂøÇÑ ¹Ì±¸¿¤Àº °ÅÁþ¸»°ú À§º¯Á¶°¡ Àå±âÀÎ ÇíÅÍ¸¦ ¸¸³­´Ù. ±×¸®°í ²Þ¿¡ ±×¸®´ø ¿ì»ó ¿¡¸£³×½ºÅä¸¦ ¸¸³ª·¯ °¡´Â ¿©Á¤¿¡¼­ °¡Á·ÀÇ ºñ¹ÐÀ» ¾Ë°Ô µÈ´Ù.",
+        "release_date": "2017-10-27",
+        "poster_path": "https://www.themoviedb.org/t/p/original/6AANwKhjIEVyya95oW4IA6joL1Z.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 24,
+    "fields": {
+        "title": "Ã»Ãá µÅÁö´Â ²Þ²Ù´Â ¼Ò³àÀÇ ²ÞÀ» ²ÙÁö ¾Ê´Â´Ù",
+        "overview": "ÇÏ´Ã°ú ¹Ù´Ù°¡ ¹ÝÂ¦ÀÌ´Â ¸¶À» \"ÈÄÁö»ç¿Í\"¿¡ »ç´Â °íµîÇÐ»ý ¾ÆÁî»ç°¡¿Í »çÄíÅ¸´Â °°Àº ÇÐ±³ ¼±¹èÀÌÀÚ ¿¬ÀÎÀÎ »çÄí¶óÁö¸¶ ¸¶ÀÌ¿Í ¼³·¹´Â ÀÏ»óÀ» º¸³»°í ÀÖ´Ù. ÇÏÁö¸¸ ¾î´À ³¯ Ã¹»ç¶ûÀÎ ¸¶Å°³ëÇÏ¶ó ¼îÄÚ°¡ µîÀåÇÏ¸é¼­ ±× ÀÏ»óÀº ¿ÏÀüÈ÷ µÚ¹Ù²î¾î ¹ö¸°´Ù. ¾Ë ¼ö ¾ø´Â ÀÌÀ¯·Î 'ÁßÇÐ»ý'°ú '¾î¸¥', µÎ ¸íÀÌ Á¸ÀçÇÏ´Â ¼îÄÚ¿Í ºÎµæÀÌÇÑ µ¿°Å¸¦ ÇÏ¸é¼­ »çÄíÅ¸¿Í ¸¶ÀÌÀÇ °ü°è°¡ »ß°Æ°Å¸®±â ½ÃÀÛÇÑ´Ù. ±×·¯´ø Áß 'ÁßÇÐ»ý ¼îÄÚ'°¡ À§ÁßÇÑ º´À» ¾Î°í ÀÖ´Ù´Â °ÍÀ» ¾Ë°í »çÄíÅ¸ÀÇ °¡½¿ ÈäÅÍ´Â ´Ù½Ã ¹ú¾îÁö´Âµ¥...",
+        "release_date": "2019-06-15",
+        "poster_path": "https://www.themoviedb.org/t/p/original/hqNkm15rQI6049Pg3XPSE8PMW98.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 25,
+    "fields": {
+        "title": "ÇØ¸® Æ÷ÅÍ¿Í ¾ÆÁîÄ«¹ÝÀÇ ÁË¼ö",
+        "overview": "13¼¼°¡ µÈ ÇØ¸® Æ÷ÅÍ´Â ¶Ç ÇÑ¹øÀÇ ¿©¸§ ¹æÇÐÀ» ÀÌ¸ð °¡Á·ÀÎ ´õÁñ¸® ÀÏ°¡¿Í ¿ì¿ïÇÏ°Ô º¸³»¾ß Çß´Ù. ¹°·Ð ¸¶¹ýÀ» ¾²´Â °Ç ÀÏÃ¼ ±ÝÁö. ÇÏÁö¸¸, ¹ö³í ÀÌ¸ðºÎÀÇ ´©ÀÌÀÎ ¸¶Áö ¾ÆÁÜ¸¶°¡ ´õÁñ¸® °¡¸¦ ¹æ¹®ÇÏ¸é¼­ »óÈ²Àº º¯ÇÑ´Ù. À§¾ÐÀûÀÎ ¸¶Áö´Â ÇØ¸®¿¡°Õ ´Ã °øÆ÷ÀÇ ´ë»ó. ¸¶Áö ¾ÆÁÜ¸¶ ¶§¹®¿¡ ½ºÆ®·¹½º¸¦ ¹Þ´ø ÇØ¸®´Â ±Þ±â¾ß ½Ç¼ö·Î ±×³à¸¦ °Å´ëÇÑ ±«¹° Ç³¼±À¸·Î ¸¸µé¾î ÇÏ´Ã ³ôÀÌ ¶ç¿ö º¸³»¹ö¸®°í ¸¸´Ù. ÀÌ¸ð¿Í ÀÌ¸ðºÎ¿¡°Ô ¹úÀ» ¹ÞÀ» °Íµµ µÎ·Æ°í, ÀÏ¹Ý ¼¼»ó¿¡¼± ¸¶¹ý »ç¿ëÀÌ ±ÝÁöµÅ ÀÖ´Â °ÍÀ» ¾î°å±â ¶§¹®¿¡ È£±×¿ÍÆ® ¸¶¹ýÇÐ±³¿Í ¸¶¹ýºÎÀÇ Â¡°è°¡ °ÆÁ¤µÈ ÇØ¸®´Â ¹ãÀÇ ¾îµÒ ¼ÓÀ¸·Î µµ¸ÁÄ¡Áö¸¸, ¼ø½Ä°£¿¡ ±Ù»çÇÑ º¸¶ó»ö 3Ãþ ¹ö½º¿¡ ÅÂ¿öÁ® ÇÑ ¼úÁýÀ¸·Î ÀÎµµµÇ°í ¸¶´Âµ¥...",
+        "release_date": "2004-05-31",
+        "poster_path": "https://www.themoviedb.org/t/p/original/anwNl1xbzXoj5Ax1nVw3WoDzHlw.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 26,
+    "fields": {
+        "title": "Æ÷µå V Æä¶ó¸®",
+        "overview": "1960³â´ë, ¸ÅÃâ °¨¼Ò¿¡ ºüÁø Æ÷µå´Â ÆÇ¸Å È°·Î¸¦ Ã£±â À§ÇØ Æä¶ó¸®¿ÍÀÇ ÀÎ¼ö ÇÕº´À» ÃßÁøÇÑ´Ù. ¸·´ëÇÑ ÀÚ±Ý·Â¿¡µµ ºÒ±¸, °è¾à¿¡ ½ÇÆÐÇÏ°í ¿£ÃÊ Æä¶ó¸®·ÎºÎÅÍ ¸ð¿å±îÁö ´çÇÑ Çî¸® Æ÷µå 2¼¼´Â ¸£¸Á 24½Ã°£ ·¹ÀÌ½º¿¡¼­ Æä¶ó¸®¸¦ ¹Ú»ì ³¾ Â÷¸¦ ¸¸µé °ÍÀ» Áö½ÃÇÑ´Ù. Áö¿ÁÀÇ ·¹ÀÌ½º·Î ºÒ¸®´Â ¸£¸Á 24½Ã°£ ·¹ÀÌ½º. ÃâÀü °æÇèÁ¶Â÷ ¾ø´Â Æ÷µå´Â ´ëÈ¸ 6¿¬ÆÐ¸¦ Â÷ÁöÇÑ Æä¶ó¸®¿¡ ´ëÇ×ÇÏ±â À§ÇØ ¸£¸Á ¿ì½ÂÀÚ Ãâ½Å ÀÚµ¿Â÷ µðÀÚÀÌ³Ê Ä³·Ñ ¼Ðºñ¸¦ °í¿ëÇÏ°í, ±×´Â ´©±¸¿Íµµ Å¸ÇùÇÏÁö ¾ÊÁö¸¸ ¿­Á¤°ú ½Ç·Â¸¸Å­Àº ÃÖ°íÀÎ ·¹ÀÌ¼­ ÄË ¸¶ÀÏ½º¸¦ ÀÚ½ÅÀÇ ÆÄÆ®³Ê·Î ¿µÀÔÇÏ´Âµ¥...",
+        "release_date": "2019-11-13",
+        "poster_path": "https://www.themoviedb.org/t/p/original/wBUoWL4z0nsvC9cYT3VCc74X3jE.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 27,
+    "fields": {
+        "title": "¿ì¸®ÀÇ ¸¶Áö¸· 1³â",
+        "overview": "17»ì ´Þ¸°Àº ¾Æ¹öÁöÀÇ °èÈ¹¿¡ µû¶ó¼­ ÇÏ¹öµå °¡±â À§ÇØ¼­ °èÈ¹´ë·Î »îÀ» »ì°Ô µÈ´Ù. ¿ì¿¬È÷ Ä£±¸µé°ú ÇÔ²¾ °£ ÄÜ¼­Æ®¿¡¼­ ¸¸³­ ÀÌÀÚº§¿¡°Ô¼­ °­ÇÑ ²ø¸²À» ´À³¢°í, ±×³à¿¡°Ô µ¥ÀÌÆ® ½ÅÃ»À» ÇÏ°Ô µÇ´Âµ¥...",
+        "release_date": "2020-11-27",
+        "poster_path": "https://www.themoviedb.org/t/p/original/rJvw9aHDwaYVjnIZkKUbdsNJ7dB.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 28,
+    "fields": {
+        "title": "ÇØ¸® Æ÷ÅÍ¿Í Á×À½ÀÇ ¼º¹° 2",
+        "overview": "´ýºíµµ¾î ±³ÀåÀÌ ³²±ä Á×À½ÀÇ ¼º¹°ÀÇ ´Ü¼­¸¦ ÂÑ´ø ÇØ¸® Æ÷ÅÍ´Â º¼µå¸ðÆ®°¡ ±×Åä·Ï Ã£¾Æ ´Ù´Ñ Àý´ëÀûÀÎ ÈûÀ» °¡Áø ÁöÆÎÀÌÀÇ ºñ¹ÐÀ» ÅëÇØ µåµð¾î ¸¶Áö¸· ÆÛÁñÀ» ¿Ï¼ºÇÑ´Ù. º¼µå¸ðÆ®ÀÇ ¿µÈ¥ÀÌ ´ã±ä ´Ù¼¸ ¹øÂ° È£Å©·è½º¸¦ Ã£±â À§ÇØ ¸¶¹ýÇÐ±³ È£±×¿ÍÆ®·Î µ¹¾Æ¿Â ÇØ¸®¿Í Ä£±¸µéÀº ±×µéÀ» ÀâÀ¸·Á´Â º¸¾È¸¶¹ý¿¡ °É·Á À§±â¸¦ ¸ÂÁö¸¸ ´ýºíµµ¾îÀÇ µ¿»ýÀÎ ¿¡¹öÆ÷½ºÀÇ µµ¿òÀ¸·Î ¹þ¾î³­´Ù. ±×¸®°í ±×¿¡°Ô¼­ ´ýºíµµ¾î¿Í ¾îµÒÀÇ ¸¶¹ý»ç ±×¸°µ¨¿Ðµå¿¡ °üÇÑ ³î¶ó¿î °ú°Å¿¡ ´ëÇØ ¾Ë°Ô µÈ´Ù. ÇÑÆí º¼µå¸ðÆ®´Â ÇØ¸®¿¡ ÀÇÇØ È£Å©·è½ºµéÀÌ ÆÄ±«µÇ¾úÀ½À» ´À³¢°í È£±×¿ÍÆ®·Î ÇâÇÑ´Ù. ÇØ¸®¸¦ ÁÖÃàÀ¸·Î ÇÑ ºÒ»çÁ¶ ±â»ç´Ü°ú Á×À½À» ¸Ô´Â ÀÚµé °£ÀÇ ÀüÅõ°¡ ¹ú¾îÁö¸ç È£±×¿ÍÆ®´Â °Å´ëÇÑ ÀüÀïÅÍ·Î º¯ÇÏ°Ô µÇ´Âµ¥...",
+        "release_date": "2011-07-07",
+        "poster_path": "https://www.themoviedb.org/t/p/original/ehUeFvQeo8Vr2aDIKLsLbC8okcw.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 29,
+    "fields": {
+        "title": "¶óÀÌ¿Â Å·",
+        "overview": "¾ÆÇÁ¸®Ä«ÀÇ ÆòÈ­·Î¿î ¿Õ±¹ ÇÁ¶óÀÌµå·£µå. ÀÌ°÷À» ´Ù½º¸®´Â »çÀÚ ¹«ÆÄ»çÀÇ ¾Æµé ½É¹Ù°¡ ÅÂ¾î³­´Ù. ¿ÕÀÇ µ¿»ý ½ºÄ«´Â ÀÚ½ÅÀÌ ¿ÕÀ§¸¦ Â÷ÁöÇÏ±â À§ÇØ ÇÏÀÌ¿¡³ªµé°ú °áÅ¹ÇÏ¿© ¹«ÆÄ»ç¸¦ Á×ÀÌ°í ½É¹Ù¿¡°Ô ÁË¸¦ µÚÁý¾î ¾º¿ö ¸Ö¸® ³»ÂÑ´Â´Ù. °£½ÅÈ÷ ¸ñ¼ûÀ» °ÇÁø ½É¹Ù´Â À¯ÄèÇÑ ¹Ì¾îÄ¹ Æ¼¸ó°ú ¸äµÅÁö Ç°¹Ù¿Í ÇÔ²² »ýÈ°ÇÏ¸ç ¾î¸¥ÀÌ µÈ´Ù. ¾î´À ³¯ ½É¹Ù´Â ¿¾ Ä£±¸ ³¯¶ó¸¦ ¸¸³ª ÇÁ¶óÀÌµå·£µå°¡ ÆÄ±«µÇ°í ÀÖ´Ù´Â ¼Ò½ÄÀ» µè°Ô µÈ´Ù. ÇÏÁö¸¸ ÀÚ½ÅÀÌ ÀúÁö¸¥ ½Ç¼ö ¶§¹®¿¡ °íÇâÀ¸·Î µ¹¾Æ°¡±â¸¦ °ÅºÎÇÏ´Â ½É¹Ù. °á±¹ ¾Æ¹öÁöÀÇ °¡¸£Ä§°ú ÀÚ½ÅÀÇ ¿î¸íÀ» ±ú´ÞÀº ½É¹Ù´Â ½ºÄ«¿Í ÇÏÀÌ¿¡³ªµéÀ» ¹°¸®Ä¡°í ÆòÈ­¸¦ µÇÃ£±â À§ÇØ ¿Õ±¹À¸·Î µ¹¾Æ°¡´Âµ¥...",
+        "release_date": "1994-06-23",
+        "poster_path": "https://www.themoviedb.org/t/p/original/19fT7TrozEwtU3IWhewIOD8pseF.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 30,
+    "fields": {
+        "title": "ÇÙ¼Ò °íÁö",
+        "overview": "ºñÆø·ÂÁÖÀÇÀÚÀÎ µµ½º´Â ÀüÀïÀ¸·ÎºÎÅÍ Á¶±¹°ú ¼ÒÁßÇÑ »ç¶÷µéÀ» ÁöÅ°±â À§ÇØ ÃÑÀ» µéÁö ¾Ê¾Æµµ µÇ´Â ÀÇ¹«º´À¸·Î À°±º¿¡ ÀÚÁø ÀÔ´ëÇÑ´Ù. ÃÑÀ» µé ¼ö ¾ø´Ù´Â ÀÌÀ¯·Î ÇÊ¼ö ÈÆ·Ã Áß ÇÏ³ªÀÎ ÃÑ±â ÈÆ·Ã ¸¶Àú °ÅºÎÇÑ µµ½º´Â µ¿·á º´»çµé°ú ±º ÀüÃ¼ÀÇ ºñ³­°ú Á¶·ÕÀ» ¹Þ°Ô µÈ´Ù. °á±¹ ±º»çÀçÆÇ±îÁö ¹Þ°Ô µÇÁö¸¸ ³¡±îÁö ÀÚ½ÅÀÇ ½Å³äÀ» ±ÁÈ÷Áö ¾ÊÀº µµ½º¿¡°Ô ±º »óºÎ´Â ¿ÀÅ°³ª¿Í ÀüÅõ¿¡ ÃÑ±â ¾øÀÌ ÀÇ¹«º´À¸·Î ÂüÀüÇÒ °ÍÀ» Çã¶ôÇÏ´Âµ¥¡¦",
+        "release_date": "2016-10-07",
+        "poster_path": "https://www.themoviedb.org/t/p/original/nlvcNogJK9R9iIj0YINApQE36FF.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 31,
+    "fields": {
+        "title": "³¯¾¾ÀÇ ¾ÆÀÌ",
+        "overview": "°íµîÇÐ±³ 1ÇÐ³â ¿©¸§. ¿Üµý ¼¶¿¡¼­ °¡ÃâÇØ, µµÄì¿¡ ¿Â È£Å¸Ä«. ±×·¯³ª »ýÈ°Àº °ð °ï¶õÇØÁ³°í, °íµ¶ÇÑ ³ª³¯ÀÇ ³¡¿¡ °Ü¿ì Ã£¾Æ³½ ÀÏÀº, ¼ö»óÇÑ ¿ÀÄÃÆ® ÀâÁöÀÇ ÀÛ°¡ ÀÏÀÌ¾ú´Ù. ±×ÀÇ ¾Õ³¯À» ½Ã»çÇÏ´Â µí, ¿¬ÀÏ ½ñ¾ÆÁö´Â ºñ. ±×·± °¡¿îµ¥, Àâ´ãÀ¸·Î ºÏÀû°Å¸®´Â µµ½Ã ÇÑ Æí¿¡¼­, È£Å¸Ä«´Â ÇÑ ¼Ò³à¸¦ ¸¸³­´Ù. ¾î¶² »ç¿¬À» ¾È°í, ³²µ¿»ý°ú µÑÀÌ¼­ ¹à°í ¾¿¾¿ÇÏ°Ô »ç´Â ¼Ò³à, ÇÏ·ç³ª. ±×³à¿¡°Ô´Â, ÀÌ»óÇÑ ´É·ÂÀÌ ÀÖ¾ú´Ù.  \"Àú±â, Áö±ÝºÎÅÍ ¸¼¾ÆÁú °Å¾ß.\" Á¶±Ý¾¿ ºñ°¡ ±×Ä¡°í, ¾Æ¸§´ä°Ô ºû³ª´Â °Å¸®. ±×°ÍÀº ±âµµÇÏ´Â °Í¸¸À¸·Î, ÇÏ´ÃÀ» ¸¼°Ô ÇÏ´Â ÈûÀÌ¾ú´Ù.",
+        "release_date": "2019-06-19",
+        "poster_path": "https://www.themoviedb.org/t/p/original/qPlVKyYsmBTX6HCRcLhO802QMbc.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 32,
+    "fields": {
+        "title": "ÀÎÅÍ½ºÅÚ¶ó",
+        "overview": "¼¼°è °¢±¹ÀÇ Á¤ºÎ¿Í °æÁ¦°¡ ¿ÏÀüÈ÷ ºØ±«µÈ ¹Ì·¡°¡ ´Ù°¡¿Â´Ù. Áö³­ 20¼¼±â¿¡ ¹üÇÑ Àß¸øÀÌ Àü ¼¼°èÀûÀÎ ½Ä·® ºÎÁ·À» ºÒ·¯¿Ô°í, NASAµµ ÇØÃ¼µÇ¾ú´Ù. ³ª»ç ¼Ò¼Ó ¿ìÁÖºñÇà»ç¿´´ø ÄíÆÛ´Â Áö±¸¿¡ ¸ô¾ÆÄ£ ½Ä·®³­À¸·Î ¿Á¼ö¼ö³ª Å°¿ì¸ç »ì°í ÀÖ´Ù. °Å¼¾ È²»ç°¡ ¸ô¾ÆÄ£ ¾î´À ³¯ ¾Ë ¼ö ¾ø´Â Èû¿¡ ÀÌ²ø·Á µþ°ú ÇÔ²² µµÂøÇÑ °÷Àº ÀÎ·ù°¡ ÀÌÁÖÇÒ Çà¼ºÀ» Ã£´Â ³ª»çÀÇ ºñ¹Ðº»ºÎ. ÀÌ ¶§ ½Ã°ø°£¿¡ ºÒ°¡»çÀÇÇÑ Æ´ÀÌ ¿­¸®°í, ÀÌ °÷À» Å½ÇèÇØ ÀÎ·ù¸¦ ±¸ÇØ¾ß ÇÏ´Â ÀÓ¹«¸¦ À§ÇØ ÄíÆÛ´Â ¸¸·ùÇÏ´Â µþÀ» µÚ·ÎÇÑ Ã¤ ¿ìÁÖ¼±¿¡ Å¾½ÂÇÏ´Âµ¥...",
+        "release_date": "2014-11-05",
+        "poster_path": "https://www.themoviedb.org/t/p/original/zDNAeWU0PxKolEX1D8Vn1qWhGjH.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 33,
+    "fields": {
+        "title": "³ÊÀÇ ÃéÀåÀ» ¸Ô°í ½Í¾î",
+        "overview": "¾î´À ³¯, ¿ì¿¬È÷ ÁÖ¿î ÇÑ ±ÇÀÇ ¡¸°øº´¹®°í¡¹¸¦ ÅëÇØ ¡®³ª¡¯´Â ÇÐ±Þ ÃÖ°íÀÇ ÀÎ±âÀÎ ¡®»çÄí¶ó¡¯ÀÇ ºñ¹Ð°ú ¸¶ÁÖÇÏ°Ô µÈ´Ù. ºñ¹ÐÀ» ¼û±ä Ã¤ »ì¾Æ°¡´Â ¡®»çÄí¶ó¡¯¿Í ±× ºñ¹ÐÀ» ¾Æ´Â À¯ÀÏÇÑ Å¬·¡½º¸ÞÀÌÆ® ¡®³ª¡¯",
+        "release_date": "2018-09-01",
+        "poster_path": "https://www.themoviedb.org/t/p/original/g1ucSvfDnV3HEVt8x7YeZ0fAIs2.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 34,
+    "fields": {
+        "title": "±â»ýÃæ",
+        "overview": "Àü¿ø ¹é¼ö·Î »ì ±æ ¸·¸·ÇÏÁö¸¸ »çÀÌ´Â ÁÁÀº ±âÅÃ °¡Á·. Àå³² ±â¿ì¿¡°Ô ¸í¹®´ë»ý Ä£±¸°¡ ¿¬°á½ÃÄÑ ÁØ °í¾× °ú¿Ü ÀÚ¸®´Â ¸ðÃ³·³ ½ÏÆ° °íÁ¤¼öÀÔÀÇ Èñ¸ÁÀÌ´Ù. ¿Â °¡Á·ÀÇ µµ¿ò°ú ±â´ë ¼Ó¿¡ ¹Ú »çÀå ÁýÀ¸·Î ÇâÇÏ´Â ±â¿ì. ±Û·Î¹ú IT±â¾÷ÀÇ CEOÀÎ ¹Ú »çÀåÀÇ ÀúÅÃ¿¡ µµÂøÇÏÀÚ Àþ°í ¾Æ¸§´Ù¿î »ç¸ð´Ô ¿¬±³¿Í °¡Á¤ºÎ ¹®±¤ÀÌ ±â¿ì¸¦ ¸ÂÀÌÇÑ´Ù. Å« ¹®Á¦ ¾øÀÌ ¹Ú »çÀåÀÇ µþ ´ÙÇýÀÇ °ú¿Ü¸¦ ½ÃÀÛÇÑ ±â¿ì. ±×·¯³ª ÀÌ·¸°Ô ½ÃÀÛµÈ µÎ °¡Á·ÀÇ ¸¸³² µÚ·Î, °ÈÀâÀ» ¼ö ¾ø´Â »ç°ÇÀÌ ±â´Ù¸®°í  ÀÖ´Âµ¥.....",
+        "release_date": "2019-05-30",
+        "poster_path": "https://www.themoviedb.org/t/p/original/v0nlHB0wDevL54Me9V9lB6QdPk2.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 35,
+    "fields": {
+        "title": "³ÊÀÇ ÀÌ¸§Àº.",
+        "overview": "½Ã°ñ¿¡ »ç´Â ¼Ò³à ¹ÌÃ÷ÇÏ(°¡¹Ì½Ã¶óÀÌ½Ã ¸ð³×)´Â ¾î´À ³¯ Àá¿¡¼­ ±ü ÈÄ ÀÚ½ÅÀÇ ¸öÀÌ ³²ÀÚ·Î ¹Ù²ï °É ¾Ë°Ô µÈ´Ù. °°Àº ½Ã°£, µµÄì¿¡ »ç´Â ¼Ò³â Å¸Å°(°¡¹ÌÅ° ·ù³ë½ºÄÉ) ¿ª½Ã ÀÌ ±âÀÌÇÑ »óÈ²À» °Þ°í ÀÖ´Ù. ³¸¼± °¡Á·, ³¸¼± Ä£±¸µé, ³¸¼± Ç³°æµé... ¼­·Î¿¡°Ô ÀÌ¾îÁø ²öÀ» ¾Ë°Ô µÈ µÑÀº µÑ¸¸ÀÇ ±ÔÄ¢À» Á¤ÇÏ°í Á¡Â÷ »óÈ²À» ¹Þ¾ÆµéÀÌ±â ½ÃÀÛÇÑ´Ù. ¼­·Î¿¡°Ô ³²±ä ¸Þ¸ð¸¦ È®ÀÎÇÏ¸ç  Á¡Á¡ Ä£±¸°¡ µÇ¾î°¡´Â Å¸Å°¿Í ¹ÌÃ÷ÇÏ. ¾ðÁ¦ºÎÅÏ°¡ ´õ ÀÌ»ó ¸öÀÌ ¹Ù²îÁö ¾ÊÀÚ  ÀÚ½ÅµéÀÌ Æ¯º°ÇÏ°Ô ÀÌ¾îÁ®ÀÖ¾úÀ½À» ±ú´ÞÀº  Å¸Å°´Â ¹ÌÃ÷ÇÏ¸¦ ¸¸³ª·¯ °¡´Âµ¥...",
+        "release_date": "2016-08-26",
+        "poster_path": "https://www.themoviedb.org/t/p/original/wx1Dxr4UyvN18SyC5GsVWWWtYja.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 36,
+    "fields": {
+        "title": "´õ ¿ïÇÁ ¿Àºê ¿ù ½ºÆ®¸®Æ®",
+        "overview": "ºÎÀÚ°¡ µÇ´Â °Ô ²ÞÀÎ 22»ìÀÇ Á¶´ø º§Æ÷Æ®(·¹¿À³ª¸£µµ µðÄ«ÇÁ¸®¿À)´Â ²ÞÀ» ½ÇÇöÄÚÀÚ ¿ù½ºÆ®¸®Æ®¿¡ ¹ßÀ» µéÀÎ´Ù. °í°´ÀÇ µ·À» ³» ÁÖ¸Ó´Ï·Î ²ø¾îµéÀÌ´Â ºñ¹ýÀº ÄÚÄ«ÀÎ°ú ¸¶½ºÅÍº£ÀÌ¼Ç¿¡ ÀÖ´Ù°í ¸»ÇÏ´Â ±«Â¥µéÀÌ ÇÏ·ç Á¾ÀÏ ÀüÈ­±â¸¦ ºÙµé°í »ç±âÄ¡´Â °÷, Á¶´ø¿¡°Ô ¿ù½ºÆ®¸®Æ®ÀÇ Ã¹ÀÎ»óÀº ±×·¨´Ù. Ã¹ Á÷Àå¿¡ ¸ö´ãÀº Áö 1³â ¸¸¿¡ ºí·¢ ¸Õµ¥ÀÌ¸¦ °æÇèÇÏ°í ½ÇÁ÷ÀÚ°¡ µÈ Á¶´øÀº Çö¶õÇÑ ¾ðº¯À» ¹«±â·Î À§±â¸¦ ±âÈ¸·Î ¸¸µé¾î¹ö¸°´Ù. Ä£±¸µéÀ» ºÒ·¯¸ð¾Æ ½ºÆ®·¡Æ° ¿ÀÅ©¸óÆ®»ç¸¦ ¼¼¿î ±×´Â ¼ö¼ö·á°¡ ºñ½Ñ Åõ±âÀû Àú°¡ÁÖÀ» ÆÈ¾Æ µ·À» ±Ü¾î¸ðÀ¸°í, ÁÖ°¡ Á¶ÀÛÀ¸·Î ¾ï¸¸ÀåÀÚ°¡ µÈ ÈÄ ¼ú°ú ¸¶¾à, ¿©ÀÚ¸¦ Å½´ÐÇÑ´Ù. ±×»çÀÌ FBI´Â ±×ÀÇ µÚ¸¦ Ä³±â ½ÃÀÛÇÏ´Âµ¥...",
+        "release_date": "2013-12-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/g4WhlVecCbBNhVT67ootHe6oe4A.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 37,
+    "fields": {
+        "title": "½ºÆÄÀÌ´õ¸Ç: ´º À¯´Ï¹ö½º",
+        "overview": "Æò¹üÇÑ 10´ë ¸¶ÀÏ½º ¸ð¶ö·¹½º´Â ¿ì¿¬È÷ ¹æ»ç´É °Å¹Ì¿¡ ¹°·Á ½ºÆÄÀÌ´õ¸Ç ´É·ÂÀ» °¡Áö°Ô µÈ´Ù. È¥¶õ½º·¯¿öÇÏ´ø ¸¶ÀÏ½º´Â ¾Ç´ç°ú ½Î¿ì°í ÀÖ´Â ÇÇÅÍ ÆÄÄ¿¸¦ ¸¶ÁÖÄ¡°Ô µÇ°í ÇÇÅÍ ÆÄÄ¿´Â ¸¶ÀÏ½º°¡ ÀÚ½Å°ú °°Àº ´É·ÂÀ» °¡Áö°í ÀÖÀ½À» Á÷°¨ÇÑ´Ù. ¿©·¯ °³ÀÇ ÆòÇà¼¼°è°¡ Á¸ÀçÇÑ´Ù´Â °ÍÀ» ¾Ë°Ô µÈ ¸¶ÀÏ½º¿Í ÇÇÅÍ ÆÄÄ¿´Â ÀÌÈÄ ½ºÆÄÀÌ´õ¿ì¸Õ ½ºÆÄÀÌ´õ ±×À¢, ½ºÆÄÀÌ´õ¸Ç ´©¾Æ¸£, ½ºÆÄÀÌ´õÇÜ µî ÆòÇà¼¼°è ¼Ó °øÁ¸ÇÏ´Â ¸ðµç ½ºÆÄÀÌ´õ¸ÇµéÀ» ¸¸³ª°Ô µÇ´Âµ¥... ÇÏ³ªÀÇ À¯´Ï¹ö½º¿¡¼­ ¸¸³ª ÆÀÀ» °á¼ºÇÑ ½ºÆÄÀÌ´õ¸ÇµéÀº °ú¿¬ ¼¼°è¸¦ ±¸ÇÒ ¼ö ÀÖÀ»±î?",
+        "release_date": "2018-12-06",
+        "poster_path": "https://www.themoviedb.org/t/p/original/vnWgIIEWAvWKOI65tm6h6VRbyY8.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 38,
+    "fields": {
+        "title": "¸ñ¼Ò¸®ÀÇ ÇüÅÂ",
+        "overview": "µûºÐÇÑ °Ô Áú»öÀÎ ¾ÆÀÌ, ÀÌ½Ã´Ù ¼î¾ß.  °£µð°¡ ¾î¶² »ç¶÷ÀÎÁö, ÀÎ·ùÀÇ ÁøÈ­°úÁ¤ÀÌ¶óµçÁö, ¾Ë°Ô¹¹¶÷.  ¾î´À ³¯ ¼î¾ßÀÇ µûºÐÇÔÀ» ¾Ñ¾Æ°¥ ÀüÇÐ»ýÀÌ ³ªÅ¸³µ´Ù. ´Ï½Ã¹Ì¾ß ¼îÄÚ. ±× ¾ÆÀÌ´Â ±Í°¡ µé¸®Áö ¾Ê´Â´Ù°í ÇÑ´Ù.  ¼î¾ßÀÇ Áþ±ÄÀº Àå³­¿¡µµ ´Ã, »ý±Û»ý±Û ¿ô°í¸¸ ÀÖ´Ù. Â¥Áõ³­´Ù.  ±×ÀÇ ±«·ÓÈû¿¡ ¼îÄÚ´Â °á±¹ ÀüÇÐÀ» °¬°í, ÀÌ½Ã´Ù ¼î¾ß´Â ¿ÜÅçÀÌ°¡ µÇ¾ú´Ù.  6³â ÈÄ, ´õ ÀÌ»ó ÀÌ·¸°Ô »ì¾ÆºÁ¾ß ÀÇ¹Ì°¡ ¾øÀ½À» ´À³¤ ¼î¾ß´Â ¸¶Áö¸·À¸·Î ¼îÄÚ¸¦ Ã£¾Æ°£´Ù.  Ã³À½À¸·Î ÀüÇØÁø µÎ »ç¶÷ÀÇ ¸ñ¼Ò¸®. µÎ »ç¶÷ÀÇ ¸¸³²ÀÌ ±³½ÇÀ», ÇÐ±³¸¦,  ±×¸®°í ¼î¾ßÀÇ ÀÎ»ý, ¼îÄÚÀÇ ÀÎ»ýÀ» ¹Ù²Ù±â ½ÃÀÛÇÑ´Ù.",
+        "release_date": "2016-09-17",
+        "poster_path": "https://www.themoviedb.org/t/p/original/emNuB1GNGjJqZiK9uVJNiUPbgsx.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 39,
+    "fields": {
+        "title": "±¸°ÜÁø ÀÎ»ýµé",
+        "overview": "ºó°ïÀÇ ±×¸²ÀÚ°¡ Â£°Ô µå¸®¿î ÀÌ½ºÅººÒÀÇ ¾î´À °Å¸®. ³¯·Î ¾ÇÈ­µÇ´Â º´¸¶¿Í ½Î¿ì´ø °í¹°»ó ¸ÞÈå¸ÞÆ®°¡ ÇÑ ¾ÆÀÌ¸¦ ¸¸³­´Ù. ¿À·£ ¼¼¿ù ÀØ°í »ì¾Ò´ø, ºÒ¿ìÇÑ ¾î¸° ½ÃÀýÀÇ ÀÚ½Å°ú ³Ê¹«³ª ´àÀº ÀÛ°í ¼ÒÁßÇÑ ¾ÆÀÌ¸¦.",
+        "release_date": "2021-03-12",
+        "poster_path": "https://www.themoviedb.org/t/p/original/q7gzodpqWGedo2Vvo65eVxFLbux.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 40,
+    "fields": {
+        "title": "ÄÝ ¹Ì ¹ÙÀÌ À¯¾î ³×ÀÓ",
+        "overview": "17»ì ¼Ò³â ¿¤¸®¿ÀÀÇ °¡Á·Àº ¸Å³â ¿©¸§ ¼Õ´ÔÀ» ¹Þ´Â´Ù. ¿¤¸®¿ÀÀÇ ¾Æ¹öÁö ÆÞ¸Õ ±³¼öÀÇ ÀÏÀ» µ½´Â º¸Á¶ ¿¬±¸¿øÀº 6ÁÖ µ¿¾È ÀÌ°÷¿¡ ¸Ó¹°¸ç »ç¶÷µé°ú ¾î¿ï¸®°í ÀÚÀ¯·Î¿î ½Ä»ç, ÀÏ±¤¿å°ú ¼ö¿µÀ» Áñ±ä´Ù. ¿ÃÇØ ÁýÀ» Ã£Àº 24»ì ¿Ã¸®¹ö´Â ¸ðµç »ç¶÷ÀÌ È£°¨À» °®´Â »ç¶÷ÀÌ´Ù. ÇÏÁö¸¸ ¿¤¸®¿ÀÀÇ °¨Á¤Àº Á»´õ Æ¯º°ÇÏ´Ù. Ã³À½ º¸´Â ¼ø°£ºÎÅÍ ±×¸¦ ÀÇ½ÄÇß°í, ±× ½ÇÃ¼°¡ µ¿¼º¿¡°Ô Ç°Àº »ç¶ûÀÓÀ» ±ú´ÞÀº ÈÄ¿¡´Â Àû´ë°¨À» °®°í ÀÖ´Â °ÍÃ³·³ ±º´Ù. ÇÏÁö¸¸ ¿¤¸®¿À°¡ ÀÚ½ÅÀÇ ÁøÂ¥ ¼Ó³»¸¦ ³»ºñÄ£ ÈÄ µÎ »ç¶÷Àº ¼­·ÎÀÇ ¸¶À½ÀÌ °°´Ù´Â °ÍÀ» ¾Ë°Ô µÈ´Ù.",
+        "release_date": "2017-09-01",
+        "poster_path": "https://www.themoviedb.org/t/p/original/guzNdgRjANTBDkTRYGqgzFOgSWx.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 41,
+    "fields": {
+        "title": "´õ ÆÄ´õ",
+        "overview": "³ª´Â ·±´ø¿¡¼­ ÆòÈ­·Ó°Ô »îÀ» º¸³»°í ÀÖ¾ú´Ù. ¹«·áÇÑ ÀÏ»ó ¼Ó ³ª¸¦ Ã£¾Æ¿À´Â °Ç µþ ¾Ø»ÓÀÌ´Ù. ±×·±µ¥ ¾ØÀÌ °©ÀÛ½º·´°Ô ·±´øÀ» ¶°³­´Ù°í ¸»ÇÑ´Ù. ±× ¼ø°£ºÎÅÍ ¾ØÀÌ ³» µþÀÌ ¾Æ´Ñ °ÍÃ³·³ ´À²¸Á³´Ù. Àá±ñ, ¾ØÀÌ ³» µþÀÌ ¸Â±â´Â ÇÑ °É±î?",
+        "release_date": "2020-12-23",
+        "poster_path": "https://www.themoviedb.org/t/p/original/8xc8OfJdNLGRzVbqT4gqYdYfhj2.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 42,
+    "fields": {
+        "title": "¼Ò³â½ÃÀýÀÇ ³Ê",
+        "overview": "½ÃÇè¸¸ Àß Ä¡¸é ¸ÚÁø ÀÎ»ýÀ» »ì ¼ö ÀÖ´Ù°í °¡¸£Ä¡´Â ¼¼»ó¿¡¼­ ±â´î °÷ ¾øÀÌ ¼¼»ó¿¡ ³»¸ô¸° ¿ìµî»ý ¼Ò³à Ã¾´Ï¿£°ú ¾ç¾ÆÄ¡ ¼Ò³â º£ÀÌ. ºñ½ÁÇÑ »óÃ³¿Í ¿Ü·Î¿ò¿¡ ²ø·Á ¼­·Î¿¡°Ô ÀÇÁöÇÏ°Ô µÈ µÎ »ç¶÷Àº ¼ö´ÉÀ» ÇÏ·ç ¾ÕµÐ ¾î´À ³¯, Ã¾´Ï¿£ÀÇ »îÀ» µÚ¹Ù²ã¹ö¸± °Å´ëÇÑ »ç°Ç¿¡ ÈÖ¸»¸®°Ô µÈ´Ù. Ã¾´Ï¿£¸¸Àº Æò¹üÇÏ°í Çàº¹ÇÏ°Ô »ì±æ ¹Ù¶ó´Â º£ÀÌ´Â ±×³àÀÇ ±×¸²ÀÚ°¡ µÇ¾î ¸ðµç °ÍÀ» ÇØ°áÇÏ±â·Î ¸¶À½ ¸Ô´Âµ¥¡¦",
+        "release_date": "2019-10-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/v9L6jlXmwV2AgGNT4zw2qcMgfAD.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 43,
+    "fields": {
+        "title": "¿ï°í ½ÍÀº ³ª´Â °í¾çÀÌ °¡¸éÀ» ¾´´Ù",
+        "overview": "³­ ³×°¡ ¸¾¿¡ µå´Âµ¥, ³Í ³»°Ô °ü½ÉÀÌ ¾ø³ª ºÁ. ±×·¡¼­ °í¾çÀÌ·Î º¯½ÅÇß¾î, ³Ê¶û Ä£ÇØÁö°í ½Í¾î¼­. ÇÏÁö¸¸ ³Ê¹« ¿À·§µ¿¾È °í¾çÀÌ·Î ÀÖ¾ú´ø Å¿ÀÏ±î, ¾î´À»õ °æ°è°¡ Èå·ÁÁø ¼Ò³à. ÀÎ°£°ú °í¾çÀÌÀÇ °¥¸²±æ¿¡¼­ ¼±ÅÃÀÇ ¼ø°£À» ¸Â´Â´Ù.",
+        "release_date": "2020-06-18",
+        "poster_path": "https://www.themoviedb.org/t/p/original/g9ArpDiGMz9OCCCdI1JKmS5JteH.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 44,
+    "fields": {
+        "title": "ÆÈ¸Ó",
+        "overview": "°íµîÇÐ±³ ¹Ì½ÄÃà±¸ ½ºÅ¸ÇÃ·¹ÀÌ¾î¿´´ø ¿¡µð ÆÈ¸Ó(Àú½ºÆ¾ ÆÀ¹ö·¹ÀÌÅ©)´Â °¨¿Á¿¡¼­ 12³â°£ÀÇ ¼ö°¨»ýÈ°À» ¸¶Ä£ ÈÄ °íÇâÀ¸·Î µ¹¾Æ¿Í »õ »îÀ» ½ÃÀÛÇÏ±â À§ÇØ ¾Ö¾´´Ù.  ¿¡µð´Â ºÎ¸ðÀÇ ¹«°ü½É°ú ÇÐ´ë ¼Ó¿¡¼­ Æ¯ÀÌÇÑ ¿©¼º ÃëÇâ ´öºÐ¿¡ ¿Õµû ´çÇÏ´Â ¿·Áý ¼Ò³â »ù(¶óÀÌ´õ ¾Ë·»)À» ¸¸³ª°Ô µÇ°í,  µÎ »ç¶÷Àº Á¡Â÷ ¼­·Î¸¦ ÀÌÇØÇÏ¸é¼­ ¿ìÁ¤À» ½×±â ½ÃÀÛÇÏÁö¸¸ ¿¡µð¸¦ ¹Ù¶óº¸´Â ÁÖº¯ÀÇ Â÷°¡¿î ½Ã¼±°ú ¿ÀÇØ´Â »õ·Ó°Ô ½ÃÀÛÇÑ »î, »ù°úÀÇ ¿ìÁ¤À» °¡¸¸ ³»¹ö·Á µÎÁö ¾Ê´Âµ¥...",
+        "release_date": "2021-01-29",
+        "poster_path": "https://www.themoviedb.org/t/p/original/xSDdRAjxKAGi8fUBLOqSrBhJmF0.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 45,
+    "fields": {
+        "title": "È÷µç ÇÇ°Ü½º",
+        "overview": "ÃµºÎÀûÀÎ ¼öÇÐ ´É·ÂÀ» °¡Áø Ä³¼­¸° Á¸½¼, NASA ÈæÀÎ ¿©¼ºµéÀÇ ¸®´õÀÌÀÚ ÇÁ·Î±×·¡¸Ó µµ·Î½Ã º» , ÈæÀÎ ¿©¼º ÃÖÃÊÀÇ NASA ¿£Áö´Ï¾î¸¦ ²Þ ²Ù´Â ¸Þ¸® Àè½¼. ¹Ì±¹°ú ·¯½Ã¾ÆÀÇ Ä¡¿­ÇÑ ¿ìÁÖ °³¹ß °æÀïÀÌ ¹ú¾îÁö°í ÀÖ´ø  ½ÃÀý, ÃµºÎÀûÀÎ µÎ³ú¿Í Àç´ÉÀ» °¡Áø ±×³àµéÀÌ NASA ÃÖÃÊÀÇ ¿ìÁÖ±Ëµµ ºñÇà ÇÁ·ÎÁ§Æ®¿¡ ¼±¹ßµÈ´Ù. ÇÏÁö¸¸ À¯»öÀÎÁ¾ Àü¿ë È­Àå½ÇÀ» »ç¿ëÇØ¾ß ÇÏ°í, Áß¿äÇÑ È¸ÀÇ¿¡ Âü¼®ÇÒ ¼ö ¾øÀ¸¸ç, °ø¿ë Ä¿ÇÇ Æ÷Æ®Á¶Â÷ ¿ë³³µÇÁö ¾Ê´Â µû°¡¿î ½Ã¼±¿¡ Á¡Á¡ ÁöÃÄ °£´Ù. ÇÑÆí ÇÁ·ÎÁ§Æ®´Â ³­Ç×À» °Þ°Ô µÇ°í, ÇØ°á ¹æ¹ýÀº ºñÀüÀ» Á¦½ÃÇÒ ¼ö ÀÖ´Â »õ·Î¿î ¼öÇÐ °ø½ÄÀ» Ã£¾Æ³»´Â °Í»ÓÀÎµ¥...",
+        "release_date": "2016-12-10",
+        "poster_path": "https://www.themoviedb.org/t/p/original/wZPcpIyZx43nXEgrc9NvQUyoxtr.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 46,
+    "fields": {
+        "title": "¹ÝÁöÀÇ Á¦¿Õ: ¹ÝÁö ¿øÁ¤´ë",
+        "overview": "È£ºøÀÌ¶ó ºÒ¸®¿ì´Â ³­ÀåÀÌ Á¾Á· ÁßÀÇ ÇÑ ¸íÀÎ ÇÁ·Îµµ´Â ÀÚ½ÅÀÇ »ïÃÌ¿¡°Ô¼­ ¿ì¿¬È÷ Àý´ë ¹ÝÁö¸¦ ¹°·Á¹Þ°Ô µÇ°í, ¸¶¹ý»ç °£´ÞÇÁ¸¦ ÅëÇØ¼­ Àý´ë¹ÝÁö°¡ »ç¿ì·ÐÀÇ ¼Õ¿¡ µé¾î°¡¸é ¾ÇÀÇ ¼¼·ÂÀÌ ¼¼»óÀ» Áö¹èÇÏ°Ô µÈ´Ù´Â °ÍÀ» ¾Ë°Ô µÈ´Ù. ÇÏÁö¸¸ Àý´ë¹ÝÁö¸¦ ¿µ¿øÈ÷ ÆÄ±«ÇÒ ¼ö ÀÖ´Â À¯ÀÏÇÑ ¹æ¹ýÀº ¹ÝÁö°¡ ¸¸µé¾îÁø ºÒÀÇ »êÀÇ ¿ë¾Ï¿¡ ±×°ÍÀ» ´øÁ® ³Ö´Â ±æ »ÓÀÌ´Ù. ¸¶Ä§³» ÇÁ·Îµµ¿Í ±×ÀÇ Ä£±¸µé, ¿¤ÇÁÁ·ÀÎ ·¹°ñ¶ó½º, ³­ÀåÀÌÁ· ±è¸®, µÎ¸íÀÇ ÀÎ°£ Àü»ç ¾Æ¶ó°ï°ú º¸·Î¹Ì¸£, ±×¸®°í ¸¶¹ý»ç °£´ÞÇÁ·Î ±¸¼ºµÈ ¹ÝÁö ¿øÁ¤´ë°¡ ±æ°íµµ Çè³­ÇÑ ¿©Á¤À» ¶°³ª°Ô µÇ´Âµ¥...",
+        "release_date": "2001-12-18",
+        "poster_path": "https://www.themoviedb.org/t/p/original/7uCvKNKKLRqYYyHIRpphi3yUE6Z.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 47,
+    "fields": {
+        "title": "½Å°úÇÔ²²-ÁË¿Í ¹ú",
+        "overview": "»ìÀÎ, ³ªÅÂ, °ÅÁþ, ºÒÀÇ, ¹è½Å, Æø·Â, Ãµ·û 7°³ÀÇ Áö¿Á¿¡¼­ 7¹øÀÇ ÀçÆÇÀ» ¹«»çÈ÷ Åë°úÇÑ ¸ÁÀÚ¸¸ÀÌ È¯»ýÇÏ¿© »õ·Î¿î »îÀ» ½ÃÀÛÇÒ ¼ö ÀÖ´Ù. È­Àç »ç°í ÇöÀå¿¡¼­ ¿©ÀÚ¾ÆÀÌ¸¦ ±¸ÇÏ°í Á×À½À» ¸ÂÀÌÇÑ ¼Ò¹æ°ü ÀÚÈ«, ±×ÀÇ ¾Õ¿¡ Àú½ÂÂ÷»ç ÇØ¿ø¸Æ°ú ´öÃáÀÌ ³ªÅ¸³­´Ù. ÀÚ½ÅÀÇ Á×À½ÀÌ ¾ÆÁ÷ ¹Ï±âÁöµµ ¾Ê´Âµ¥ ´öÃáÀº Á¤ÀÇ·Î¿î ¸ÁÀÚÀÌÀÚ ±ÍÀÎÀÌ¶ó¸ç ±×¸¦ Ä¡ÄÑ¼¼¿î´Ù. Àú½ÂÀ¸·Î °¡´Â ÀÔ±¸, ÃÊ±º¹®¿¡¼­ ±×¸¦ ±â´Ù¸®´Â ¶Ç ÇÑ ¸íÀÇ Â÷»ç °­¸², ±×´Â Â÷»çµéÀÇ ¸®´õÀÌÀÚ ¾ÕÀ¸·Î ÀÚÈ«ÀÌ °Þ¾î¾ß ÇÒ 7°³ÀÇ ÀçÆÇ¿¡¼­ º¯È£¸¦ ¸Ã¾ÆÁÙ º¯È£»çÀÌ±âµµ ÇÏ´Ù. ¿°¶ó´ë¿Õ¿¡°Ô Ãµ³â µ¿¾È 49¸íÀÇ ¸ÁÀÚ¸¦ È¯»ý½ÃÅ°¸é ÀÚ½Åµé ¿ª½Ã ÀÎ°£À¸·Î È¯»ý½ÃÄÑ ÁÖ°Ú´Ù´Â ¾à¼ÓÀ» ¹ÞÀº »ïÂ÷»çµé, ±×µéÀº ÀÚ½ÅµéÀÌ º¯È£ÇÏ°í È£À§ÇØ¾ß ÇÏ´Â 48¹øÂ° ¸ÁÀÚÀÌÀÚ 19³â ¸¸¿¡ ³ªÅ¸³­ ÀÇ·Î¿î ±ÍÀÎ ÀÚÈ«ÀÇ È¯»ýÀ» È®½ÅÇÏÁö¸¸, °¢ Áö¿Á¿¡¼­ ÀÚÈ«ÀÇ °ú°Å°¡ ÇÏ³ª µÑ¾¿ µå·¯³ª¸é¼­ ¿¹»óÄ¡ ¸øÇÑ °í³­°ú ¸Â´Ú¶ß¸®´Âµ¥¡¦",
+        "release_date": "2017-12-14",
+        "poster_path": "https://www.themoviedb.org/t/p/original/5j2YVF7VouLG0Ze96SEsj4DnVQM.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 48,
+    "fields": {
+        "title": "½ºÅ¸¿öÁî ¿¡ÇÇ¼Òµå 4: »õ·Î¿î Èñ¸Á",
+        "overview": "°øÈ­±¹ÀÌ ºØ±«ÇÏ°í Á¦±¹ÀÌ ¼ö¸³µÈ µÚ 20³â, Á¦´ÙÀÌ ±â»ç´ÜÀº Àü¸êÇÏ°í °­·ÂÇÑ Á¦±¹±ºÀÇ È¾Æ÷¿¡ ÀºÇÏ°è´Â °øÆ÷¿¡ ÈÛ½Î¿© ÀÖ´Ù. ±×·¯´ø Áß °øÈ­±¹ Àç°ÇÀ» ³ë¸®´Â ¹Ý¶õ±ºÀÌ Á¦±¹±ºÀÇ ºñ¹Ðº´±â µ¥½º½ºÅ¸ ¼³°èµµ¸¦ ÈÉÃÄ ´Þ¾Æ³ª°í Á¦±¹±ºÀº ÀÌ¸¦ ÂÑ´Â´Ù. ÇÏÁö¸¸ °á±¹ Á¦±¹ÀÇ ¼Õ¿¡ ºÙÀâÈ÷°Ô µÈ ±×µéÀº µå·ÎÀÌµå R2-D2¿¡ ¼³°èµµ¸¦ ³Ö¾î¼­ R2ÀÇ Ä£±¸ C-3PO¿Í Å»Ãâ½ÃÅ°´Â µ¥ ¼º°øÇÏ°í, µÎ µå·ÎÀÌµå ÄÞºñ´Â Å¸ÅõÀÎÀÇ ½Ã°ñ ¸¶À»¿¡¼­ ¼÷ºÎ¿Í ÇÔ²² »ì°í ÀÖ´ø Ã»³â ·çÅ© ½ºÄ«ÀÌ¿öÄ¿¿¡°Ô ¿À°Ô µÇ´Âµ¥...",
+        "release_date": "1977-05-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/7XFfURIFCJxN1mfBg0SAjk5yGzg.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 49,
+    "fields": {
+        "title": "¹ÝÁöÀÇ Á¦¿Õ: µÎ °³ÀÇ Å¾",
+        "overview": "9¸íÀÇ ¹ÝÁö¿øÁ¤´ë´Â »ç¿ì·ÐÀÇ ¼¼·Â¿¡ ¸Â¼­ ¹ÝÁö¸¦ ÁöÄÑ³ÂÁö¸¸ ¹ÝÁö ¿øÁ¤´ë´Â »Ô»ÔÀÌ Èð¾îÁö°Ô µÈ´Ù. ¸Þ¸®¿Í ÇÇÇÉÀ» ±¸ÇÏ±â À§ÇØ ¿ì¸£Å©ÇÏÀÌ ±º´ë¸¦ Ãß°ÝÇÏ´ø ¾Æ¶ó°ï°ú ·¹°ñ¶ó½º, ±è¸®´Â À¯·É ½£¿¡¼­ ¹é»öÀÇ ¸¶¹ý»ç·Î ºÎÈ°ÇÑ ¸¶¹ý»ç °£´ÞÇÁ¸¦ ¸¸³ª°Ô µÇ°í »ç¿ì·ÐÀÌ ¾ÏÈæ¼¼°èÀÇ µÎ °³ÀÇ Å¾À» ÅëÇÕÇÏ¿© Á¡Á¡ ±× ¼¼·ÂÀ» ³ÐÇô°¡°í ÀÖ´Ù´Â »ç½ÇÀ» µè°Ô µÈ´Ù. ÀÌ¿¡ ¾Æ¶ó°ï°ú ¿øÁ¤´ë´Â Áß°£°èÀÇ ¼±ÇÑ ¹«¸®ÀÇ ÅëÇÕÀ» ÀÌ·ï »ç¿ì·ÐÀÇ ¼¼·ÂÀ» °ßÁ¦ÇØ¾ß ÇÏ´Â Å« ÀÓ¹«¸¦ ¸Ã°Ô µÈ´Ù. ÇÏÁö¸¸ ¿ø¼öÁö°£ÀÎ °ïµµ¸£¿Í ·ÎÇÑÀ¸·Î ³ª´¶ ÀÎ°£ Á¾Á·ÀÇ ÅëÇÕÀº ½±Áö ¾Ê°í °Ô´Ù°¡ ·ÎÇÑÀÇ ¿Õ¸¶Àú »ç·ç¸¸¿¡°Ô µ¿È­µÇ´Âµ¥...",
+        "release_date": "2002-12-18",
+        "poster_path": "https://www.themoviedb.org/t/p/original/hjGjAdEPJF2unG8yseu5mcVb5cx.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 50,
+    "fields": {
+        "title": "¹ÝÁöÀÇ Á¦¿Õ: ¿ÕÀÇ ±ÍÈ¯",
+        "overview": "»ç¿ì·ÐÀÌ ÀÎ°£µéÀÇ ¸¶Áö¸· ¿ä»õÀÎ °ïµµ¸£¸¦ ÇâÇØ ¾ß¿åÀ» µå·¯³»°í ÀÖ´Â ÇÑÆí, ¾Æ¶ó°ïÀº ¼è¶ôÇØ°¡°í ÀÖ´Â °ïµµ¸£ÀÇ Àç°ÇÀ» À§ÇØ ¿ÕÀ§ °è½ÂÀ» ½ÅÁßÇÏ°Ô °áÁ¤Áö¾î¾ß¸¸ ÇÏ´Â »óÈ². ÀÌÁ¦ Áß°£´ë·úÀÇ ¹Ì·¡´Â ±×ÀÇ ¾î±ú¿¡ ´Þ·ÁÀÖ´Â °Í. »ç¿ì·ÐÀÌ ÀÌ²ô´Â ¾îµÒÀÇ ±º´ë¿ÍÀÇ ¸¶Áö¸· ÀüÅõ¸¦ À§ÇØ °£´ÞÇÁ´Â °ïµµ¸£¿¡ Èð¾îÁ® ÀÖ´ø º´»çµéÀ» ¸ðÀ¸°í, ·ÎÇÑÀÇ ¿Õ ¼¼¿Àµ§¿¡°Ô µµ¿òÀ» ¹Þ±âµµ ÇÏÁö¸¸ »ç¿ì·ÐÀÇ ±º´ë¿¡ ºñÇÏ¸é ¿­¼¼¸¦ ¸éÄ¡ ¸øÇÑ´Ù. ±×·¯³ª ±×µéÀº Áß°£´ë·úÀ» »ç¿ì·ÐÀÇ ¾ß¿åÀ¸·ÎºÎÅÍ ÁöÅ°·Á´Â »ç¸í°¨°ú, ¸¶Áö¸· ¹ÝÁö ¿î¹ÝÀÚ¿¡°Ô ÀÓ¹«¸¦ ³¡³¾ ±âÈ¸¸¦ ÁÖ±â À§ÇØ ¾îµÒÀÇ ±º´ë¸¦ ÇâÇØ µ¹ÁøÇÏ°Ô µÇ´Âµ¥...",
+        "release_date": "2003-12-01",
+        "poster_path": "https://www.themoviedb.org/t/p/original/tAXXuEAKLk2mOEIJzwajJQEnVZu.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 51,
+    "fields": {
+        "title": "ÀÌº°ÀÇ ¾ÆÄ§¿¡ ¾à¼ÓÀÇ ²ÉÀ» Àå½ÄÇÏÀÚ",
+        "overview": "10´ë Áß¹Ý¿¡ ¿Ü¸ðÀÇ ¼ºÀåÀÌ ¸ØÃß°í ¼ö¹é³âÀ» »ç´Â Àå¼ö ¹ÎÁ· ÀÌ¿ÃÇÁ´Â ÀÎ°£ÀÌ »ç´Â ¸¶À»¿¡¼­ ¸Ö¸® ¶³¾îÁ® Á¶¿ëÈ÷ »ì°í ÀÖ¾ú´Ù.  ÇÏÁö¸¸ ±×µéÀÇ ¿ÂÈ­ÇÑ ÀÏ»óÀº Àå¼öÀÇ ÇÇ¸¦ ¿ä±¸ÇÏ´Â ¸ÞÀÚÅ× ±º¿¡ ÀÇÇØ ÆÄ±«µÈ´Ù. ¸ðµç °ÍÀ» ÀÒ°í ¿ÜÅçÀÌ°¡ µÈ ÀÌ¿ÃÇÁÀÇ ¼Ò³à ¸¶Å°¾Æ´Â ½£À» ¹æÈ²ÇÏ´ø Áß ºÎ¸ð¸¦ ÀÒÀº ¾Æ±â¸¦ ¿î¸íÀûÀ¸·Î ¸¸³ª ±×¸¦ Å°¿ö ³ª°¡±â·Î °á½ÉÇÑ´Ù.",
+        "release_date": "2018-02-24",
+        "poster_path": "https://www.themoviedb.org/t/p/original/x4lFC7knq631uFzGsOiu4xZ9ZYQ.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 52,
+    "fields": {
+        "title": "ÀÎ¼Á¼Ç",
+        "overview": "Å¸ÀÎÀÇ ²Þ°ú Á¢¼ÓÇØ »ý°¢À» »©³¾ ¼ö ÀÖ´Â ±Ù¹Ì·¡, µ¼ ÄÚºê´Â ²ÞÀÇ º¸¾È ÇÁ·Î±×·¡¸ÓÀÌÀÚ µ¿½Ã¿¡ Ä§ÀÔÀÚ´Ù. ±×´Â ÀÏº»ÀÎ »ç¾÷°¡ »çÀÌÅäÀÇ Á¦¾È¿¡ µû¶ó °Å´ë ÇÕº´ ±â¾÷ÀÇ ÃÑ¼ö°¡ µÉ ÇÇ¼ÅÀÇ ²ÞÀ» ¼³°èÇÏ¿© ±â¾÷ ÇÕº´À» ¸·À¸·Á µç´Ù. ±× ÀÏÀ» ¼º»ç½ÃÅ°¸é ÄÚºê´Â »çÀÌÅäÀÇ µµ¿òÀ¸·Î ¾Æ³»ÀÇ »ìÇØ¹üÀ¸·Î ¸ô¸° ÀÚ½ÅÀÇ ´©¸íÀ» µÚ·Î ÇÏ°í »ç¶û½º·± ÀÚ³àµéÀÌ ÀÖ´Â ÁýÀ¸·Î µ¹¾Æ°¥ ¼ö ÀÖ´Ù. ¸¶Ä§³» ÄÚºê ÀÏÇàÀº ²Þ ¾ÈÀÇ ²Þ ¾ÈÀÇ ¶Ç ²ÞÀÌ¶ó´Â °æ·Î¸¦ °ÅÄ¡¸ç ÇÇ¼ÅÀÇ ²Þ°ú ¹«ÀÇ½Ä ±í¼÷ÇÑ °÷À» ¼³°èÇÏ°í Ä§ÅõÇÑ´Ù.",
+        "release_date": "2010-07-15",
+        "poster_path": "https://www.themoviedb.org/t/p/original/jSm8mzp7sucgL8NwINIoAmx4dS5.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 53,
+    "fields": {
+        "title": "º¸Çì¹Ì¾È ·¦¼Òµð",
+        "overview": "°øÇ× ¼öÇÏ¹° ³ëµ¿ÀÚ·Î ÀÏÇÏ¸ç À½¾ÇÀÇ ²ÞÀ» Å°¿ì´ø ÀÌ¹ÎÀÚ Ãâ½ÅÀÇ ¾Æ¿ô»çÀÌ´õ ÆÄ·Ï ¹ö»ç¶ó. º¸ÄÃÀ» ±¸ÇÏ´ø ·ÎÄÃ ¹êµå¿¡ µé¾î°¡°Ô µÇ¸é¼­ ÇÁ·¹µð ¸ÓÅ¥¸®¶ó´Â ÀÌ¸§À¸·Î ¹êµå ÄýÀ» ÀÌ²ø°Ô µÈ´Ù. ½Ã´ë¸¦ ¾Õ¼­°¡´Â µ¶Ã¢ÀûÀÎ À½¾Ç°ú È­·ÁÇÑ ÆÛÆ÷¸Õ½º·Î °üÁßµéÀ» »ç·ÎÀâÀ¸¸ç ¼ºÀåÇÏ´ø ÄýÀº ¹æ¼Û¿¡¼­ ¿Ü¸éÀ» ¹ÞÀ» °ÍÀÌ¶ó´Â À½¹Ý»çÀÇ ¹Ý´ë¿¡µµ ºÒ±¸ÇÏ°í ¹«·Á 6ºÐ µ¿¾È ÀÌ¾îÁö´Â ½ÇÇèÀûÀÎ °î º¸Çì¹Ì¾È ·¦¼Òµð·Î ´ë¼º°øÀ» °ÅµÎ¸ç ¿ùµå½ºÅ¸ ¹Ý¿­¿¡ ¿À¸¥´Ù. ±×·¯³ª µ¶º¸ÀûÀÎ Á¸Àç°¨À» »Õ¾î³»´ø ÇÁ·¹µð´Â ¼Ö·Î µ¥ºß¶ó´Â À¯È¤¿¡ Èçµé¸®°Ô µÇ°í, ¿À·£ ½Ã°£ ÇÔ²² ÇØ¿Ô´ø ¸â¹öµé°ú °áº°À» ¼±¾ðÇÏ°Ô µÇ´Âµ¥...",
+        "release_date": "2018-10-24",
+        "poster_path": "https://www.themoviedb.org/t/p/original/z0lKvIIJGzTBIa22aC0ZhxBxf23.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 54,
+    "fields": {
+        "title": "´ÙÅ© ³ªÀÌÆ®",
+        "overview": "¹üÁË¿Í ºÎÁ¤ºÎÆÐ¸¦ Á¦°ÅÇÏ¿© °í´ã½Ã¸¦ ÁöÅ°·Á´Â ¹èÆ®¸Ç. ±×´Â Áü °íµç Çü»ç¿Í ÆÐ±â ³ÑÄ¡´Â °í´ã½Ã Áö¹æ °Ë»ç ÇÏºñ µ§Æ®¿Í ÇÔ²² µµ½Ã¸¦ ¹üÁË Á¶Á÷À¸·ÎºÎÅÍ ¿µ¿øÈ÷ ±¸¿øÇÏ°íÀÚ ÇÑ´Ù. ¼¼ ¸íÀÇ ÀÇ±âÅõÇÕÀ¸·Î À§±â¿¡ Ã³ÇÑ ¾Ç´çµéÀÌ ¸ðÀÎ ÀÚ¸®¿¡ º¸¶ó»ö ¾çº¹À» ÀÔ°í ¾ó±¼¿¡ Â£°Ô È­ÀåÀ» ÇÑ ±«ÀÌÇÑ Á¸Àç°¡ ³ªÅ¸³ª ¹èÆ®¸ÇÀ» Á×ÀÌÀÚ´Â »ç»ó ÃÊÀ¯ÀÇ Á¦¾ÈÀ» ÇÑ´Ù. ±×´Â ¹Ù·Î ¾î¶°ÇÑ ·êµµ, ¸ñÀûµµ ¾ø´Â »ç»ó ÃÖ¾ÇÀÇ ¾Ç´ç ¹ÌÄ¡±¤ÀÌ »ìÀÎ±¤´ë Á¶Ä¿. ¹èÆ®¸ÇÀ» Á×ÀÌ°í °í´ã½Ã¸¦ ³¡Àå³»¹ö¸®±â À§ÇÑ Á¶Ä¿ÀÇ ±¤±â ¾î¸° Çà°¢¿¡ µµ½Ã´Â È¥¶õ¿¡ ºüÁö´Âµ¥...",
+        "release_date": "2008-07-16",
+        "poster_path": "https://www.themoviedb.org/t/p/original/e1nMtpUTtaJGXbeZZ2ajaIOyTgU.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 55,
+    "fields": {
+        "title": "¸ÅÆ®¸¯½º",
+        "overview": "ÀÎ°£ÀÇ ±â¾ï¸¶Àú AI¿¡ ÀÇÇØ ÀÔ·ÂµÇ°í »èÁ¦µÇ´Â ¼¼»ó, ÁøÂ¥º¸´Ù ´õ ÁøÂ¥ °°Àº °¡»ó Çö½Ç ¸ÅÆ®¸¯½º. ±× ¼Ó¿¡¼­ ÁøÁ¤ÇÑ Çö½ÇÀ» ÀÎ½ÄÇÒ ¼ö ¾ø°Ô Àç¹èµÇ´Â ÀÎ°£µé. ±× ¸ÅÆ®¸¯½º¸¦ ºüÁ® ³ª¿À¸é¼­ AI¿¡°Ô °¡Àå À§ÇèÇÑ ÀÎ¹°ÀÌ µÈ ¸ðÇÇ¾î½º´Â ¸î ¾È µÇ´Â µ¿·áµé°ú ÇÔ²² ±â°è¿ÍÀÇ ÀüÀï ÀüÈÄÀÇÀÇ ÆóÇã¸¦ ¶°µ¹¸ç ÀÎ·ù¸¦ ±¸ÇÒ ¸¶Áö¸· ¿µ¿õÀ» Ã£¾Æ Çì¸Ç´Ù. ¸¶Ä§³» ¸ðÇÇ¾î½º´Â ³·¿¡´Â Æò¹üÇÑ È¸»ç¿ø ¾Ø´õ½¼À¸·Î, ¹ã¿¡´Â ÇØÄ¿·Î È°µ¿ÇÏ´Â Ã»³â ³×¿À¸¦ ±×·Î Áö¸ñÇÑ´Ù. ¸ðÇÇ¾î½ºÀÇ Áö½Ã´ë·Î ±×¸¦ ¸¸³ª°Ô µÈ ³×¿À´Â µÎ°³ÀÇ ¾Ë¾à Áß ÇÏ³ª¸¦ °í¸£´Â ¼±ÅÃÀ» ÇÏ°Ô µÇ´Âµ¥...",
+        "release_date": "1999-03-30",
+        "poster_path": "https://www.themoviedb.org/t/p/original/yI9r0iz2XvlevxUzxvdoQmv3yce.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 56,
+    "fields": {
+        "title": "¾î¸ÞÀÌÂ¡ ¸Þ¸®",
+        "overview": "ÇØº¯°¡ Á¶¿ëÇÑ ¸¶À»¿¡¼­ »ïÃÌ ÇÁ·©Å©(Å©¸®½º ¿¡¹Ý½º)¿Í ÇÔ²² »ì¾Æ°¡´Â 7»ì ¼öÇÐ ÃµÀç ¼Ò³à ¸Þ¸®(¸ÆÄÉ³ª ±×·¹ÀÌ½º).  ¸Þ¸®°¡ ÇÐ±³¿¡ µé¾î°¡¸é¼­ ±×³àÀÇ ÃµºÎÀû Àç´ÉÀº ¼¼»ó¿¡ ¾Ë·ÁÁö±â ½ÃÀÛÇÏ°í,  ¼¼°èÀûÀÎ ¼öÇÐ°è Àú¸íÀÎ»çÀÌÀÚ ¸Þ¸®ÀÇ ÇÒ¸Ó´ÏÀÎ ¿¡ºí¸°(¸°Á¦ÀÌ ´øÄ­)Àº ±×³à°¡ ¼¼»óÀ» ¹Ù²Ü ¼öÇÐÀÚ°¡ µÇ±â¸¦ Èñ¸ÁÇÑ´Ù.  ¹Ù´å°¡¿¡¼­ ¶Ù¾î³î±â º¸´Ù ¾î·Á¿î ¼öÇÐ¹®Á¦ Ç®±â¸¦ Áñ°Å¿öÇÏ´Â ¸Þ¸® ±×¸®°í,  ±×³à¿¡°Ô ¼¼»óÀÌ ÇÊ¿ä·Î ÇÏ´Â ¼öÇÐÀÚÀÇ ±æÀ» ¿­¾îÁÖ°íÀÚ ÇÏ´Â ÇÒ¸Ó´Ï.  ÃË¸Á¹Þ´Â ÃµÀç ¼öÇÐÀÚ¿´Áö¸¸ ºÒÇàÇÑ Á×À½À» ¸ÂÀº ¿©µ¿»ý°ú ¾à¼ÓÇÑ ¸Þ¸®ÀÇ Æò¹üÇÏ°í Çàº¹ÇÑ »îÀ» À§ÇØ ÀÌ¸¦ ¹Ý´ëÇÏ´Â »ïÃÌ ÇÁ·©Å©. ÀÌµéÀÇ ¹Ù¶÷Àº °á±¹ Æ¯º°ÇÑ ÃµÀç ¼Ò³à ¸Þ¸®¸¦ µÑ·¯½Ñ ¹ýÀû ºÐÀïÀ¸·Î ¹øÁö´Âµ¥¡¦  7»ì »ç¶û½º·¯¿î ÃµÀç ¼Ò³à ¸Þ¸®ÀÇ ¼±ÅÃÀº ¾î´À ÂÊÀÏ±î?  °ú¿¬ ±×³à´Â Çàº¹ÇØÁú ¼ö ÀÖÀ»±î?",
+        "release_date": "2017-04-12",
+        "poster_path": "https://www.themoviedb.org/t/p/original/rn0TQDEXJyvwX49Ht33t3N3zq6y.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 57,
+    "fields": {
+        "title": "¼¾°ú Ä¡È÷·ÎÀÇ Çà¹æºÒ¸í",
+        "overview": "Æò¹üÇÑ ¿­ »ì Â¥¸® ¼Ò³à Ä¡È÷·Î ½Ä±¸´Â ÀÌ»ç °¡´ø Áß ±æÀ» Àß¸ø µé¾î ³°Àº ÅÍ³ÎÀ» Áö³ª°¡°Ô µÈ´Ù. ÅÍ³Î ÀúÆí¿£ ÆóÇã°¡ µÈ ³îÀÌ°ø¿øÀÌ ÀÖ¾ú°í ±×°÷¿£ ÀÌ»óÇÑ ±â¿îÀÌ Èê·¶´Ù. ÀÎ±âÃ´ ÇÏ³ª ¾ø´Â ÀÌ ¸¶À»ÀÇ ³¸¼± ºÐÀ§±â¿¡ ºÒ±æÇÑ ±â¿îÀ» ´À³¤ Ä¡È÷·Î´Â ºÎ¸ð´Ô¿¡°Ô µ¹¾Æ°¡ÀÚ°í Á¶¸£Áö¸¸ ºÎ¸ð´ÔÀº È£±â½É¿¡ µé¶° ¸¶À» °÷°÷À» µ¹¾Æ´Ù´Ï±â ½ÃÀÛÇÑ´Ù. ¾î´À À½½ÄÁ¡¿¡ µµÂøÇÑ Ä¡È÷·ÎÀÇ ºÎ¸ð´ÔÀº ±× °÷¿¡ Â÷·ÁÁø À½½ÄµéÀ» º¸°í Áñ°Å¿öÇÏ¸ç Çã°ÌÁö°Ì ¸Ô¾î´ë´Ù°¡ µÅÁö·Î º¯ÇØ¹ö¸°´Ù. °Ì¿¡ Áú·Á ´çÈ²ÇÏ´Â Ä¡È÷·Î¿¡°Ô ³¸¼± ¼Ò³â ÇÏÄí°¡ ³ªÅ¸³ª »¡¸® ÀÌ°÷À» ³ª°¡¶ó°í ¼Ò¸®Ä¡´Âµ¥...",
+        "release_date": "2001-07-20",
+        "poster_path": "https://www.themoviedb.org/t/p/original/u1L4qxIu5sC2P082uMHYt7Ifvnj.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 58,
+    "fields": {
+        "title": "ÆÄÀÌºê ÇÇÆ®",
+        "overview": "°°Àº º´À» °¡Áø »ç¶÷³¢¸® 6ÇÇÆ® ÀÌ»ó Á¢±ÙÇØ¼­µµ, Á¢ÃËµµ ÇØ¼± ¾ÈµÇ´Â CF(³¶Æ÷¼º ¼¶À¯Áõ)¸¦ °¡Áø ¡®½ºÅÚ¶ó¡¯¿Í ¡®Àª¡¯. Ã¹´«¿¡ ¹ÝÇÑ µÎ »ç¶÷Àº ¼­·Î¸¦ À§ÇØ ¾ÈÀü°Å¸®¸¦ À¯ÁöÇÏ·Á°í ÇÏÁö¸¸ ±×·²¼ö·Ï ´õ¿í ºüÁ®µç´Ù. ¼ÕÀ» ÀâÀ» ¼öµµ Å°½º¸¦ ÇÒ ¼öµµ ¾ø´Â ±×µéÀº º´ ¶§¹®¿¡ ÁöÄÑ¾ß Çß´ø 6ÇÇÆ®¿¡¼­ 1ÇÇÆ® ´õ °¡±î¿öÁö´Â °É ¼±ÅÃÇÏ°í Ã³À½À¸·Î ¿ë±â¸¦ ³» º´¿ø ¹Û µ¥ÀÌÆ®¸¦ °á½ÉÇÑ´Ù. ±×·¯³ª °©ÀÚ±â ¼ûÀ» ½¬Áö ¸øÇÏ´Â ¡®½ºÅÚ¶ó¡¯. ¡®Àª¡¯Àº ±×³à¸¦ »ì¸®±â À§ÇØ ¾ÈÀü°Å¸®¸¦ ¾î±â°Ô µÇ´Âµ¥¡¦",
+        "release_date": "2019-03-15",
+        "poster_path": "https://www.themoviedb.org/t/p/original/8bXlrAzTJKwedmUDKBhiaU7OkqW.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 59,
+    "fields": {
+        "title": "¾ÏÈæ ¼ÓÀÇ Ç÷Åõ",
+        "overview": "ÆÄÄÚ(Paco: º¥ÀÚ¹Î ºê·¡Æ® ºÐ)¿Í Å©·ç½º(Cruz: Á¦½Ã º¸·¹°í ºÐ)´Â »çÃÌÀÎ ¹ÌÅ¬·Î(Miklo: ´Ù¹Ì¾È Â÷ÆÄ ºÐ)¿Í LAÀÇ ¸ß½ÃÄÚ°è ¹Ì±¹ÀÎ Áö¿ªÀÎ Ä¡Ä«³ë¿¡¼­ ¼ºÀåÇÑ´Ù. ÆÄÄÚ´Â °Å¸®ÀÇ ºÎ»çÀÎ ¹Ý¸é Å©·ç½º´Â ¿¹¼úÀû Àç´ÉÀÇ ¼ÒÀ¯ÀÚÀÌ´Ù. ¹ÌÅ¬·Î´Â È¥Ç÷¾Æ·Î Èò ÇÇºÎ¿Í Çª¸¥ ´« ¶§¹®¿¡ Ä¡Ä«³ë ¼¼°è¿¡¼­ ¹Þ¾Æµé¿©ÁöÁö ¾Ê¾Æ Ä¡Ä«³ë ÀÏ¿øÀÌ µÇ·Á°í ¾Ö¾´´Ù. ¼ÂÀº Á×À» ¶§±îÁö ¿ìÁ¤À» ÁöÅ³ °ÍÀ» ¼­¾àÇÑ´Ù. ¾î´À³¯ Å©·ç½º´Â Ä¶¸®Æ÷´Ï¾ÆÁÖ ¹Ì¼ú ÀÛÇ° ½É»ç¿¡¼­ 1µîÀ» ÇÏ³ª °æÀï Á¶Á÷ÀÎ Æ®·¹½º Ç¬Åä½ºÀÇ ½À°ÝÀ¸·Î Ã´Ãß°¡ ºÎ·¯Áø´Ù. ´ÙÀ½³¯ º¸º¹À» ÇÏ±â À§ÇØ ÀûÀÇ µÎ¸ñ ½ºÆÄÀÌ´õ(Spider: ·¹ÀÌ ¿À¸®¿¤ ºÐ)¸¦ ¸ð¿åÇÏ³ª ½ºÆÄÀÌ´õ´Â ÃÑÀ» ÇÇÄÚ¿¡°Ô ½î°í, ÀÌ¸¦ º» ¹ÌÅ¬·Î°¡ ½ºÆÄÀÌ´õ¸¦ »ç»ìÇÏ³ª ÀÚ½Åµµ Áß»óÀ» ÀÔ´Â´Ù.",
+        "release_date": "1993-02-05",
+        "poster_path": "https://www.themoviedb.org/t/p/original/gvP6R6juhe2IpCG7QGDgjyUvm0g.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 60,
+    "fields": {
+        "title": "¾Æ¸®¾Æ³ª ±×¶õµ¥: ÀÍ½ºÅ¥Áî ¹Ì, ¾ÆÀÌ ·¯ºê À¯",
+        "overview": "ÀÛÀº Ã¼±¸·Î Å« ¹«´ë¿Í ³ÐÀº ¼¼»óÀ» µÚÁý¾î ³õ´Â´Ù. ½ºÀ§Æ®³Ê ¿ùµå Åõ¾îÀÇ ·±´ø ¹«´ë¿¡ ¿À¸£´Â ¾Æ¸®¾Æ³ª ±×¶õµ¥. ¹«´ë À§¿Í µÚ, ±×¸®°í ¿©Çà±æ¿¡¼­ÀÇ ±×³à ¸ð½ÀÀ» ´ã¾Ò´Ù.",
+        "release_date": "2020-12-21",
+        "poster_path": "https://www.themoviedb.org/t/p/original/sO7s9SHO7W1thAwkRJGgLso68gZ.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 61,
+    "fields": {
+        "title": "µå·¡°ï ±æµéÀÌ±â: È¨Ä¿¹Ö",
+        "overview": "½º³ë±ÛÅä±×¿¡ È÷ÄÅ°ú Åõ½½¸®½º, ¶óÀÌÆ® Ç»¸®¿Í »õ³¢µé±îÁö ¸ðµÎ ¹öÅ© ¼¶¿¡ ¸ðÀÎ´Ù",
+        "release_date": "2019-10-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/kXj2Qrfm994yLeuADqbOieU1mUH.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 62,
+    "fields": {
+        "title": "»þÀÌ´×",
+        "overview": "¼Ò¼³°¡ÀÎ Àè Åä·£½º´Â ÄÝ·Î¶óµµ »ê¸Æ¿¡ ÀÖ´Â ¿À¹ö·è È£ÅÚÀÇ °ü¸®ÀÎÀ¸·Î ÃëÁ÷ÇÑ´Ù. ´ÙÀ½ ½ÃÁð ÁØºñ¸¦ ÇÏ´Â ÀÌ°÷Àº °Ü¿ï µ¿¾È Æó¼âµÇ±â ¶§¹®¿¡ Åä·£½ºÀÇ °¡Á·µé¸¸ È£ÅÚ¿¡ ¸Ó¹°°Ô µÈ´Ù. °©ÀÚ±â ¸ô¾ÆÄ£ Æø¼³·Î Àè°ú ¾Æ³» À¢µð¿Í ¾Æµé°ú ÇÔ²² È£ÅÚ¿¡ °í¸³µÇ°í, Åõ½Ã¿Í ÅÚ·¹ÆÄ½Ã ´É·ÂÀÌ ÀÖ´Â ÀèÀÇ ¾Æµé ´ë´Ï´Â È£ÅÚ¿¡ À¯·ÉÀÌ ÀÖÀ¸¸ç À¯·ÉµéÀÌ ÃµÃµÈ÷ ¾Æ¹öÁö¸¦ ¹ÌÄ¡°Ô ÇÏ°í ÀÖÀ½À» ¾Ë°Ô µÈ´Ù. ÀèÀº °ú°Å¿¡ ½º½º·Î ÀÚ½ÅÀÇ ¾Æ³»¿Í µÎ µþÀ» Á×ÀÎ ÀÌ°÷ÀÇ ¿¹Àü °ü¸®ÀÎ ±×·¹ÀÌµðÀÇ À¯·ÉÀ» ¸¸³­´Ù. °ú°Å¿¡ ÀÖ¾ú´ø »ìÀÎ»ç°ÇÀÇ ¾Ç·É¿¡ ÈÖ¸»¸° ÀèÀº È£ÅÚÀ» °øÆ÷ÀÇ µµ°¡´Ï·Î ¸ô¾Æ°¡´Âµ¥...",
+        "release_date": "1980-05-23",
+        "poster_path": "https://www.themoviedb.org/t/p/original/vzc4lvpjaZrrfxsnqmhURm37gmB.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 63,
+    "fields": {
+        "title": "¿ù-E",
+        "overview": "ÅÖ ºó Áö±¸¿¡ È¦·Î ³²¾Æ ¼ö¹é ³âÀÌ¶õ ½Ã°£À» ¿Ü·Ó°Ô ÀÏ¸¸ ÇÏ¸ç º¸³»´ø ¿ù-E (WALL-E: Waste Allocation Load Lifter Earth-Class, Áö±¸ Æó±â¹° ¼ö°Å-Ã³¸®¿ë ·Îº¿). ±×·± ±×°¡ ¸Å·ÂÀûÀÎ Å½»ç ·Îº¿ ¡®ÀÌºê¡¯¿Í ¸¶ÁÖÄ£ ¼ø°£, Àâµ¿»ç´Ï ¼öÁý¸¸ÀÌ ³«ÀÌ´ø ÀÎ»ý¿¡µµ ¼ÒÁßÇÑ ¸ñÇ¥°¡ »ý±ä´Ù. ÀÌºê´Â Áö±¸ÀÇ ¹Ì·¡¸¦ °áÁ¤ÇÒ ¿­¼è°¡ ¿ì¿¬È÷ ¿ù-EÀÇ ¼Õ¿¡ µé¾î°£ »ç½ÇÀ» ¾Ë°Ô µÇ°í, °íÇâº°·Î µ¹¾Æ°¥ ³¯¸¸ ¾ÖÅ¸°Ô ±â´Ù¸®´Â ÀÎ°£µé¿¡°Ô ÀÌ¸¦ º¸°íÇÏ±â À§ÇØ ¼­µÑ·¯ ¿ìÁÖ·Î ÇâÇÑ´Ù. ÇÑÆí ¿ù-E´Â ÀÌºê¸¦ µÚÂÑ¾Æ ÀºÇÏ¸¦ °¡·ÎÁö¸£¸ç, ½ºÅ©¸° »ç»ó °¡Àå Â¥¸´ÇÑ »ó»óÀÌ ³ÑÄ¡´Â ¾îµåº¥Ã³¸¦ ¼±»çÇÑ´Ù. ÀÌÁ¦²¯ ²Þ¿¡¼­µµ º¼ ¼ö ¾ø¾ú´ø ¹Ì·¡ ¼¼°è¸¦ ¹è°æÀ¸·Î ¿ìÁÖ¿¡¼­ ÆîÃÄÁö´Â ¿ù-EÀÇ È¯»óÀûÀÎ ¸ðÇè! ¾Ö¿Ï¿ë ¹ÙÄû¹ú·¹, ¿ë¸Í½º·´Áö¸¸ ¾îµò°¡ ³ª»ç°¡ ºüÁø µíÇÑ »çÈ¸ ºÎÀûÀÀ ·Îº¿ ±º´Ü µî ÀÏ·ÃÀÇ À¯ÄèÇÑ Ä³¸¯ÅÍµéÀÌ ¿©±â¿¡ µ¿ÂüÇÑ´Ù.",
+        "release_date": "2008-06-22",
+        "poster_path": "https://www.themoviedb.org/t/p/original/qYMQMuDHXeEDoHbGFkvPATG3eC0.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 64,
+    "fields": {
+        "title": "ÆÄÀÌÆ® Å¬·´",
+        "overview": "ÀÚµ¿Â÷ È¸»çÀÇ ¸®ÄÝ ½É»ç°üÀ¸·Î ÀÏÇÏ´Â ÁÖÀÎ°ø(¿¡µå¿öµå ³ëÆ°)Àº ÀÏ»óÀÇ ¹«·áÇÔ°ú °øÇãÇÔ ¼Ó¿¡¼­ ´Ã »õ·Î¿î Å»ÃâÀ» ²Þ²Û´Ù. ±×´Â ºñÇà±â¿¡¼­ ÀÚ½ÅÀ» ºñ´© Á¦Á¶¾÷ÀÚ¶ó°í ¼Ò°³ÇÏ´Â Å¸ÀÏ·¯ ´õµç(ºê·¡µå ÇÇÆ®)À» ¸¸³­´Ù. Áý¿¡ µ¹¾Æ¿Â ÁÖÀÎ°øÀº ¾ÆÆÄÆ®°¡ ´©±º°¡¿¡ ÀÇÇØ ÆøÆÄµÇ¾úÀ½À» ¹ß°ßÇÏ°í, Å¸ÀÏ·¯¿¡°Ô µµ¿òÀ» Ã»ÇØ ÇÔ²² »ýÈ°ÇÏ°Ô µÈ´Ù. ¾î´À ³¯ ¹ã Å¸ÀÏ·¯´Â ÁÖÀÎ°ø¿¡°Ô ÀÚ½ÅÀ» ¶§·Á´Þ¶ó°í ºÎÅ¹ÇÑ´Ù. »ç¶÷Àº ½Î¿öºÁ¾ß ÁøÁ¤ÇÑ ÀÚ½ÅÀ» ¾Ë ¼ö ÀÖ´Ù´Â °ÍÀÌ´Ù. °á±¹ ÀÌµéÀº ¸ÅÁÖ Åä¿äÀÏ ¹ã ¼úÁý ÁöÇÏ¿¡¼­ ¸ÇÁÖ¸ÔÀ¸·Î °ÝÅõ¸¦ ¹úÀÌ´Â ÆÄÀÌÆ® Å¬·´À» °á¼ºÇÏ±â¿¡ ÀÌ¸£´Âµ¥...",
+        "release_date": "1999-10-15",
+        "poster_path": "https://www.themoviedb.org/t/p/original/eKZ07Ted7VHxQjbuZrRBFOamcKJ.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 65,
+    "fields": {
+        "title": "7¹ø¹æÀÇ ±âÀû",
+        "overview": "±³µµ¼Ò 7¹ø ¹æ. Áö´ÉÀÌ ¿¹´Ò°ö »ì ¼öÁØÀÎ ³²ÀÚ°¡ ÀÌ°÷¿¡ µé¾î¿Ô´Ù. ¾Æµ¿ »ìÇØ ´©¸íÀ» ¾²°í »çÇüÀ» ±â´Ù¸®Áö¸¸ ±×¿¡°Õ ¾Æ³¢´Â µþÀÌ ÀÖ´Ù. °¨¹æ µ¿·áµéÀÌ ÁØºñÇÑ Æ¯º° ¼±¹°·Î µþ°ú ÀçÈ¸ÇÑ ³²ÀÚ. ÇÏÁö¸¸ °è¼Ó ÇÔ²²ÇÏ·Á¸é ¹«ÁË¸¦ ¹àÇô¾ß ÇÑ´Ù.",
+        "release_date": "2019-10-10",
+        "poster_path": "https://www.themoviedb.org/t/p/original/sOfUbzu6OUL5cscGODPdpHn9C1g.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 66,
+    "fields": {
+        "title": "¾ðÅÍÃ³ºí: 1%ÀÇ ¿ìÁ¤",
+        "overview": "»óÀ§ 1% ±ÍÁ·³²°ú ÇÏÀ§ 1% ¹«ÀÏÇ¬ÀÌ ¸¸³µ´Ù.  2ÁÖ°£ÀÇ ³»±â·Î ½ÃÀÛµÈ »ó»óÃÊ¿ù Æ¯º°ÇÑ µ¿°Å ½ºÅä¸®  ÇÏ·ç 24½Ã°£ ³»³» µ¹ºÁÁÖ´Â ¼Õ±æÀÌ ¾øÀ¸¸é ¾Æ¹« °Íµµ ÇÒ ¼ö ¾ø´Â Àü½ÅºÒ±¸ÀÇ »óÀ§ 1% ¹é¸¸ÀåÀÚ ÇÊ¸³(ÇÁ¶û¼ö¾Æ Å¬·çÁ¦). ¾î´À ³¯ ¿ì¿¬È÷, °¡Áø °ÍÀÌ¶ó°ï °Ç°­ÇÑ ½ÅÃ¼°¡ ÀüºÎÀÎ ÇÏÀ§ 1% ¹«ÀÏÇ¬ ¹é¼ö µå¸®½º(¿À¸¶ »çÀÌ)¸¦ ¸¸³ª°Ô µÈ ±×´Â °ÅÄ§¾øÀÌ ÀÚÀ¯·Î¿î ¼º°ÝÀÇ µå¸®½º¿¡°Ô È£±â½ÉÀ» ´À²¸ Æ¯º°ÇÑ ³»±â¸¦ Á¦¾ÈÇÑ´Ù. ¹Ù·Î 2ÁÖ µ¿¾È ÇÊ¸³ÀÇ ¼Õ¹ßÀÌ µÇ¾î ÇÑ½Ãµµ ¶³¾îÁöÁö ¾Ê°í ÀÚ½ÅÀ» °£È£ÇÏ¸ç ¹öÆ¿ ¼ö ÀÖ´ÂÁö ½ÃÇèÇØº¸°Ú´Ù´Â °Í. ÂüÀ»¼ºÀÌ¶ó°ï ´«²Å ¸¸Å­µµ Ã£¾Æ º¼ ¼ö ¾ø´ø µå¸®½º´Â ¿À±â°¡ ¹ßµ¿ÇØ ¾û°Ì°á¿¡ ³»±â¸¦ ¼ö¶ôÇÑ´Ù. ÀÌ·¸°Ô, ÀüÇô ¾î¿ï¸± °Í °°Áö ¾Ê´ø ±Ø°ú ±Ø, µÎ ³²ÀÚÀÇ ¿¹ÃøºÒÇã ±â¸·Èù µ¿°Å°¡ ½ÃÀÛ µÇ´Âµ¥¡¦",
+        "release_date": "2011-11-02",
+        "poster_path": "https://www.themoviedb.org/t/p/original/9Ku1CNkZQh3EYikM974hj7SNZfk.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 67,
+    "fields": {
+        "title": "¿¡ÀÌ¸®¾ð",
+        "overview": "2122³â, 2Ãµ¸¸ÅæÀÇ ±¤¹°°ú 7¸íÀÇ ½Â¹«¿øÀ» ÅÂ¿ì°í Áö±¸·Î ±ÍÈ¯ÁßÀÎ È­¹°¼± ³ë½ºÆ®·Î¸ðÈ£ÀÇ ¸ÞÀÎ ÄÄÇ»ÅÍ ¸¶´õ´Â ¾î¶² À§¼º¿¡¼­ ³ª¿À´Â ¾Ë ¼ö ¾ø´Â ½ÅÈ£¸¦ Æ÷ÂøÇÏ°Ô µÈ´Ù. ¸¶´õ¿¡ ÀÇÇØ µ¿¸éÁß ±ú¾î³­ ½Â¹«¿øµéÀº ÀÌ ½ÅÈ£¸¦ Á¶»çÇÏ±â À§ÇØ È¤¼º LA-426¿¡ Âø·úÇÑ´Ù. ÀÌµé Áß¿£ 2µî Ç×ÇØ»çÀÎ ¿¤·» ¸®ÇÃ¸®µµ ÀÖ´Ù. È¤¼º¿¡¼­ Á¤Ã¼ ºÒ¸íÀÇ ¿ìÁÖ¼±À» ¹ß°ßÇÑ ±×µéÀº Å½»ç¿¡ ³ª¼­Áö¸¸, ¿ìÁÖ¼±Àº ÀÌ¹Ì ¿À·¡Àü¿¡ ÆÄ±«µÇ¾î ½â°í ÀÖ¾úÀ¸¸ç ½Â¹«¿øµéÀº ¸ðµÎ ¹ÌÀÌ¶ó·Î º¯ÇØ ÀÖ´Ù. »ç°í ¿øÀÎÀ» Ã£±â À§ÇØ Á» ´õ ¾ÈÀ¸·Î µé¾î°£ Á¶»ç¹ÝÀº ¿©±âÀú±â °è¶õ ¸ð¾çÀÇ ¹°Ã¼°¡ ÀÖ´Â »ê¶õ½ÇÀ» ¹ß°ßÇÏ´Âµ¥...",
+        "release_date": "1979-05-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 68,
+    "fields": {
+        "title": "»ª Åõ ´õ Ç»ÃÄ",
+        "overview": "¸¶Æ¼ ¸ÆÇÃ¶óÀÌ(¸¶ÀÌÅ¬ J. Æø½º)´Â Æò¹üÇÑ °íµîÇÐ»ýÀÌ´Ù. ±×·±µ¥ Æò¼Ò Ä£ÇÏ°Ô Áö³»´ø ±«»óÇÑ ¹ß¸í°¡ ¿¡¸ÞÆ® ºê¶ó¿î ¹Ú»ç(Å©¸®½ºÅäÆÛ ·ÎÀÌµå)°¡ ½ºÆ÷Ã÷Ä« µå·Î¸®¾ÈÀ» °³Á¶ÇØ Å¸ÀÓ¸Ó½ÅÀ» ¸¸µé°í, ¶æ¹ÛÀÇ »ç°í·Î ºê¶ó¿î ¹Ú»ç°¡ Å×·¯¹üµé¿¡°Ô ÃÑÀ» ¸Â°í À§ÇèÇØÁø »óÈ²¿¡¼­ ¸¶Æ¼´Â 30³â ÀüÀ¸·Î °¡°Ô µÈ´Ù. ±ØÀå °£ÆÇ¿¡´Â 2·ù ¹è¿ìÀÎ ·Î³Îµå ·¹ÀÌ°ÇÀÌ º¸ÀÌ°í Ã»³âÀÎ ¾Æ¹öÁö¿Í ¾î¸Ó´Ï¸¦ º¸°Ô µÈ´Ù. ÀþÀº ¾Æ¹öÁø ¸ÛÃ»ÇÏ°í, ¾î¸Ó´Ï´Â ¹Ì·¡ÀÇ ¾ÆµéÀÎ ¸¶Æ¼¸¦ ÁÁ¾ÆÇØ ¾ß´ÜÀÌ´Ù. ¸¶Æ¼°¡ ¹Ì·¡·Î °¡´Â °ÍÀ» µµ¿Í ÁÙ »ç¶÷Àº 30³â ÀüÀÎ ÀþÀº ºê¶ó¿î ¹Ú»ç»ÓÀÎµ¥...",
+        "release_date": "1985-07-03",
+        "poster_path": "https://www.themoviedb.org/t/p/original/7gGicAJdHRzaUd6qLjH5bSW4Cgi.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 69,
+    "fields": {
+        "title": "´ëºÎ",
+        "overview": "½Ã½Ç¸®¿¡¼­ ÀÌ¹Î¿Â µÚ, Á¤Ä¡±Ç±îÁö ¿µÇâ·ÂÀ» ¹ÌÄ¡´Â °Å¹°·Î ÀÚ¸®ÀâÀº µ· ²Ã·¹¿À³×´Â °®°¡Áö °í¹ÎÀ» È£¼ÒÇÏ´Â »ç¶÷µéÀÇ ¹®Á¦¸¦ ÇØ°áÇØÁÖ¸ç ´ëºÎ¶ó ºÒ¸®¿î´Ù. ÇÑÆí ¼Ö·Î¼Ò¶ó´Â ÀÎ¹°Àº ²Ã·¹¿À³×°¡¿Í ¶óÀÌ¹úÀÎ Å¿Å¸¸®¾Æ ÆÐ¹Ð¸®¿Í ¼ÕÀâ°í »õ·Î¿î ¸¶¾à »ç¾÷À» Á¦¾ÈÇÑ´Ù. µ· ²Ã·¹¿À³×°¡ ¸¶¾à »ç¾÷¿¡ Âü¿©ÇÏÁö ¾Ê±â·Î ÇÏÀÚ, µ· ²Ã·¹¿À³×¸¦ Àú°ÝÇØ ±×´Â Áß»óÀ» ÀÔ°í »ç°æÀ» Çì¸Å°Ô µÈ´Ù. ±× µÚ, µ· ²Ã·¹¿À³×ÀÇ ¾Æµé ¼Ò´Ï´Â Á¶Á÷·ÂÀ» ÃÑ µ¿¿øÇØ ´Ù¸¥ ÆÐ¹Ð¸®µé°ú ÇÇ¸¦ ºÎ¸£´Â ÀüÀïÀ» ½ÃÀÛÇÏ´Âµ¥... °¡Á·ÀÇ »ç¾÷°ú »ó°ü¾øÀÌ ´ëÇÐ¿¡ ÁøÇÐÇÑ µÚ ÀÎÅÚ¸®·Î Áö³»¿Ô´ø ¸·³» ¾Æµé ¸¶ÀÌÅ¬Àº ¾Æ¹öÁö°¡ ÃÑ°ÝÀ» ´çÇÑ µÚ, ¾Æ¹öÁö¸¦ ±¸ÇÏ±â À§ÇØ À§ÇèÃµ¸¸ÇÑ Çù»ó ÀÚ¸®¿¡ ³ª¼±´Ù.",
+        "release_date": "1972-03-14",
+        "poster_path": "https://www.themoviedb.org/t/p/original/cOwVs8eYA4G9ZQs7hIRSoiZr46Q.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 70,
+    "fields": {
+        "title": "ÅÍ¹Ì³×ÀÌÅÍ 2: ½ÉÆÇÀÇ ³¯",
+        "overview": "¹Ì·¡, ÀÎ·ù¿Í ±â°èÀÇ ÀüÀïÀº °è¼Ó µÇ´Â °¡¿îµ¥ ½ºÄ«ÀÌ³ÝÀº ÀÎ·ù ÀúÇ×±º »ç·É°ü Á¸ ÄÚ³Ê¸¦ ¾ø¾Ö±â À§ÇØ ¾×Ã¼ ±Ý¼ÓÇü ·Îº¿ÀÎ T-1000(·Î¹öÆ® ÆÐÆ®¸¯)À» °ú°ÅÀÇ ¾î¸° Á¸ ÄÚ³Ê¿¡°Ô·Î º¸³½´Ù. ÇüÅÂÀÇ º¯½Å°ú ÀÚ°¡ Ä¡À¯±îÁö °¡´ÉÇÑ T-1000¿¡ ´ëÇ×ÇÏ°í Á¸ ÄÚ³Ê¸¦ ÁöÅ°±â À§ÇØ ÀÎ·ù ÀúÇ×±ºÀº T-101(¾Æ³îµå ½´¿ÐÁ¦³×°Å)À» °ú°Å·Î ±ÞÆÄÇÑ´Ù. ¹Ì·¡ÀÇ ÀÎ·ù ¿î¸íÀ» Áå ¾î¸° Á¸ ÄÚ³Ê, ±×¸¦ ±¸ÇØ³»Áö ¾ÊÀ¸¸é ÀÎ·ùÀÇ ¹Ì·¡´Â ¾ø´Ù. ¹Ýµå½Ã Á¦°ÅÇØ¾ß ÇÏ´Â ½ºÄ«ÀÌ³ÝÀÇ T-1000Àº °ÅÄ§¾øÀÌ Á¸ ÄÚ³Ê ÀÏÇàÀ» À§ÇùÇÏ¸ç ¼û°¡»Û Ãß°ÝÀ» ½ÃÀÛÇÏ´Âµ¥...",
+        "release_date": "1991-07-03",
+        "poster_path": "https://www.themoviedb.org/t/p/original/nDVUiEqoeXaDQuM81KkUVNviYIm.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 71,
+    "fields": {
+        "title": "¼ÅÅÍ ¾ÆÀÏ·£µå",
+        "overview": "º¸½ºÅÏ ¼ÅÅÍ¾ÆÀÏ·£µåÀÇ Á¤½Åº´¿øÀº Áß¹üÁË¸¦ ÀúÁö¸¥ Á¤½Åº´ÀÚ¸¦ °Ý¸®ÇÏ´Â º´µ¿À¸·Î Å»Ãâ ÀÚÃ¼°¡ ºÒ°¡´ÉÇÏ´Ù. ÇÏÁö¸¸ ÀÚ½Ä ¼ÂÀ» Á×ÀÎ ÇøÀÇ¸¦ ¹Þ°í ÀÖ´Â ¿©ÀÎÀÌ ÀÌ»óÇÑ ÂÊÁö¸¸À» ³²±ä Ã¤ °¨ÂÊ°°ÀÌ »ç¶óÁö´Â »ç°ÇÀÌ ¹ß»ýÇÑ´Ù. ¿¬¹æº¸¾È°ü Å×µð ´Ù´Ï¿¤½º(·¹¿À³ª¸£µµ µðÄ«ÇÁ¸®¿À)´Â ¼ö»ç¸¦ À§ÇØ µ¿·á Ã´(¸¶Å© ·¯ÆÈ·Î)°ú ÇÔ²² ¼ÅÅÍ¾ÆÀÏ·£µå·Î ÇâÇÑ´Ù. Å×µð´Â ¼ö»ç¸¦ À§ÇØ ÀÇ»ç, °£È£»ç, º´¿ø°ü°èÀÚ µîÀ» ½É¹®ÇÏÁö¸¸ ¼ö»ç´Â ÀüÇô ÁøÃ´µÇÁö ¾Ê´Â´Ù. ¼³»ó°¡»ó ÆøÇ³ÀÌ ºÒ¾î ´ÚÃÄ Å×µð¿Í Ã´Àº ¼¶¿¡ °í¸³µÇ°Ô µÇ°í, ±×µé¿¡°Ô Á¡Á¡ ±«ÀÌÇÑ ÀÏµéÀÌ ÀÏ¾î³ª±â ½ÃÀÛÇÏ´Âµ¥...",
+        "release_date": "2010-02-14",
+        "poster_path": "https://www.themoviedb.org/t/p/original/aywZdSOXtwcqqLTl271EUJemi2.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 72,
+    "fields": {
+        "title": "½ºÄ«ÆäÀÌ½º",
+        "overview": "1980³â 5¿ù Äí¹Ù°¡ ¸¶¸®¿¤ Ç×À» °³Ç×ÇÏ¿© ¹ÝÄ«½ºÆ®·Î ÁöÁöÀÚµéÀÌ ¹Ì±¹ ÇÃ·Î¸®´Ù¿¡ ÀÔÇ×ÇÑ´Ù. Åä´Ï ¸óÅ¸³ª¿Í ¸¶´Ï¸®º£¶óµµ ÀÌ¹Î ¼ö¿ë¼Ò·Î º¸³»Áø´Ù. 3°³¿ù ÈÄ ¸¶´Ï°¡ ¼ö¿ë¼Ò¿¡ ÀÖ´Â ·¹º¥°¡¶ó´Â ÀÚ¸¦ »ìÇØÇØ ÁÖ¸é ½ÅºÐÁõÀ» ÀÔ¼öÇØ ÁÖ°Ú´Ù´Â ÀÏÀ» ¹Þ¾Æ ¼ö¿ë¼Ò¿¡ Æøµ¿À» ÀÏÀ¸ÄÑ ·¹º¥°¡¸¦ ¾Ï»ìÇÑ´Ù. Á¢½Ã´ÛÀÌ·Î ±Ù±ÙÈ÷ »ì¾Æ°¡´ø Åä´Ï´Â ÇÁ·©Å©ÀÇ ºÎÇÏ·ÎºÎÅÍ ÄÝ·Òºñ¾Æ ¸¶¾à»ó°úÀÇ °Å·¡ÀÏÀ» ¸Ã¾Ò´Ù°¡ À§ÇèÃµ¸¸ÇÑ À§±â¸¦ ³Ñ±ä´Ù. ±× »ç°ÇÀ» °è±â·Î, Åä´Ï´Â ÇÁ·©Å©ÀÇ ½ÅÀÓÀ» ¾ò°í ±×ÀÇ ºÎÇÏ°¡ µÇÁö¸¸, ¼ö °³¿ù ÈÄ °á±¹ ÀÚ½ÅÀ» ¾ø¾Ö·Á´Â ÇÁ·©Å©¸¦ Á×ÀÌ°í Á¶Á÷À» Àå¾Ç, º¸½º ÀÚ¸®¿¡ ¿À¸£´Âµ¥...",
+        "release_date": "1983-12-09",
+        "poster_path": "https://www.themoviedb.org/t/p/original/zx7sXrMISbs8RI4URbjPyKocRgP.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 73,
+    "fields": {
+        "title": "·¹¿Ë",
+        "overview": "ÇÑ ¼Õ¿£ ¿ìÀ¯ 2ÆÑÀÌ µç °¡¹æ, ´Ù¸¥ ÇÑ ¼Õ¿£ È­ºÐÀ» µé°í »Ñ¸® ¾øÀÌ ¶°µµ´Â Å³·¯ ·¹¿ËÀº ¾î´À ³¯ ¿· Áý ¼Ò³à ¸¶Æ¿´ÙÀÇ ÀÏ°¡Á·ÀÌ ¸ô»ì ´çÇÏ´Â °ÍÀ» ¸ñ°ÝÇÑ´Ù. ±× »çÀÌ ½ÉºÎ¸§À» °¬´Ù µ¹¾Æ ¿Â ¸¶Æ¿´Ù´Â °¡Á·µéÀÌ Ã³ÂüÈ÷ ¸ô»ì ´çÇÏÀÚ ·¹¿Ë¿¡°Ô µµ¿òÀ» Ã»ÇÑ´Ù. °¡Á·ÀÇ ¿ø¼ö¸¦ °±±â À§ÇØ Å³·¯°¡ µÇ±â·Î °á½ÉÇÑ 12¼¼ ¼Ò³à ¸¶Æ¿´Ù´Â ·¹¿Ë¿¡°Ô ±ÛÀ» ¾Ë·ÁÁÖ´Â ´ë½Å º¹¼öÇÏ´Â ¹ýÀ» ¹è¿ì°í, ±× »çÀÌ ·¹¿Ë¿¡ ´ëÇÑ »ç¶ûÀ» Å°¿ö³ª°£´Ù. µåµð¾î ±×³à´Â °¡Á·À» Á×ÀÎ »ç¶÷ÀÌ ºÎÆÐÇÑ ¸¶¾à °æÂû ½ºÅÄ½ºÀÓÀ» ¾Ë°Ô µÇ°í, È¦·Î ±×ÀÇ »ç¹«½Ç·Î ÇâÇÏ°Ô µÇ´Âµ¥...",
+        "release_date": "1994-09-14",
+        "poster_path": "https://www.themoviedb.org/t/p/original/nmLhnK0Jxyj3WYZADgvrwFUY0wk.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 74,
+    "fields": {
+        "title": "¼î»ýÅ© Å»Ãâ",
+        "overview": "ÃË¸Á¹Þ´Â ÀºÇà °£ºÎ ¾Øµð µàÇÁ·¹ÀÎÀº ¾Æ³»¿Í ±×³àÀÇ Á¤ºÎ¸¦ »ìÇØÇß´Ù´Â ´©¸íÀ» ¾´´Ù. ÁÖº¯ÀÇ Áõ¾ð°ú »ìÇØ ÇöÀåÀÇ ±×·²µíÇÑ Áõ°Åµé·Î ±×´Â Á¾½ÅÇüÀ» ¼±°í¹Þ°í ¾ÇÁú¹üµé¸¸ ¼ö¿ëÇÑ´Ù´Â Áö¿Á°°Àº ±³µµ¼Ò ¼î»ýÅ©·Î ÇâÇÑ´Ù. ÀÎ°£ ¸»Á¾ ¾²·¹±âµé¸¸ ¸ðÀÎ ±×°÷¿¡¼­ ±×´Â ÀÌ·ç ¸»ÇÒ ¼ö ¾ø´Â ¾ï¾Ð°ú Áü½Âº¸´Ù ¸øÇÑ Ãë±ÞÀ» ´çÇÑ´Ù. ±×·¯´ø ¾î´À ³¯, °£¼öÀÇ ¼¼±ÝÀ» ¸éÁ¦¹Þ°Ô ÇØ ÁØ ´öºÐ¿¡ ±×´Â ÀÏ¾à ±³µµ¼ÒÀÇ ºñ°ø½Ä È¸°è»ç·Î ÀÏÇÏ°Ô µÈ´Ù. ±× ¿ÍÁß¿¡ ±³µµ¼Ò ¼ÒÀåÀº ÁË¼öµéÀ» ÀÌ¸®Àú¸® ºÎ¸®¸é¼­ °ËÀº µ·À» ±Ü¾î ¸ðÀ¸°í ¾Øµð´Â ÀÌ µ·À» ¼¼Å¹ÇÏ¿© ºÒ·ÁÁÖ¸é¼­ ±×ÀÇ µ·À» °ü¸®ÇÏ´Âµ¥...",
+        "release_date": "1994-09-23",
+        "poster_path": "https://www.themoviedb.org/t/p/original/3hO6DIGRBaJQj2NLEYBMwpcz88D.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 75,
+    "fields": {
+        "title": "¾È³ç º£ÀÏ¸®",
+        "overview": "È¯»ý¸¸ ¹ú½á 5¹øÂ°! µµ¹«Áö ³¡³¯ ÁÙ ¸ð¸£´Â ¡®º£ÀÏ¸®¡¯ÀÇ »î¿¡ »õ·Î¿î ¹Ì¼ÇÀÌ »ý°å´Ù?! ¹Ù·Î ¡®ÀÌµç¡¯ÀÇ ÀÛÀº º£ÀÌºñ ¡®¾¾Á¦ÀÌ¡¯¸¦ µ¹º¸´Â °Í. ¼Ò²ß³îÀÌµµ ÇØ¾ß ÇÏ°í À§ÇèÇÑ °÷¿¡ µé¾î°¡¸é Â¢¾î¼­ ¾Ë·ÁÁà¾ß ÇÏ°í, ¡®¾¾Á¦ÀÌ¡¯¿Í ÇÔ²² ÇØ¾ß ÇÒ ÀÏÀÌ ³Ê¹«³ªµµ ¸¹ÀÌ ³²¾Ò´Âµ¥ ¡®¾¾Á¦ÀÌ¡¯´Â ¡®º£ÀÏ¸®¡¯¿Í ¡®ÀÌµç¡¯ÀÇ °çÀ» ¶°³ª µµ½Ã·Î ÇâÇÑ´Ù. 7³â ÈÄ ¡®¸ô¸®¡¯·Î ´Ù½Ã ÅÂ¾î³­ ¡®º£ÀÏ¸®¡¯´Â ¿ì¿©°îÀý ³¡¿¡ ¡®¾¾Á¦ÀÌ¡¯ÀÇ ÁýÀ¸·Î ÀÔ¾çµÇ°í ¡®¾¾Á¦ÀÌ¡¯°¡ Çàº¹ÇÒ ¶§, ½½ÇÃ ¶§, ¿Ü·Î¿ï ¶§ Ç×»ó ¿·¿¡ ÀÖ¾îÁØ´Ù. ÁÖÀ¯¼ÒÀÇ ¡®ºòµ¶¡¯À¸·Î ´Ù½Ã ÅÂ¾î³­ ¡®º£ÀÏ¸®¡¯. ¡®¾¾Á¦ÀÌ¡¯¸¦ ¸¸³ª±â¸¸À» ±â´Ù¸®Áö¸¸ ¿ì¿¬È÷ ¸¸³ª°Ô µÈ ¡®¾¾Á¦ÀÌ¡¯´Â ¡®º£ÀÏ¸®¡¯¸¦ ¾Ë¾Æº¸Áö ¸øÇÏ°í ¶°³ª¹ö¸°´Ù. Å¯Å¯Å¯¡¦ ¾îµð¼­ ¡®¾¾Á¦ÀÌ¡¯ ³¿»õ ¾È³ª¿ä? ¡®¸Æ½º¡¯·Î È¯»ýÇÑ ¡®º£ÀÏ¸®¡¯´Â ¿ÀÁ÷ ÀÏ°ß´Ü½É ¡®¾¾Á¦ÀÌ¡¯¸¦ ±â´Ù¸®´ø Áß À¯±â°ß ÀÔ¾ç¼Ò¿¡¼­ µåµð¾î ¡®¾¾Á¦ÀÌ¡¯¸¦ ´Ù½Ã ¸¸³ª°Ô µÈ´Ù. ÀÎ»ýÀº ±æ°í °ß»ýÀº Âª´Ù´Âµ¥, Àú ³à¼®À» ³¡±îÁö ÁöÄÑÁÙ ¼ö ÀÖÀ»±î?",
+        "release_date": "2019-05-03",
+        "poster_path": "https://www.themoviedb.org/t/p/original/eeSXArYcWGI0ubSrQ45XelaGx2V.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 76,
+    "fields": {
+        "title": "ÆÞÇÁ ÇÈ¼Ç",
+        "overview": "ÆßÇÁÅ²¿Í Çã´Ï ¹ö´Ï°¡ ·¹½ºÅä¶û¿¡¼­ °­µµ Çà°¢À» ¹úÀÌ±â ½ÃÀÛÇÑ´Ù. ºó¼¾Æ®¿Í ±× µ¿·á Áì½º´Â µÎ¸ñÀÇ ±Ý°¡¹æÀ» Ã£±â À§ÇØ ´Ù¸¥ °Ç´ÞÀÌ »ç´Â ¾ÆÆÄÆ®¸¦ Ã£¾Æ°£´Ù. ¸¶¸£¼¿·¯½º´Â ºÎÄ¡¿¡°Ô µ·À» ÁÖ¸ç »ó´ë ¼±¼ö¿¡°Ô Á® ÁÖ¶ó°í ÇÏÁö¸¸ ºÎÄ¡´Â »ó´ë ¼±¼ö¸¦ ¶§·Á ´¯È÷°í µµ¸ÁÄ¡´Ù, ¾î¸± ¶§ ¾Æ¹öÁö¿¡°Ô ¹°·Á¹ÞÀº ½Ã°è¸¦ Ã£±â À§ÇØ ¾ÆÆÄÆ®·Î ÇâÇÑ´Ù. ¾Æ¹«·± »ó°ü ¾øÀÌ º¸ÀÌ´Â ÀÌ »ç°ÇµéÀÌ ¼­·Î ¾ôÈ÷°í ˜ùÈ÷¸é¼­ ¿¹»óÄ¡ ¸øÇÑ ÀÎ°ú°ü°è°¡ ¸¸µé¾îÁö´Âµ¥...",
+        "release_date": "1994-09-10",
+        "poster_path": "https://www.themoviedb.org/t/p/original/6lXRHGoEbnnBUKsuqpL9JxD4DzT.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 77,
+    "fields": {
+        "title": "½ºÆ¼ºì À¯´Ï¹ö½º: ´õ ¹«ºñ",
+        "overview": "Áö±¸ ¼öÈ£¸¦ À§ÇÑ ¸¶¹ý ¹Ì¼ÇµéÀ» ÇìÃÄ ³ª°¡´Â ½ºÆ¼ºì À¯´Ï¹ö½ºÀÇ ½Å³ª´Â ¸ðÇèÀÌ ÆîÃÄÁø´Ù. ¹Ï¾î¶ó, ½ºÆ¼ºì ÁªÆÄ¿ö! ½ºÆ¼ºìÀÌ Áö±¸¸¦ ÁöÅ°´Â ÀÏÀº ³¡³µ´Ù°í »ý°¢Çß´Ù. ±×·¯³ª, ºñÄ¡½ÃÆ¼¿¡¼­ »õ·Î¿î À§ÇùÀÌ ´Ù°¡¿À°í ÀÖ´Ù. ½ºÆ¼ºìÀº °Å´ëÇÑ µµÀü¿¡ ¸¶ÁÖÇÏ°Ô µÉ °ÍÀÌ´Ù.",
+        "release_date": "2019-09-02",
+        "poster_path": "https://www.themoviedb.org/t/p/original/8mRgpubxHqnqvENK4Bei30xMDvy.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 78,
+    "fields": {
+        "title": "Àå°í: ºÐ³ëÀÇ ÃßÀûÀÚ",
+        "overview": "ÈæÀÎ ³ë¿¹ Àå°í´Â ÂøÇÑ »ç¸¶¸®¾ÆÀÎ °°Àº µ¶ÀÏÀÎ Çö±Ý»ç³É²Û ´ÚÅÍ Å·ÀÇ µµ¿òÀ» ¹Þ¾Æ ¸ÚÁø ¸»À» Å¸°í ¹Ì±¹ Æò¿øÀ» ´Þ¸®¸ç Çì¾îÁø ¾Æ³» ºê·ëÈú´Ù¸¦ Ã£¾Æ´Ù´Ï´Â ÃÑÀâÀÌ ³¶¸¸ÁÖÀÇÀÚ·Î º¯½ÅÇÑ´Ù. ±×´Â ºê·ëÈú´Ù°¡ ¹Ì½Ã½ÃÇÇ¿¡¼­ °¡Àå ¾Çµ¶ÇÑ ³óÀå Äµµð·£µåÀÇ ³ë¿¹·Î ÀÏÇÏ°í ÀÖ´Ù´Â ¼Ò½ÄÀ» µè°í ³óÀåÁÖ Äµµð¸¦ Ã£¾Æ°£´Ù. ¾Æ³»¸¦ ±¸ÇØ¾ß ÇÏ´Â ºÐ³ëÀÇ ·Î¸ÇÆ¼½ºÆ® Àå°í, ±×¸¦ µ½´Â Á¤ÀÇÀÇ ¹Ù¿îÆ¼ ÇåÅÍ ´ÚÅÍ Å·, ±×¸®°í ±×µéÀÇ Ç¥ÀûÀÌ µÈ ¿å¸ÁÀÇ ¸¶½ºÅÍ Äµµð. º¹¼öÀÇ »ç½½ÀÌ Ç®¸®¸é, ¼¼ ³²ÀÚÀÇ ÇÇµµ ´«¹°µµ ¾ø´Â ´ë°áÀÌ ½ÃÀÛµÈ´Ù.",
+        "release_date": "2012-12-25",
+        "poster_path": "https://www.themoviedb.org/t/p/original/cDW2Ro4HPhsYgRKyGI9CA33gTpn.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 79,
+    "fields": {
+        "title": "ÇÏ¿ïÀÇ ¿òÁ÷ÀÌ´Â ¼º",
+        "overview": "19¼¼±â ¸» ¸¶¹ý°ú °úÇÐÀÌ °øÁ¸ÇÏ°í ÀÖ´Â ¼¼°è ¾Þ°Å¸®. ¼ÒÇÇ´Â µ¹¾Æ°¡½Å ¾Æ¹öÁöÀÇ ¸ðÀÚ»óÁ¡¿¡¼­ ½¯Æ´¾øÀÌ ÀÏÇÏ´Â 18»ì ¼Ò³àÀÌ´Ù. ¾î´À ³¯ ¿À·§¸¸¿¡ ¸¶À»·Î ³ª°£ ¼ÒÇÇ´Â ¿ì¿¬È÷ ÇÏ¿ïÀ» ¸¸³ª°Ô µÈ´Ù. ÇÏ¿ïÀº ¿Õ½Ç ¸¶¹ý»ç·Î¼­ ÇÚ¼¶ÇÏÁö¸¸ Á¶±Ý °ÌÀÌ ¸¹Àº Ã»³âÀÌ´Ù. È²¹«Áö ¸¶³à´Â µÎ »ç¶÷ÀÇ »çÀÌ¸¦ ¿ÀÇØ, ÁÖ¹®À» °É¾î ¼ÒÇÇ¸¦ 90»ìÀÇ ´ÄÀº ÇÒ¸Ó´Ï·Î ¸¸µé¾î ¹ö¸°´Ù. °¡Á·À» °ÆÁ¤ÇÑ ¼ÒÇÇ´Â ÁýÀ» ³ª¿À°Ô µÇ°í È²¹«Áö¸¦ Çì¸Å´Ù°¡ ÇÏ¿ïÀÌ »ç´Â ¼º¿¡¼­ °¡Á¤ºÎ·Î ³¸¼± »ýÈ°À» ½ÃÀÛÇÑ´Ù. 4°³ÀÇ ´Ù¸®·Î °È´Â ±â±«ÇÑ ¿òÁ÷ÀÌ´Â ¼º ¾È¿¡¼­ ÇÏ¿ï°ú ¼ÒÇÇÀÇ ±â¹¦ÇÑ »ç¶û°ú ¸ðÇèÀÌ ½ÃÀÛµÇ´Âµ¥...",
+        "release_date": "2004-11-19",
+        "poster_path": "https://www.themoviedb.org/t/p/original/xiz6TiSduvR1U3VLfWVlBEdT9fO.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 80,
+    "fields": {
+        "title": "Æ÷·¹½ºÆ® °ËÇÁ",
+        "overview": "ºÒÆíÇÑ ´Ù¸®, ³²µéº¸´Ù Á¶±Ý ¶³¾îÁö´Â Áö´ÉÀ» °¡Áø Æ÷·¹½ºÆ® °ËÇÁ´Â Çå½ÅÀûÀÎ ¾î¸Ó´ÏÀÇ º¸»ìÇË°ú Ã¹»ç¶û Á¦´Ï¿ÍÀÇ ¸¸³²À¸·Î Æí°ß°ú ±«·ÓÈû ¼Ó¿¡¼­µµ µû¶æÇÑ ¸¶À½À» Áö´Ï°í ¼ºÀåÇÑ´Ù. ¶Ç·¡µéÀÇ ±«·ÓÈûÀ» ÇÇÇØ µµ¸ÁÄ¡´ø Æ÷·¹½ºÆ®´Â ´©±¸º¸´Ù ºü¸£°Ô ´Þ¸± ¼ö ÀÖ´Â ÀÚ½ÅÀÇ Àç´ÉÀ» ±ú´Ý´Â´Ù. ±×ÀÇ Àç´ÉÀ» ¾Ë¾Æ º» ´ëÇÐ¿¡¼­ ±×¸¦ ¹Ì½ÄÃà±¸ ¼±¼ö·Î ¹ßÅ¹ÇÏ°í, Á¹¾÷ ÈÄ¿¡µµ ¶Ù¾î³­ ½ÅÃ¼´É·ÂÀ¸·Î ±º¿¡ µé¾î°¡ ¹«°øÈÆÀåÀ» ¼ö¿©¹Þ´Â µî ÅºÅºÇÑ ÀÎ»ý °¡µµ¿¡ ¿À¸£°Ô µÈ Æ÷·¹½ºÆ®. ÇÏÁö¸¸ ¾î¸Ó´Ï°¡ º´¿¡ °É·Á Á×À½À» ¸ÂÀÌÇÏ°í, Ã¹»ç¶û Á¦´Ï ¿ª½Ã ±×ÀÇ °çÀ» ¶°³ª°¡¸ç ´Ù½Ã ÇÑ ¹ø ÀÎ»ýÀÇ ÀüÈ¯Á¡À» ¸ÂÀÌÇÏ°Ô µÇ´Âµ¥...",
+        "release_date": "1994-07-06",
+        "poster_path": "https://www.themoviedb.org/t/p/original/xdJxoq0dtkchOkUz5UVKuxn7a2V.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 81,
+    "fields": {
+        "title": "½®µé·¯ ¸®½ºÆ®",
+        "overview": "2Â÷ ¼¼°è´ëÀü ´ç½Ã µ¶ÀÏ±ºÀÌ Á¡·ÉÇÑ Æú¶õµå. ½Ã·ù¿¡ ¸ÂÃç ÀÚ½ÅÀÇ ¼º°øÀ» Ãß±¸ÇÏ´Â ±âÈ¸ÁÖÀÇÀÚ ½®µé·¯´Â À¯ÅÂÀÎÀÌ °æ¿µÇÏ´Â ±×¸© °øÀåÀ» ÀÎ¼öÇÑ´Ù. ±×´Â °øÀåÀ» ÀÎ¼öÇÏ±â À§ÇØ ³ªÂî ´ç¿øÀÌ µÇ°í µ¶ÀÏ±º¿¡°Ô ³ú¹°À» ¹ÙÄ¡´Â µî °®Àº ¹æ¹ýÀ» µ¿¿øÇÑ´Ù. ±×·¯³ª ³ÃÈ¤ÇÑ ±âÈ¸ÁÖÀÇÀÚ¿´´ø ½®µé·¯´Â À¯ÅÂÀÎ È¸°è»çÀÎ ½ºÅÏ°ú Ä£ºÐÀ» ¸ÎÀ¸¸é¼­ ³ÃÈ¤ÇÑ À¯ÅÂÀÎ ÇÐ»ì¿¡ ´ëÇÑ ¾ç½ÉÀÇ ¼Ò¸®¸¦ µè±â ½ÃÀÛÇÑ´Ù. ¸¶Ä§³» ±×´Â °­Á¦ ¼ö¿ë¼Ò·Î ²ø·Á°¡ Á×À½À» ¸Â°ÔµÉ À¯ÅÂÀÎµéÀ» ±¸ÇØ³»±â·Î °á½ÉÇÏ°í, µ¶ÀÏ±º Àå±³¿¡°Ô »©³»´Â »ç¶÷ ¼ýÀÚ´ë·Î ³ú¹°À» ÁÖ´Â ¹æ¹ýÀ¸·Î À¯ÅÂÀÎµéÀ» ±¸ÇØ³»·Á´Â °èÈ¹À» ¼¼¿ì´Âµ¥...",
+        "release_date": "1993-11-30",
+        "poster_path": "https://www.themoviedb.org/t/p/original/oyyUcGwLX7LTFS1pQbLrQpyzIyt.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 82,
+    "fields": {
+        "title": "±«¹°ÀÇ ¾ÆÀÌ",
+        "overview": "±«¹°ÀÇ ¼Õ¿¡ ±æ·¯Áø ÀÎ°£ ¼Ò³â X ÀÎ°£À» Á¦ÀÚ·Î »ïÀº ±«¹°  ³Ê¹«µµ ´Þ¶ú´ø ±×µéÀÌ ¸¸µé¾î°¡´Â ÇÏ³ªÀÇ ¼¼»ó!  °¥ °÷À» ÀÒ°í ½ÃºÎ¾ßÀÇ µÞ°ñ¸ñÀ» ¹èÈ¸ÇÏ´ø 9»ì ¼Ò³â ¡®·»¡¯Àº ÀÎ°£ ¼¼°è·Î ³ª¿Â ±«¹° ¡®Äí¸¶Å×Ã÷¡¯¿Í ¸¶ÁÖÄ¡°Ô µÇ°í, ±×¸¦ ÂÑ´Ù ¿ì¿¬È÷ ±«¹°ÀÇ ¼¼°è¿¡ ¹ßÀ» µéÀÌ°Ô µÈ´Ù. ¡®Äí¸¶Å×Ã÷¡¯¿¡°Ô ¡®Å¥Å¸¡¯¶ó´Â »õ·Î¿î ÀÌ¸§À» ¾ò°Ô µÈ ¼Ò³âÀº ±×ÀÇ ½º½ÂÀ» ÀÚÃ³ÇÑ ¡®Äí¸¶Å×Ã÷¡¯¿Í ÇÔ²² ±â¹¦ÇÑ µ¿°Å¸¦ ½ÃÀÛÇÏÁö¸¸ ³Ê¹«µµ ´Ù¸¥ ±×µéÀº »ç»ç°Ç°Ç ºÎµúÈù´Ù. ÇÔ²²ÇÏ´Â ½Ã°£ÀÌ ½×¿©°¥¼ö·Ï µÑÀº ¼­·Î¸¦ Áø½ÉÀ¸·Î ¾Æ³¢¸ç º¯ÇØ°¡°í, ÁøÁ¤ÇÑ °¡Á·ÀÇ Á¤À» ³ª´©°Ô µÈ´Ù. ÇÏÁö¸¸ ¾î´À »õ ÈÇÂ½ Ä¿¹ö¸° ¡®Å¥Å¸¡¯°¡ ÀÎ°£ ¼¼°è¿¡ °ü½ÉÀ» °®°Ô µÇ¸é¼­ ¿¹»óÄ¡ ¸øÇÑ »ç°ÇµéÀÌ ¹ú¾îÁö±â ½ÃÀÛÇÏ´Âµ¥¡¦¡¦",
+        "release_date": "2015-07-11",
+        "poster_path": "https://www.themoviedb.org/t/p/original/jA2intByHllsjaMhgHOdVDOCUfb.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 83,
+    "fields": {
+        "title": "·¯ºê, »çÀÌ¸Õ",
+        "overview": "»çÀÌ¸ÕÀº Æò¹üÇÑ »îÀ» »ç´Â °íµîÇÐ»ýÀÌ´Ù. »ç¶ûÇÏ´Â °¡Á·ÀÌ ÀÖ°í Ä£±¸µéÀÌÀÖ´Ù. ´Ù¸¸, ÀÚ½ÅÀÌ °ÔÀÌÀÎ °É ¾Æ¹«µµ ¸ð¸¥´Ù´Â °Í»Ó. ³²µé°ú ´Ù¸¦ ¹Ù°¡ ¾øÁö¸¸ °ÔÀÌ¶ó´Â ÀÌÀ¯·Î ³²µéÀÌ ÀÚ½ÅÀ» ´Ù¸£°Ô º¼±î ¸¶À½ ÇÑ ÄÒ¿¡ °í¹ÎÀ» ¾È°í ´Ù´Ñ´Ù. °ÔÀÌÀÓÀ» ¼û±â°í ÇÐ±³ »ýÈ°À» ÀÌ¾î°¡´ø »çÀÌ¸ÕÀº ±³³» °Ô½ÃÆÇÀ» ÅëÇØ ÇÐ±³¿¡ Ä¿¹Ö¾Æ¿ôÇÏÁö ¾ÊÀº °ÔÀÌ°¡ ¶Ç ÀÖÀ½À»¾Ë°Ô µÈ´Ù. »çÀÌ¸ÕÀº ÀÍ¸íÀÇ ÇÐ»ý ºí·ç¿¡°Ô ¸ÞÀÏÀ» º¸³» ÀÚ½Åµµ °ÔÀÌÀÓÀ» Ã³À½À¸·Î ¹àÈù´Ù. »çÀÌ¸ÕÀº ºí·ç¿Í ¸ÞÀÏÀ» ÁÖ°í¹ÞÀ¸¸ç °¡±î¿öÁø´Ù. ±³³» ¼ö ¸¹Àº ³²ÇÐ»ýÁß ºí·ç´Â ´©±¸ÀÏ±î?",
+        "release_date": "2018-02-16",
+        "poster_path": "https://www.themoviedb.org/t/p/original/5YUYg5q7QfC4IoNwNUtiwdiYKPr.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 84,
+    "fields": {
+        "title": "Á¶Á¶ ·¡ºø",
+        "overview": "ÀüÀïÀÌ ¸·¹ÙÁö¿¡ Á¢¾îµç 1940³â´ë µ¶ÀÏ, ¾ö¸¶ ·ÎÁö¿Í ´ÜµÑÀÌ »ì°í ÀÖ´Â 10»ì ¼Ò³â Á¶Á¶´Â µ¶ÀÏ ¼Ò³â´Ü¿¡ ÀÔ´ÜÇÑ´Ù. »ó»ó ¼Ó Ä£±¸ È÷Æ²·¯ÀÇ ÀÀ¿ø¿¡ ÈûÀÔ¾î ¼Ò³â´Ü »ýÈ°À» ½ÃÀÛÇÑ Á¶Á¶´Â ³ª¾àÇÑ ¸ð½ÀÀ¸·Î ´Ü¿ø »çÀÌ¿¡¼­ ³î¸²°Å¸®°¡ µÇ°í ¸¸´Ù. ¼³»ó°¡»óÀ¸·Î Á¶Á¶´Â ¼ö·ùÅº »ç°í±îÁö ÀÏÀ¸Å°¸ç ¾ó±¼°ú ´Ù¸®¿¡ ºÎ»óÀ» ÀÔ´Â´Ù. ±×·¸°Ô È÷Æ²·¯ÀÇ ¸ÚÁø °æÈ£¿øÀÌ µÇ°Ú´Ù´Â ºÎÇ¬ ²ÞÀÌ ¹°°ÅÇ°À¸·Î µ¹¾Æ°¥ ¶§Âë, Á¶Á¶´Â ÀÚ½ÅÀÇ Áý º®Àå ¾È¿¡ ¼û¾î Áö³»´ø À¯´ëÀÎ ¼Ò³à ¿¤»ç¿Í ¸¶ÁÖÄ¡°Ô µÇ´Âµ¥...",
+        "release_date": "2019-10-18",
+        "poster_path": "https://www.themoviedb.org/t/p/original/vUDIREXlBiGT1WoKNVaV47gdtkA.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 85,
+    "fields": {
+        "title": "¹Ù½ºÅÍÁî: °ÅÄ£ ³à¼®µé",
+        "overview": "2Â÷ ¼¼°è ´ëÀü, ³ªÄ¡ÀÇ ÀÜÀÎÇÏ°í Æø·ÂÀûÀÎ ÇàÅÂ¿¡ ºÐ°³ÇÑ ¹Ì±º ¾Ëµµ ·¹ÀÎ ÁßÀ§´Â ´çÇÑ ¸¸Å­ µ¹·ÁÁØ´Ù´Â °­·ÄÇÑ ½Å³äÀ¸·Î ÃÖ°íÀÇ Àç´ÉÀ» °¡Áø 8¸íÀÇ ´ë¿øÀ» ¸ð¾Æ ¹Ù½ºÅÍÁî¶õ ±º´ÜÀ» ¸¸µé¾î ³ªÄ¡°¡ Á¡·ÉÇÑ ÇÁ¶û½º¿¡ ÀáÀÔÇØ º¹¼ö¸¦ ½ÃÀÛÇÑ´Ù. ¾î´À ³¯ ¾Ëµµ ·¹ÀÎ ÁßÀ§´Â µ¶ÀÏÀÇ ¿©¹è¿ìÀÌÀÚ ¿µ±¹ÀÇ ´õºí ½ºÆÄÀÌÀÎ ºê¸®Áþ¿¡°Ô ¶æ¹ÛÀÇ ¼Ò½ÄÀ» µè´Â´Ù. ³ªÄ¡ ¼ö³úºÎ°¡ ¸ðµÎ Âü¼®ÇÏ´Â µ¶ÀÏ ÀüÀï ¿µÈ­ÀÇ ÇÁ¸®¹Ì¾î¿¡ È÷Æ²·¯µµ Âü¼®À» ÇÑ´Ù´Â °Í. ÇÑ ¹ø¿¡ ³ªÄ¡¸¦ ¸ðµÎ ¾µ¾î¹ö¸± °èÈ¹À¸·Î ¹Ù½ºÅÍÁî´Â ÀÌÅ»¸®¾Æ ¿µÈ­ °ü°èÀÚ·Î ºÐÀåÇØ ±ØÀåÀ¸·Î ÇâÇÏ´Âµ¥...",
+        "release_date": "2009-08-19",
+        "poster_path": "https://www.themoviedb.org/t/p/original/u8gcf764K5wBBDoXlQtnkOtVeHR.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 86,
+    "fields": {
+        "title": "ÀÌ¹ÌÅ×ÀÌ¼Ç °ÔÀÓ",
+        "overview": "¸Å ¼ø°£ 3¸íÀÌ Á×´Â »ç»ó ÃÖ¾ÇÀÇ À§±â¿¡ Ã³ÇÑ Á¦ 2Â÷ ¼¼°è´ëÀü. Àý´ë ÇØµ¶ÀÌ ºÒ°¡´ÉÇÑ ¾ÏÈ£ ¿¡´Ï±×¸¶·Î ÀÎÇØ ¿¬ÇÕ±ºÀº ¼Ó¼ö¹«Ã¥À¸·Î ´çÇÏ°Ô µÈ´Ù. °á±¹ °¢ ºÐ¾ßÀÇ ¼öÀçµéÀ» ¸ð¾Æ ±â¹Ð ÇÁ·ÎÁ§Æ® ¾ÏÈ£ ÇØµ¶ÆÀÀ» °¡µ¿ÇÑ´Ù. ÃµÀç ¼öÇÐÀÚ ¾Ù·± Æ©¸µÀº ¾ÏÈ£ ÇØµ¶À» À§ÇÑ Æ¯º°ÇÑ ±â°è¸¦ ¹ß¸íÇÏÁö¸¸  24½Ã°£ ¸¶´Ù ¹Ù²î´Â ¿Ïº®ÇÑ ¾ÏÈ£ Ã¼°è ¶§¹®¿¡ ¹ø¹øÈ÷ ÁÂÀýÇÏ°í ¸¶´Âµ¥... °ú¿¬, ¾Ù·± Æ©¸µ°ú ¾ÏÈ£ ÇØµ¶ÆÀÀº ¾ÏÈ£¸¦ Ç®°í ÀüÀïÀÇ ½Â¸®¸¦ ²ø¾î³¾ ¼ö ÀÖÀ»±î¡¦?",
+        "release_date": "2014-11-14",
+        "poster_path": "https://www.themoviedb.org/t/p/original/wT4cHJMqWqWxY4GXDXgD10lMQWy.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 87,
+    "fields": {
+        "title": "±Û·¡µð¿¡ÀÌÅÍ",
+        "overview": "Á×À» ³¯ÀÌ ¸ÓÁö¾ÊÀº È²Á¦ ¸¶¸£Äí½º ¾Æ¿ì·¼¸®¿ì½º´Â ¸·½Ã¹«½º¸¦ ÃÑ¾ÖÇÏ¿© ¾ÆµéÀÌ ¾Æ´Ñ ±×¿¡°Ô ±Ç·ÂÀ» ³Ñ°ÜÁÖ±â·Î ÇÑ´Ù. È²Á¦ÀÇ ¾Æµé ÄÚ¸ðµÎ½º´Â ÀÌ¿¡ ÁúÅõ¿Í ºÐ³ë¸¦ ´À²¸ È²Á¦¸¦ »ìÇØÇÑ´Ù. ¿ÕÁÂ¸¦ ÀÌ¾î¹ÞÀº ÄÚ¸ðµÎ½º´Â ¸·½Ã¹«½º¿Í ±×ÀÇ °¡Á·À» Á×ÀÌ¶ó°í ¸í·ÉÇÑ´Ù. °¡Á·À» ¸ðµÎ ÀÒ°í °Ü¿ì »ì¾Æ³²Àº ¸·½Ã¹«½º´Â ³ë¿¹·Î Àü¶ôÇÏ°í, Åõ±âÀåÀÇ °ËÅõ»ç°¡ µÈ´Ù. ±×¿¡°Ô ³²Àº °Ç ¿ÀÁ÷ È²Á¦ ÄÚ¸ðµÎ½º¿¡ ´ëÇÑ º¹¼ö »Ó. °ËÅõ»ç·Î¼­ ¸Å °æ±â¸¶´Ù ½Â¸®·Î ÀÌ²ø¸é¼­ »ì¾Æ³²ÀÚ ±×ÀÇ ¸í¼ºÀº ³¯·Î ³ô¾Æ °£´Ù. ±×·¯´ø ¾î´À ³¯ ¿À·¡ Àü »ç¶ûÇß´ø È²Á¦ÀÇ ´©ÀÌ ·ç½Ç¶ó¸¦ ´Ù½Ã ¸¸³ª°Ô µÇ´Âµ¥...",
+        "release_date": "2000-05-01",
+        "poster_path": "https://www.themoviedb.org/t/p/original/yemF0xxGU56Pf3JXxVr4C6kuKng.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 88,
+    "fields": {
+        "title": "Ç® ¸ÞÅ» ÀÚÄÏ",
+        "overview": "Á¶Ä¿¿Í ·Î·»½º, Ä«¿ìº¸ÀÌ µîÀº º£Æ®³² Àü¿¡ ÂüÀüÇÏ±â À§ÇØ ÀÔ´ëÇÑ ½Åº´µéÀÌ´Ù. ÀÌµéÀº ÀüÅõ º£Å×¶ûÀÎ ÇÏÆ®¸¸ »ó»çÀÇ ±³À°ÇÏ¿¡ Ã¶µÎÃ¶¹ÌÇÑ ÇØº´À¸·Î ´Ù½Ã ÅÂ¾î³ª±â À§ÇØ ÈÆ·ÃÀ» ¹Þ´Â´Ù. ¶×¶×ÇÏ°í ¾à°£ Áö´ÉÀÌ ¸ðÀÚ¶ó´Â ·Î·»½º´Â ½Åº´ ±³À°´ë ÃÖ°íÀÇ °í¹®°ü. °íµÈ ÈÆ·ÃÀ» °Þ´Â ÀÌµéÀº ·Î·»½º·Î ÀÎÇØ ÀÚ½ÅµéÀÌ ¾óÂ÷·Á¸¦ ¹Þ°Ô µÇ´Â »ç½ÇÀÌ ½È´Ù. ¾ðÁ¦ºÎÅÍÀÎ°¡ ·Î·»½º´Â ÀÚ½ÅÀÇ ÃÑ°ú ´ëÈ­¸¦ ³ª´©°í, ÈÆ·Ã»ýµéÀº ±×°¡ ¾îµòÁö ¸ð¸£°Ô ´Þ¶óÁö°í ÀÖ´Ù´Â »ç½ÇÀ» ´À³¤´Ù. 8ÁÖ°£ÀÇ ÈÆ·ÃÀÌ ³¡³ª°¥ ¹«·Æ, À­ Ä§´ë¿¡¼­ ÀÚ°íÀÖ¾î¾ß ÇÒ ·Î·»½º°¡ »ç¶óÁø °ÍÀ» ¾Ë°ÔµÈ Á¶Ä¿´Â È­Àå½Ç¿¡¼­ ±×¸¦ Ã£¾Æ³»´Âµ¥...",
+        "release_date": "1987-06-26",
+        "poster_path": "https://www.themoviedb.org/t/p/original/aQJ650CEHmN5B7W1C2r8efCDyiP.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 89,
+    "fields": {
+        "title": "Å°Áî¸ð³ë°¡Å¸¸® III ³ÃÇ÷Æí",
+        "overview": "µå¶ó¸¶Ã÷·ç±â, ¿¡ÇÇ¼Òµå, ±×¸®°í Å³·ÎÆ¾Ä¿ÅÍ.  ±«ÀÌÀÇ Àü¹®°¡, ¿À½Ã³ë ¸Þ¸ÞÀÇ µµ¿òÀ» ¹Þ°í 3¸íÀÇ °­Àû°úÀÇ ½Î¿òÀ» ÀÌ°Ü³½ ¾Æ¶ó¶ó±â ÄÚ¿ä¹Ì.  ±×´Â ¸¶Ä§³» ÈíÇ÷±Í Å°½º¼¦ ¾Æ¼¿·Ñ¶ó ¿À¸®¿Â ÇÏÆ® ¾ð´õ ºí·¹ÀÌµåÀÇ »çÁö¸¦ ¸ðµÎ Å»È¯ÇÏ´Â µ¥ ¼º°øÇÑ´Ù.  ¸ðµç °ÍÀº Æò¹üÇÑ ÀÎ°£À¸·Î µÇµ¹¾Æ°¡±â À§ÇØ...  ±×·¯³ª ´Ù½Ã Å°½º¼¦ÀÇ °çÀ¸·Î µ¹¾Æ¿Â ÄÚ¿ä¹Ì´Â ÈíÇ÷±ÍÀÇ Á¸Àç, ±× ¹«¼­¿î º»ÁúÀ» ¾Ë°Ô µÈ´Ù.  °áÄÚ µ¹ÀÌÅ³ ¼ö ¾ø´Â ÀÚ½ÅÀÇ Çàµ¿¿¡ ´ëÇÑ ÈÄÈ¸, ±×¸®°í ±× Àü¸»À» ±ú´Ý°í ¸ö¼­¸®Ä¡´Â ÄÚ¿ä¹Ì.  È¥¶õ¿¡ ºüÁ® ÀÖ´Â ±×ÀÇ ¾Õ¿¡ ³ªÅ¸³­ °Ç ´Ù¸§ ¾Æ´Ñ ÄÚ¿ä¹ÌÀÇ Ä£±¸ ÇÏ³×Ä«¿Í Ã÷¹Ù»ç¿´´Ù.  ÇÏ³×Ä«¿Í´Â ÄÚ¿ä¹Ì¿¡°Ô ¾î¶°ÇÑ Á¦¾ÈÀ» ÇÏ´Âµ¥...",
+        "release_date": "2017-01-06",
+        "poster_path": "https://www.themoviedb.org/t/p/original/djIeBViGU47P05TmmSv1YmX25RE.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 90,
+    "fields": {
+        "title": "ÀÎºñÀúºí °Ô½ºÆ®",
+        "overview": "ÀÇ¹®ÀÇ ½À°ÝÀ¸·Î »ìÇØ ´çÇÑ ¡®·Î¶ó¡¯ ¡®¾Æµå¸®¾È¡¯Àº ¿¬ÀÎÀÇ Á×À½¿¡ Àý¸ÁÇÏ°í, ¹üÀÎÀº ÈçÀûµµ ¾øÀÌ »ç¶óÁ³´Ù.  À¯·ÂÇÑ ¿ëÀÇÀÚ·Î ´©¸íÀ» ¾´ ¡®¾Æµå¸®¾È¡¯Àº ½Â·ü 100%ÀÇ º¯È£»ç ¡®¹öÁö´Ï¾Æ¡¯¸¦ ¼±ÀÓÇÑ´Ù.  ±×¸®°í ÀÚ½ÅÀÇ ¹«ÁË¸¦ ÀÔÁõÇÏ±â À§ÇØ °í±ººÐÅõÇÏ´ø Áß  °ú°Å ±×¿Í ¡®·Î¶ó¡¯°¡ ÀºÆóÇÑ ±³Åë»ç°í¿Í ¼û°ÜÁø ¿¬°ü¼ºÀ» Ã£°Ô µÇ´Âµ¥¡¦  ³²Àº ½Ã°£Àº ´Ü 3½Ã°£, »ç°ÇÀ» Àç±¸¼ºÇØ ¹«ÁË¸¦ ÀÔÁõÇØ¾ß ÇÑ´Ù!",
+        "release_date": "2016-09-22",
+        "poster_path": "https://www.themoviedb.org/t/p/original/iPIGImrrBFZpz1gBrwV2mINrhS.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 91,
+    "fields": {
+        "title": "¶óÀÌ¾ð ÀÏº´ ±¸ÇÏ±â",
+        "overview": "1944³â 6¿ù 6ÀÏ ³ë¸£¸Áµð »ó·ú ÀÛÀü. ¿À¸¶ÇÏ ÇØº¯¿¡ ´ë±âÇÏ°í ÀÖ´ø º´»çµéÀº ÇÑÄ¡ ¾Õµµ ³»´Ùº¼ ¼ö ¾ø´Â ±äÀåµÈ »óÈ²¿¡ µÎ·Á¿òÀ» °¨Ãâ ¼ö ¾ø´Ù. ³ë¸£¸Áµð ÇØº¯À» ÀÀ½ÃÇÏ´Â ¹Ð·¯ ´ëÀ§¿Í °¡Àå ¾î·Á¿î ÀÓ¹«¸¦ ¼öÇàÇØ¾ßÇÒ µÎ·Á¿ò¿¡ ÁöÄ£ ±×ÀÇ ´ë¿øµé. ¸î ¹øÀÇ Á×À» °íºñ¸¦ ³Ñ±â°í ¸ÃÀº ¹Ù ÀÓ¹«¸¦ ¿Ï¼öÇÏÁö¸¸ 3ÇüÁ¦°¡ Àü»çÇÏ°í ÀûÁø¿¡¼­ ½ÇÁ¾µÈ À¯ÀÏÇÑ »ýÁ¸ÀÚÀÎ ¸·³» ¶óÀÌ¾ð ÀÏº´À» À§ÇÑ ¹Ì ÇàÁ¤ºÎÀÇ Æ¯º°ÇÑ ÀÓ¹«¸¦ ¸Ã°Ô µÈ´Ù.´Ü ÇÑ¸íÀÇ ¸ñ¼ûÀ» ±¸ÇÏ±â À§ÇØ ¿©´ü ¸íÀÌ À§ÇèÀ» °¨¼öÇØ¾ßÇÒ »óÈ²¿¡¼­ ´ë¿øµéÀº °ú¿¬ ¶óÀÌ¾ð ÀÏº´ ÇÑ ¸íÀÇ »ý¸íÀÌ ±×µé ¿©´ü ¸íÀÇ »ý¸íº¸´Ù ´õ °¡Ä¡°¡ ÀÖ´Â °ÍÀÎÁö ²÷ÀÓ¾ø´Â È¥¶õ¿¡ ºüÁö´Âµ¥...",
+        "release_date": "1998-07-24",
+        "poster_path": "https://www.themoviedb.org/t/p/original/2ATMbU4EljWkWcEJT9TElbQOMYY.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 92,
+    "fields": {
+        "title": "±×¸° ¸¶ÀÏ",
+        "overview": "¹Ì±¹ ·çÀÌÁö¾Ö³ªÀÇ ÄÝµå ¸¶¿îÆ¾ ±³µµ¼Ò. ÆúÀº »çÇü¼ö °¨¹æÀÇ °£¼öÀåÀ¸·Î ÀÏÇÏ°í ÀÖ´Ù. ±×ÀÇ ÀÏÀº »çÇü¼öµéÀ» °¨µ¶ÇÏ°í, ±×¸° ¸¶ÀÏÀÌ¶ó ºÒ¸®´Â ÃÊ·Ï»ö º¹µµ¸¦ °ÅÃÄ ±×µéÀ» »çÇü ÁýÇàÀå±îÁö ¾È³»ÇÏ´Â °Í. ÆúÀº ±×µéÀÌ Á×À½À» ¸ÂÀÌÇÏ´Â ¼ø°£±îÁö ÆòÈ­·Ó°Ô Áö³¾ ¼ö ÀÖµµ·Ï ÃÖ¼±À» ´ÙÇÑ´Ù. ¾î´À ³¯ Á¸ Ä¿ÇÇ¶ó´Â »çÇü¼ö°¡ ÀÌ¼ÛµÇ¾î ¿Â´Ù. ±×´Â ½ÖµÕÀÌ ¿©ÀÚ¾ÆÀÌ¸¦ »ìÇØÇÑ Èä¾Ç¹ü. ÇÏÁö¸¸ ¼øÁøÇÑ ´«¸Á¿ï¿¡ °ÌÀ» ÀÜ¶à Áý¾î¸ÔÀº ±×ÀÇ ¸ð½À¿¡ ÆúÀº ´çÈ¤°¨À» ´À³¤´Ù. °Ô´Ù°¡ ±×´Â ÃÊÀÚ¿¬Àû ´É·ÂÀ¸·Î ÆúÀÇ Áöº´À» ±ú²ýÇÏ°Ô Ä¡·áÇØÁÖ±â±îÁö ÇÑ´Ù. Á¸À» Àü±â ÀÇÀÚ·Î µ¥·Á°¡¾ß ÇÒ ³¯ÀÌ ´Ù°¡¿À¸é¼­ ÆúÀº ±×°¡ ¹«ÁË¶ó´Â È®½ÅÀ» °®°Ô µÇ´Âµ¥...",
+        "release_date": "1999-12-10",
+        "poster_path": "https://www.themoviedb.org/t/p/original/yuSpRhrTIJa5JN8oESrfD2bndp1.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 93,
+    "fields": {
+        "title": "ÀÌ¿ôÁý ÅäÅä·Î",
+        "overview": "1955³â ÀÏº»ÀÇ ¾Æ¸§´Ù¿î ½Ã°ñ ¸¶À», »ó³ÉÇÏ°í ÀÇÁ£ÇÑ 11»ì »çÃ÷Å°¿Í Àå³­²Ù·¯±â¿¡ È£±â½É ¸¹Àº 4»ìÀÇ ¸ÞÀÌ ´Â »çÀÌÁÁÀº ÀÚ¸Å·Î ¾Æºü¿Í ÇÔ²² µµ½Ã¸¦ ¶°³ª ½Ã°ñ·Î ÀÌ»ç¿Â´Ù. ÀÚ»óÇÑ ¾Æºü Äí»çÄ«º£Å¸Ã÷¿À´Â µµÄì¿¡¼­ ´ëÇÐ ¿¬±¸¿øÀÌ¸ç, ÀÔ¿ø ÁßÀÌÁö¸¸ µû¶æÇÑ ¹Ì¼Ò¸¦ ÀÒÁö ¾Ê´Â ¾ö¸¶°¡ ÀÖ´Ù. °ð Åð¿øÇÏ½Ç ¾ö¸¶¸¦ °ø±â°¡ ¸¼Àº °÷¿¡¼­ ¸ÂÀÌÇÏ±â À§ÇØ¼­´Ù. ½£ ÇÑº¹ÆÇ¿¡ ±Ý¹æÀÌ¶óµµ ¾²·¯Áú °ÍÃ³·³ ³°Àº ÁýÀ» º¸¸ç ÀÚ¸Å´Â »õ·Î¿î È¯°æ¿¡ ´ëÇÑ È£±â½ÉÀ¸·Î ÀÜ¶à µé¶á´Ù. ±×·¯´ø ¾î´À ³¯ »çÃ÷Å°°¡ ÇÐ±³¿¡ °£ µ¿¾È ¸ÞÀÌ´Â ½£¿¡¼­ Á¤·ÉÀ» ¸¸³ª´Ù. ¸ÞÀÌ´Â ±× Á¤·É¿¡°Ô ÅäÅä·Î¶õ ÀÌ¸§À» ºÙ¿©ÁÖ´Âµ¥...",
+        "release_date": "1988-04-16",
+        "poster_path": "https://www.themoviedb.org/t/p/original/csiklRMzvXRLKtFcIlEDeEU7nWr.jpg"
+    }
+},
+{
+    "model": "movies.movie",
+    "pk": 94,
+    "fields": {
+        "title": "³ªÅ¸Áö¸¶µ¿°­¼¼",
+        "overview": 
