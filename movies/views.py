@@ -16,6 +16,8 @@ from tmdb import URLMaker
 
 # Create your views here.
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
 def movie_list(request):
     if request.method == 'GET':
         movies = get_list_or_404(Movie)
@@ -24,6 +26,8 @@ def movie_list(request):
 
 
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
 def movie_detail(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     if request.method == 'GET':
@@ -32,6 +36,8 @@ def movie_detail(request, movie_pk):
 
 
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
 def review_list(request):
     if request.method == 'GET':
         reviews = get_list_or_404(Review)
@@ -40,6 +46,8 @@ def review_list(request):
 
 
 @api_view(['GET','POST'])
+@authentication_classes([])
+@permission_classes([])
 def movie_reviews(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     if request.method == 'GET':
@@ -54,6 +62,8 @@ def movie_reviews(request, movie_pk):
 
 
 @api_view(['GET','PUT','DELETE'])
+@authentication_classes([])
+@permission_classes([])
 def review_detail(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     if request.method == 'GET':
@@ -75,6 +85,8 @@ def review_detail(request, review_pk):
 
 
 @api_view(['GET','POST'])
+@authentication_classes([])
+@permission_classes([])
 def movie_comments(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     if request.method == 'GET':
@@ -89,6 +101,8 @@ def movie_comments(request, movie_pk):
 
 
 @api_view(['PUT','DELETE'])
+@authentication_classes([])
+@permission_classes([])
 def movie_comment_edit(request, comment_pk):
     comment = get_object_or_404(MovieComment, pk=comment_pk)
     if request.method == 'PUT':
@@ -106,6 +120,8 @@ def movie_comment_edit(request, comment_pk):
 
 
 @api_view(['GET','POST'])
+@authentication_classes([])
+@permission_classes([])
 def review_comments(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     if request.method == 'GET':
@@ -120,6 +136,8 @@ def review_comments(request, review_pk):
 
 
 @api_view(['PUT','DELETE'])
+@authentication_classes([])
+@permission_classes([])
 def review_comment_edit(request, comment_pk):
     comment = get_object_or_404(ReviewComment, pk=comment_pk)
     if request.method == 'PUT':
@@ -135,7 +153,7 @@ def review_comment_edit(request, comment_pk):
         }
         return Response(context, status=204)
 
-        
+
 # def get_data(request):
 #     TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
 #     my_url = URLMaker(TMDB_API_KEY)
