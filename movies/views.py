@@ -45,7 +45,7 @@ def movie_reviews(request, movie_pk):
         serializer = ReviewsListSerializer(reviews, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
-        # user_pk = request.data.get('user_id')
+        # user_pk = request.data.get('user_id'), 추후 수정
         user = get_object_or_404(User, pk=1)
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
@@ -79,16 +79,16 @@ def review_detail(request, review_pk):
 @api_view(['GET','POST'])
 @authentication_classes([])
 @permission_classes([])
-def movie_comments(request, movie_pk):
-    movie = get_object_or_404(Movie, pk=movie_pk)
+def review_comments(request, review_pk):
+    review = get_object_or_404(Movie, pk=review_pk)
     if request.method == 'GET':
-        comments = movie.comment_set.all()
+        comments = review.comments.all()
         serializer = CommentsListSerializer(comments, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
         serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(movie_id=movie)
+            serializer.save(review=review, )
             return Response(serializer.data)
 
 
@@ -121,9 +121,11 @@ def review_comments(request, review_pk):
         serializer = CommentsListSerializer(comments, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
+        # user_pk = request.data.get('user_id'), 추후 수정
+        user = get_object_or_404(User, pk=1)
         serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(review_id=review)
+            serializer.save(review_id=review, create_user=user)
             return Response(serializer.data)
 
 
