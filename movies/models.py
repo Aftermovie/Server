@@ -1,4 +1,5 @@
 from django.db import models
+from accounts.models import User, Profile
 
 # Create your models here.
 class Movie(models.Model):
@@ -9,21 +10,17 @@ class Movie(models.Model):
 
 
 class Review(models.Model):
-    title = models.CharField(max_length=100)
     content = models.TextField()
     rank = models.IntegerField()
-    movie_id = models.ForeignKey(Movie, on_delete=models.CASCADE)
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='reviews')
     created_at = models.DateTimeField(auto_now_add=True)
+    create_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reviews')
+    like_users = models.ManyToManyField(User, related_name='likes')
+    dislike_users = models.ManyToManyField(User, related_name='dislikes')
 
 
-class MovieComment(models.Model):
+class Comment(models.Model):
     content = models.CharField(max_length=100)
-    movie_id = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='comment')
-    rank = models.IntegerField()
-    created_at = models.DateTimeField(auto_now_add=True)
-
-
-class ReviewComment(models.Model):
-    content = models.CharField(max_length=100)
-    review_id = models.ForeignKey(Review, on_delete=models.CASCADE, related_name='comment')
+    review = models.ForeignKey(Review, on_delete=models.CASCADE, related_name='comments')
+    create_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments')
     created_at = models.DateTimeField(auto_now_add=True)

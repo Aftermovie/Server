@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Movie, ReviewComment, Review, MovieComment
+from .models import Movie, Comment, Review
 
 
 class MoviesListSerializer(serializers.ModelSerializer):
@@ -8,24 +8,25 @@ class MoviesListSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ReviewCommentSerializer(serializers.ModelSerializer):
+class CommentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Review
+        model = Comment
         fields = '__all__'
-        read_only_fields = ('review_id',)
+        read_only_fields = ('review',)
 
 
 class ReviewSerializer(serializers.ModelSerializer):
-    comment = ReviewCommentSerializer(many=True, read_only=True)
+    comments = CommentSerializer(many=True, read_only=True)
     
     class Meta:
         model = Review
         fields = '__all__'
-        read_only_fields = ('movie_id',)
+        read_only_fields = ('movie','create_user','like_users','dislike_users')
 
 
 class MovieSerializer(serializers.ModelSerializer):
-    review_set = ReviewSerializer(many=True, read_only=True)
+    reviews = ReviewSerializer(many=True, read_only=True)
+
     class Meta:
         model = Movie
         fields = '__all__'
@@ -35,25 +36,13 @@ class ReviewsListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
         fields = '__all__'
-        read_only_fields = ('movie_id',)
+        read_only_fields = ('movie', 'create_user')
 
 
-class ReviewCommentsListSerializer(serializers.ModelSerializer):
+class CommentsListSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ReviewComment
+        model = Comment
         fields = '__all__'
-        read_only_fields = ('review_id',)
+        read_only_fields = ('review', 'create_user')
 
 
-class MovieCommentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Review
-        fields = '__all__'
-        read_only_fields = ('movie_id',)
-
-
-class MovieCommentsListSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = MovieComment
-        fields = '__all__'
-        read_only_fields = ('movie_id',)

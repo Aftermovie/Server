@@ -7,9 +7,9 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 from .serializers import (MovieSerializer, MoviesListSerializer,
                             ReviewSerializer, ReviewsListSerializer,
-                            MovieCommentSerializer, MovieCommentsListSerializer,
-                            ReviewCommentSerializer, ReviewCommentsListSerializer)
-from .models import Movie, Review, MovieComment, ReviewComment
+                            CommentSerializer, CommentsListSerializer,)
+from .models import Movie, Review, Comment
+from accounts.models import User
 
 import requests
 from tmdb import URLMaker
@@ -35,29 +35,21 @@ def movie_detail(request, movie_pk):
         return Response(serializer.data)
 
 
-@api_view(['GET'])
-@authentication_classes([])
-@permission_classes([])
-def review_list(request):
-    if request.method == 'GET':
-        reviews = get_list_or_404(Review)
-        serializer = ReviewsListSerializer(reviews, many=True)
-        return Response(serializer.data)
-
-
 @api_view(['GET','POST'])
 @authentication_classes([])
 @permission_classes([])
 def movie_reviews(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     if request.method == 'GET':
-        reviews = movie.review_set.all()
+        reviews = movie.reviews.all()
         serializer = ReviewsListSerializer(reviews, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
+        # user_pk = request.data.get('user_id')
+        user = get_object_or_404(User, pk=1)
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(movie_id=movie)
+            serializer.save(movie=movie, create_user=user)
             return Response(serializer.data)
 
 
@@ -91,10 +83,10 @@ def movie_comments(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     if request.method == 'GET':
         comments = movie.comment_set.all()
-        serializer = MovieCommentsListSerializer(comments, many=True)
+        serializer = CommentsListSerializer(comments, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
-        serializer = MovieCommentSerializer(data=request.data)
+        serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save(movie_id=movie)
             return Response(serializer.data)
@@ -104,9 +96,9 @@ def movie_comments(request, movie_pk):
 @authentication_classes([])
 @permission_classes([])
 def movie_comment_edit(request, comment_pk):
-    comment = get_object_or_404(MovieComment, pk=comment_pk)
+    comment = get_object_or_404(Comment, pk=comment_pk)
     if request.method == 'PUT':
-        serializer = MovieCommentSerializer(comment, data=request.data)
+        serializer = CommentSerializer(comment, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
@@ -126,10 +118,10 @@ def review_comments(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     if request.method == 'GET':
         comments = review.comment_set.all()
-        serializer = ReviewCommentsListSerializer(comments, many=True)
+        serializer = CommentsListSerializer(comments, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
-        serializer = ReviewCommentSerializer(data=request.data)
+        serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save(review_id=review)
             return Response(serializer.data)
@@ -138,10 +130,10 @@ def review_comments(request, review_pk):
 @api_view(['PUT','DELETE'])
 @authentication_classes([])
 @permission_classes([])
-def review_comment_edit(request, comment_pk):
-    comment = get_object_or_404(ReviewComment, pk=comment_pk)
+def comment_edit(request, comment_pk):
+    comment = get_object_or_404(Comment, pk=comment_pk)
     if request.method == 'PUT':
-        serializer = ReviewCommentSerializer(comment, data=request.data)
+        serializer = CommentSerializer(comment, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
@@ -154,22 +146,22 @@ def review_comment_edit(request, comment_pk):
         return Response(context, status=204)
 
 
-# def get_data(request):
-#     TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
-#     my_url = URLMaker(TMDB_API_KEY)
-#     for i in range(1,100):
-#         target = my_url.get_url(page=i, language='ko-KR')
-#         res = requests.get(target)
-#         movies = res.json().get('results')
-#         for movie in movies:
-#             if movie.get('vote_average') >= 8 and movie.get('vote_count') >= 100 and movie.get('overview'):
-#                 data={
-#                     'title' : movie.get('title'),
-#                     'overview' : movie.get('overview'),
-#                     'release_date' : movie.get('release_date'),
-#                     'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
-#                 }
-#                 serializer = MoviesListSerializer(data=data)
-#                 if serializer.is_valid(raise_exception=True):
-#                     serializer.save()
-#     return Response(data)
+def get_data(request):
+    TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
+    my_url = URLMaker(TMDB_API_KEY)
+    for i in range(1,100):
+        target = my_url.get_url(page=i, language='ko-KR')
+        res = requests.get(target)
+        movies = res.json().get('results')
+        for movie in movies:
+            if movie.get('vote_average') >= 8 and movie.get('vote_count') >= 100 and movie.get('overview'):
+                data={
+                    'title' : movie.get('title'),
+                    'overview' : movie.get('overview'),
+                    'release_date' : movie.get('release_date'),
+                    'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
+                }
+                serializer = MoviesListSerializer(data=data)
+                if serializer.is_valid(raise_exception=True):
+                    serializer.save()
+    return Response(data)
