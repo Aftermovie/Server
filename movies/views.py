@@ -162,7 +162,7 @@ def get_data(request):
                     'overview' : movie.get('overview'),
                     'release_date' : movie.get('release_date'),
                     'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
-                    'image' : 'https://www.themoviedb.org/t/p/original'+movie.get('backdrop_path'),
+                    'image' : 'http://image.tmdb.org/t/p/w1280'+movie.get('backdrop_path'),
                 }
                 genres = movie.get('genre_ids')
                 serializer = MovieSerializer(data=data)
