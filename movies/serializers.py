@@ -3,6 +3,7 @@ from .models import Movie, Comment, Review, Genre
 
 
 class MoviesListSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Movie
         fields = '__all__'

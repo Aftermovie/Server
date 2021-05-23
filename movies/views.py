@@ -165,10 +165,10 @@ def get_data(request):
                     'image' : 'https://www.themoviedb.org/t/p/original'+movie.get('backdrop_path'),
                 }
                 genres = movie.get('genre_ids')
-                # print(genres)
-                serializer = MoviesListSerializer(data=data)
+                serializer = MovieSerializer(data=data)
                 if serializer.is_valid(raise_exception=True):
                     # for genre_id in genres:
                     #     genre = get_object_or_404(Genre, pk=genre_id)
+                    #     serializer.genre.add(genre)
                     serializer.save()
     return Response(data)
