@@ -8,7 +8,7 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from .serializers import (MovieSerializer, MoviesListSerializer,
                             ReviewSerializer, ReviewsListSerializer,
                             CommentSerializer, CommentsListSerializer,)
-from .models import Movie, Review, Comment
+from .models import Movie, Review, Comment, Genre
 from accounts.models import User
 
 import requests
@@ -117,7 +117,7 @@ def movie_comment_edit(request, comment_pk):
 def review_comments(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     if request.method == 'GET':
-        comments = review.comment_set.all()
+        comments = review.comments.all()
         serializer = CommentsListSerializer(comments, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
@@ -151,19 +151,24 @@ def comment_edit(request, comment_pk):
 def get_data(request):
     TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
     my_url = URLMaker(TMDB_API_KEY)
-    for i in range(1,100):
+    for i in range(1,1000):
         target = my_url.get_url(page=i, language='ko-KR')
         res = requests.get(target)
         movies = res.json().get('results')
         for movie in movies:
-            if movie.get('vote_average') >= 8 and movie.get('vote_count') >= 100 and movie.get('overview'):
+            if movie.get('vote_average') >= 8 and movie.get('vote_count') >= 100 and movie.get('overview') and movie.get('backdrop_path'):
                 data={
                     'title' : movie.get('title'),
                     'overview' : movie.get('overview'),
                     'release_date' : movie.get('release_date'),
                     'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
+                    'image' : 'https://www.themoviedb.org/t/p/original'+movie.get('backdrop_path'),
                 }
+                genres = movie.get('genre_ids')
+                # print(genres)
                 serializer = MoviesListSerializer(data=data)
                 if serializer.is_valid(raise_exception=True):
+                    # for genre_id in genres:
+                    #     genre = get_object_or_404(Genre, pk=genre_id)
                     serializer.save()
     return Response(data)

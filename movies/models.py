@@ -1,12 +1,20 @@
 from django.db import models
+from django.db.models.fields.related import ManyToManyField
 from accounts.models import User, Profile
 
-# Create your models here.
+
+class Genre(models.Model):
+    number = models.IntegerField()
+    name = models.CharField(max_length=20)
+
+
 class Movie(models.Model):
     title = models.CharField(max_length=100)
     overview = models.TextField()
     release_date = models.DateField()
     poster_path = models.CharField(max_length=200)
+    image = models.CharField(max_length=200)
+    genre = models.ManyToManyField(Genre, related_name='movies')
 
 
 class Review(models.Model):
