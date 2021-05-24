@@ -9,7 +9,7 @@ class Genre(models.Model):
 
 
 class Movie(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, unique=True)
     overview = models.TextField()
     release_date = models.DateField()
     poster_path = models.CharField(max_length=200)

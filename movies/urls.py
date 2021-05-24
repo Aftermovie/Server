@@ -9,4 +9,5 @@ urlpatterns = [
     path('reviews/<int:review_pk>/', views.review_detail),
     path('reviews/<int:review_pk>/comments/', views.review_comments),
     path('comments/<int:comment_pk>/', views.comment_edit),
+    path('genre/<int:genre_pk>/', views.genre_sort),
 ]

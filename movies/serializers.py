@@ -3,11 +3,11 @@ from .models import Movie, Comment, Review, Genre
 
 
 class MoviesListSerializer(serializers.ModelSerializer):
+    genre = serializers.SlugRelatedField(many=True, read_only=True, slug_field='name')
 
     class Meta:
         model = Movie
         fields = '__all__'
-        read_only_fields = ('genre',)
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -28,11 +28,11 @@ class ReviewSerializer(serializers.ModelSerializer):
 
 class MovieSerializer(serializers.ModelSerializer):
     reviews = ReviewSerializer(many=True, read_only=True)
+    genre = serializers.SlugRelatedField(many=True, read_only=True, slug_field='name')
 
     class Meta:
         model = Movie
         fields = '__all__'
-        read_only_fields = ('genre',)
 
 
 class ReviewsListSerializer(serializers.ModelSerializer):

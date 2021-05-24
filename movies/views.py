@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, get_list_or_404
-from rest_framework import status
+from rest_framework import serializers, status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -148,6 +148,16 @@ def comment_edit(request, comment_pk):
         return Response(context, status=204)
 
 
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def genre_sort(request, genre_pk):
+    genre = get_object_or_404(Genre, pk=genre_pk)
+    movies = genre.movies.all()
+    serializer = MoviesListSerializer(movies, many=True)
+    return Response(serializer.data)
+
+
 def get_data(request):
     TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
     my_url = URLMaker(TMDB_API_KEY)
@@ -156,7 +166,7 @@ def get_data(request):
         res = requests.get(target)
         movies = res.json().get('results')
         for movie in movies:
-            if movie.get('vote_average') >= 8 and movie.get('vote_count') >= 100 and movie.get('overview') and movie.get('backdrop_path'):
+            if movie.get('vote_average') >= 7 and movie.get('vote_count') >= 100 and movie.get('overview') and movie.get('backdrop_path'):
                 data={
                     'title' : movie.get('title'),
                     'overview' : movie.get('overview'),
@@ -164,11 +174,11 @@ def get_data(request):
                     'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
                     'image' : 'http://image.tmdb.org/t/p/w1280'+movie.get('backdrop_path'),
                 }
-                genres = movie.get('genre_ids')
                 serializer = MovieSerializer(data=data)
                 if serializer.is_valid(raise_exception=True):
-                    # for genre_id in genres:
-                    #     genre = get_object_or_404(Genre, pk=genre_id)
-                    #     serializer.genre.add(genre)
                     serializer.save()
+                    new_movie = get_object_or_404(Movie, title=data.get('title'))
+                    for genre_id in movie.get('genre_ids'):
+                        genre = get_object_or_404(Genre, number=genre_id)
+                        genre.movies.add(new_movie)
     return Response(data)
