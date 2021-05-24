@@ -165,20 +165,28 @@ def get_data(request):
         target = my_url.get_url(page=i, language='ko-KR')
         res = requests.get(target)
         movies = res.json().get('results')
-        for movie in movies:
-            if movie.get('vote_average') >= 7 and movie.get('vote_count') >= 100 and movie.get('overview') and movie.get('backdrop_path'):
-                data={
-                    'title' : movie.get('title'),
-                    'overview' : movie.get('overview'),
-                    'release_date' : movie.get('release_date'),
-                    'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
-                    'image' : 'http://image.tmdb.org/t/p/w1280'+movie.get('backdrop_path'),
-                }
-                serializer = MovieSerializer(data=data)
-                if serializer.is_valid(raise_exception=True):
-                    serializer.save()
-                    new_movie = get_object_or_404(Movie, title=data.get('title'))
-                    for genre_id in movie.get('genre_ids'):
-                        genre = get_object_or_404(Genre, number=genre_id)
-                        genre.movies.add(new_movie)
-    return Response(data)
+        if movies:
+            for movie in movies:
+                if movie.get('vote_average') >= 6 and movie.get('vote_count') >= 1000 and movie.get('overview') and movie.get('backdrop_path'):
+                    data={
+                        'movie_id' : movie.get('id'),
+                        'title' : movie.get('title'),
+                        'tmdb_score': movie.get('vote_average'),
+                        'popularity': movie.get('popularity'),
+                        'overview' : movie.get('overview'),
+                        'release_date' : movie.get('release_date'),
+                        'poster_path' : 'https://www.themoviedb.org/t/p/original'+movie.get('poster_path'),
+                        'image' : 'http://image.tmdb.org/t/p/w1280'+movie.get('backdrop_path'),
+                    }
+                    serializer = MovieSerializer(data=data)
+                    if serializer.is_valid(raise_exception=True):
+                        serializer.save()
+                        try:
+                            new_movie = get_object_or_404(Movie, movie_id=movie.get('id'))
+                            for genre_id in movie.get('genre_ids'):
+                                target_genre = get_object_or_404(Genre, number=genre_id)
+                                new_movie.genre.add(target_genre)
+                        except:
+                            print(movie.get('title'))
+
+    return Response({'success': True})
