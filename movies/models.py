@@ -10,7 +10,7 @@ class Genre(models.Model):
 
 class Movie(models.Model):
     movie_id = models.IntegerField()
-    tmdb_score = models.DecimalField(max_digits=4,decimal_places=2)
+    tmdb_score = models.FloatField()
     title = models.CharField(max_length=100)
     overview = models.TextField()
     release_date = models.DateField()
