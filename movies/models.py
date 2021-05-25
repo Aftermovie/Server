@@ -1,6 +1,6 @@
 from django.db import models
 from django.db.models.fields.related import ManyToManyField
-from accounts.models import Profile
+from django.conf import settings
 
 
 class Genre(models.Model):
@@ -24,13 +24,13 @@ class Review(models.Model):
     rank = models.IntegerField()
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='reviews')
     created_at = models.DateTimeField(auto_now_add=True)
-    create_user = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='reviews')
-    like_users = models.ManyToManyField(Profile, related_name='likes')
-    dislike_users = models.ManyToManyField(Profile, related_name='dislikes')
+    create_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='reviews')
+    like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='likes')
+    dislike_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='dislikes')
 
 
 class Comment(models.Model):
     content = models.CharField(max_length=100)
     review = models.ForeignKey(Review, on_delete=models.CASCADE, related_name='comments')
-    create_user = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='comments')
+    create_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='comments')
     created_at = models.DateTimeField(auto_now_add=True)

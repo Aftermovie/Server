@@ -22,7 +22,7 @@ class ReviewSerializer(serializers.ModelSerializer):
     comments_count = serializers.IntegerField(source='comments.count', read_only=True)
     likes_count = serializers.IntegerField(source='like_users.count', read_only=True)
     dislikes_count = serializers.IntegerField(source='dislike_users.count', read_only=True)
-    create_user = serializers.SlugRelatedField(read_only=True, slug_field='name')
+    create_user = serializers.CharField(max_length=20, read_only=True, source='profile.name')
 
     class Meta:
         model = Review
@@ -47,10 +47,12 @@ class ReviewsListSerializer(serializers.ModelSerializer):
 
 
 class CommentsListSerializer(serializers.ModelSerializer):
+    create_user = serializers.CharField(max_length=20, read_only=True, source='profile.name')
+
     class Meta:
         model = Comment
         fields = '__all__'
-        read_only_fields = ('review', 'create_user')
+        read_only_fields = ('review',)
 
 
 class GenreSerializer(serializers.ModelSerializer):

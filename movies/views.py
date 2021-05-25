@@ -57,10 +57,9 @@ def movie_reviews(request, movie_pk):
         return Response(serializer.data)
     elif request.method == 'POST':
         # user_pk = request.data.get('user_id'), 추후 수정
-        user = get_object_or_404(User, pk=1)
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(movie=movie, create_user=user)
+            serializer.save(movie=movie, create_user=request.user)
             return Response(serializer.data)
 
 
@@ -99,7 +98,7 @@ def review_comments(request, review_pk):
     elif request.method == 'POST':
         serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(review=review, )
+            serializer.save(review=review, create_user=request.user)
             return Response(serializer.data)
 
 
