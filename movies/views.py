@@ -167,7 +167,7 @@ def get_data(request):
         movies = res.json().get('results')
         if movies:
             for movie in movies:
-                if movie.get('vote_average') >= 6 and movie.get('vote_count') >= 1000 and movie.get('overview') and movie.get('backdrop_path'):
+                if movie.get('vote_average') >= 7.5 and movie.get('vote_count') >= 1500 and movie.get('overview') and movie.get('backdrop_path'):
                     data={
                         'movie_id' : movie.get('id'),
                         'title' : movie.get('title'),
