@@ -1,3 +1,4 @@
+from django.http.response import JsonResponse
 from django.shortcuts import get_object_or_404, get_list_or_404
 from rest_framework import serializers, status
 from rest_framework.response import Response
@@ -157,6 +158,58 @@ def genre_sort(request, genre_pk):
     serializer = MoviesListSerializer(movies, many=True)
     return Response(serializer.data)
 
+
+@api_view(['POST'])
+@authentication_classes([])
+@permission_classes([])
+def review_like(request, review_pk):
+    review = get_object_or_404(Review, pk=review_pk)
+    liked = 0
+    disliked = 0
+    # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
+    if review.dislike_users.filter(pk=request.user.pk).exists():
+        review.dislike_users.remove(request.user)
+        review.like_users.add(request.user)
+        disliked -= 1
+        liked += 1
+    if review.like_users.filter(pk=request.user.pk).exists():
+        review.like_users.remove(request.user)
+        liked -= 1
+    else:
+        review.like_users.add(request.user)
+        liked += 1
+    like_status = {
+        'likeChange': liked,
+        'dislikeChange': disliked,
+    }
+    return JsonResponse(like_status)
+
+
+
+@api_view(['POST'])
+@authentication_classes([])
+@permission_classes([])
+def review_dislike(request, review_pk):
+    review = get_object_or_404(Review, pk=review_pk)
+    liked = 0
+    disliked = 0
+    # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
+    if review.like_users.filter(pk=request.user.pk).exists():
+        review.like_users.remove(request.user)
+        review.dislike_users.add(request.user)
+        liked -= 1
+        disliked += 1
+    if review.dislike_users.filter(pk=request.user.pk).exists():
+        review.dislike_users.remove(request.user)
+        disliked -= 1
+    else:
+        review.dislike_users.add(request.user)
+        disliked += 1
+    dislike_status = {
+        'likeChange': liked,
+        'dislikeChange': disliked,
+    }
+    return JsonResponse(dislike_status)
 
 def get_data(request):
     TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
