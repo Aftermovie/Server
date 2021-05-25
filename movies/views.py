@@ -1,4 +1,4 @@
-from django.http.response import JsonResponse
+from django.http.response import JsonResponse, Http404
 from django.shortcuts import get_object_or_404, get_list_or_404
 from rest_framework import serializers, status
 from rest_framework.response import Response
@@ -20,10 +20,9 @@ from tmdb import URLMaker
 @authentication_classes([])
 @permission_classes([])
 def movie_list(request):
-    if request.method == 'GET':
-        movies = get_list_or_404(Movie)
-        serializer = MoviesListSerializer(movies, many=True)
-        return Response(serializer.data)
+    movies = get_list_or_404(Movie)
+    serializer = MoviesListSerializer(movies, many=True)
+    return Response(serializer.data)
 
 
 @api_view(['GET'])
@@ -31,9 +30,20 @@ def movie_list(request):
 @permission_classes([])
 def movie_detail(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
-    if request.method == 'GET':
-        serializer = MovieSerializer(movie)
+    serializer = MovieSerializer(movie)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def movie_search(request, movie_name):
+    movies = Movie.objects.filter(title__icontains=movie_name)
+    if movies:
+        serializer = MoviesListSerializer(movies)
         return Response(serializer.data)
+    # 에러 받는 용도
+    return Http404()
 
 
 @api_view(['GET','POST'])

@@ -37,7 +37,7 @@ def login(request):
     serializer = ProfileSerializer(profile)
     return Response(serializer.data)
 
-@api_view(['GET','PUT'])
+@api_view(['GET'])
 def profile(request, user_id):
     user = get_object_or_404(User, pk=user_id)
     profile = get_object_or_404(Profile, user=user)
