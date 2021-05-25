@@ -16,13 +16,21 @@ import requests
 from tmdb import URLMaker
 
 # Create your views here.
-@api_view(['GET'])
+@api_view(['GET','POST'])
 @authentication_classes([])
 @permission_classes([])
 def movie_list(request):
-    movies = get_list_or_404(Movie)
-    serializer = MoviesListSerializer(movies, many=True)
-    return Response(serializer.data)
+    if request.method=='GET':
+        movies = get_list_or_404(Movie)
+        serializer = MoviesListSerializer(movies, many=True)
+        return Response(serializer.data)
+    elif request.method=='POST':
+        movies = Movie.objects.filter(title__icontains=request.data.get('target'))
+        if movies:
+            serializer = MoviesListSerializer(movies, many=True)
+            return Response(serializer.data)
+    # 에러 보내는 용도
+    return Http404()
 
 
 @api_view(['GET'])
@@ -32,18 +40,6 @@ def movie_detail(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     serializer = MovieSerializer(movie)
     return Response(serializer.data)
-
-
-@api_view(['GET'])
-@authentication_classes([])
-@permission_classes([])
-def movie_search(request, movie_name):
-    movies = Movie.objects.filter(title__icontains=movie_name)
-    if movies:
-        serializer = MoviesListSerializer(movies)
-        return Response(serializer.data)
-    # 에러 받는 용도
-    return Http404()
 
 
 @api_view(['GET','POST'])
