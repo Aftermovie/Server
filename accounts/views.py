@@ -32,9 +32,8 @@ def signup(request):
 @api_view(['GET','PUT'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def profile(request,user_pk):
-    if request.method=='POST':
-        user=get_object_or_404(User,pk=user_pk)
-        profile = get_object_or_404(Profile, user=user)
+def profile(request):
+    if request.method=='GET':
+        profile = get_object_or_404(Profile, user=request.user)
         serializer = ProfileSerializer(profile)
         return Response(serializer.data)
