@@ -1,6 +1,5 @@
 from django.http.response import JsonResponse, Http404
 from django.shortcuts import get_object_or_404, get_list_or_404
-from rest_framework import serializers, status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -11,6 +10,7 @@ from .serializers import (MovieSerializer, MoviesListSerializer,
                             CommentSerializer, CommentsListSerializer,)
 from .models import Movie, Review, Comment, Genre
 from accounts.models import User
+from server.settings import TMDB_API_KEY
 
 import requests
 from tmdb import URLMaker
@@ -217,7 +217,6 @@ def review_dislike(request, review_pk):
     return JsonResponse(dislike_status)
 
 def get_data(request):
-    TMDB_API_KEY = 'fd99d2b1c23f6f04fe6697ee24cbabc9'
     my_url = URLMaker(TMDB_API_KEY)
     for i in range(1,1000):
         target = my_url.get_url(page=i, language='ko-KR')
