@@ -1,6 +1,6 @@
 from accounts.models import Profile,User
 from django.shortcuts import get_object_or_404
-from rest_framework import serializers, status
+from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.response import Response
 from .serializers import ProfileSerializer, UserSerializer
@@ -37,11 +37,11 @@ def login(request):
     serializer = ProfileSerializer(profile)
     return Response(serializer.data)
 
-@api_view(['GET'])
-def profile(request, user_id):
-    user = get_object_or_404(User, pk=user_id)
-    profile = get_object_or_404(Profile, user=user)
-    serializer = ProfileSerializer(profile)
+# @api_view(['GET'])
+# def profile(request, user_id):
+#     user = get_object_or_404(User, pk=user_id)
+#     profile = get_object_or_404(Profile, user=user)
+#     serializer = ProfileSerializer(profile)
 
-    # if request.method == 'POST':
-    #     user = get
+#     # if request.method == 'POST':
+#     #     user = get

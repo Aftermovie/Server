@@ -17,6 +17,8 @@ from tmdb import URLMaker
 
 # Create your views here.
 @api_view(['GET','POST'])
+@authentication_classes([])
+@permission_classes([])
 def movie_list(request):
     if request.method=='GET':
         movies = get_list_or_404(Movie)
@@ -32,6 +34,8 @@ def movie_list(request):
 
 # 영화 상세 정보 조회
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
 def movie_detail(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     serializer = MovieSerializer(movie)
@@ -149,6 +153,8 @@ def comment_edit(request, comment_pk):
 
 
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
 def genre_sort(request, genre_pk):
     genre = get_object_or_404(Genre, pk=genre_pk)
     movies = genre.movies.all()
