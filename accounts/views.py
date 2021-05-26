@@ -1,4 +1,5 @@
 from accounts.models import Profile,User
+from movies.models import Movie, Review
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
@@ -29,11 +30,19 @@ def signup(request):
         return Response(u_serializer.data, status=status.HTTP_201_CREATED)
 
 
-@api_view(['GET','PUT'])
+@api_view(['GET','POST'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def profile(request):
+    profile = get_object_or_404(Profile, user=request.user)
     if request.method=='GET':
-        profile = get_object_or_404(Profile, user=request.user)
+        serializer = ProfileSerializer(profile)
+        return Response(serializer.data)
+    elif request.method=='POST':
+        movie = get_object_or_404(Movie, pk=request.data.get('want_movie_id'))
+        if profile.wish_movies.filter(pk=movie.pk).exists():
+            profile.wish_movies.remove(movie)
+        else:
+            profile.wish_movies.add(movie)
         serializer = ProfileSerializer(profile)
         return Response(serializer.data)

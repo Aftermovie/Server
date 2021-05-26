@@ -5,9 +5,10 @@ from rest_framework.decorators import api_view, authentication_classes, permissi
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-from .serializers import (MovieSerializer, MoviesListSerializer,
+from movies.serializers.common import (MovieSerializer, CommentsListSerializer,
                             ReviewSerializer, ReviewsListSerializer,
-                            CommentSerializer, CommentsListSerializer,)
+                            CommentSerializer,)
+from movies.serializers.nested import MoviesListSerializer
 from .models import Movie, Review, Comment, Genre
 from accounts.models import User
 from server.settings import TMDB_API_KEY

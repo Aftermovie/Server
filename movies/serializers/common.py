@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 from accounts.serializers import UserSerializer
 
-from .models import Comment, Genre, Movie, Review
+from movies.models import Comment, Genre, Movie, Review
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -11,12 +11,6 @@ class CommentSerializer(serializers.ModelSerializer):
         fields = '__all__'
         read_only_fields = ('review',)
 
-
-class MoviesListSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Movie
-        fields = ('id','title','poster_path','image','overview')
 
 
 class ReviewSerializer(serializers.ModelSerializer):

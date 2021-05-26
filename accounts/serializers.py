@@ -1,15 +1,20 @@
-from rest_framework import serializers
 from django.contrib.auth import get_user_model
-from .models import Profile
+from rest_framework import serializers
+
+from accounts.models import Profile
+
+from movies.serializers.nested import MoviesListSerializer
+
 
 User = get_user_model()
 
 class ProfileSerializer(serializers.ModelSerializer):
+    wish_movies = MoviesListSerializer(many=True, read_only=True)
 
     class Meta:
         model = Profile
         fields = "__all__"
-        read_only_fields = ('user', 'wish_movies', 'watch_movies', 'prefer_genres')
+        read_only_fields = ('user', 'watch_movies', 'prefer_genres')
 
 
 class UserSerializer(serializers.ModelSerializer):
