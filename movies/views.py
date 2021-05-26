@@ -17,8 +17,6 @@ from tmdb import URLMaker
 
 # Create your views here.
 @api_view(['GET','POST'])
-@authentication_classes([])
-@permission_classes([])
 def movie_list(request):
     if request.method=='GET':
         movies = get_list_or_404(Movie)
@@ -32,10 +30,8 @@ def movie_list(request):
     # 에러 보내는 용도
     return Http404()
 
-
+# 영화 상세 정보 조회
 @api_view(['GET'])
-@authentication_classes([])
-@permission_classes([])
 def movie_detail(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
     serializer = MovieSerializer(movie)
@@ -43,14 +39,14 @@ def movie_detail(request, movie_pk):
 
 
 @api_view(['GET','POST'])
-@authentication_classes([])
-@permission_classes([])
 def movie_reviews(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
+    # 영화 리뷰 조회
     if request.method == 'GET':
         reviews = movie.reviews.all()
         serializer = ReviewsListSerializer(reviews, many=True)
         return Response(serializer.data)
+    # 영화 리뷰 생성
     elif request.method == 'POST':
         # user_pk = request.data.get('user_id'), 추후 수정
         serializer = ReviewSerializer(data=request.data)
@@ -60,19 +56,20 @@ def movie_reviews(request, movie_pk):
 
 
 @api_view(['GET','PUT','DELETE'])
-@authentication_classes([])
-@permission_classes([])
 def review_detail(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
+    # 리뷰 세부사항 조회
     if request.method == 'GET':
         serializer = ReviewSerializer(review)
         return Response(serializer.data)
+    # 리뷰 수정
     elif request.method == 'PUT':
         # 일부 수정의 경우를 위해 partial=True parameter 추가
         serializer = ReviewSerializer(review, data=request.data, partial=True)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
+    # 리뷰 삭제
     elif request.method == 'DELETE':
         review.delete()
         context = {
@@ -83,8 +80,6 @@ def review_detail(request, review_pk):
 
 
 @api_view(['GET','POST'])
-@authentication_classes([])
-@permission_classes([])
 def review_comments(request, review_pk):
     review = get_object_or_404(Movie, pk=review_pk)
     if request.method == 'GET':
@@ -99,27 +94,26 @@ def review_comments(request, review_pk):
 
 
 @api_view(['PUT','DELETE'])
-@authentication_classes([])
-@permission_classes([])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def movie_comment_edit(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
-    if request.method == 'PUT':
-        serializer = CommentSerializer(comment, data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            serializer.save()
-            return Response(serializer.data)
-    elif request.method == 'DELETE':
-        comment.delete()
-        context = {
-            'success': True,
-            'message': f'{comment_pk}번 댓글 삭제'
-        }
-        return Response(context, status=204)
+    if request.user == comment.create_user:
+        if request.method == 'PUT':
+            serializer = CommentSerializer(comment, data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                return Response(serializer.data)
+        elif request.method == 'DELETE':
+            comment.delete()
+            context = {
+                'success': True,
+                'message': f'{comment_pk}번 댓글 삭제'
+            }
+            return Response(context, status=204)
 
 
 @api_view(['GET','POST'])
-@authentication_classes([])
-@permission_classes([])
 def review_comments(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     if request.method == 'GET':
@@ -136,8 +130,8 @@ def review_comments(request, review_pk):
 
 
 @api_view(['PUT','DELETE'])
-@authentication_classes([])
-@permission_classes([])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def comment_edit(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     if request.method == 'PUT':
@@ -155,8 +149,6 @@ def comment_edit(request, comment_pk):
 
 
 @api_view(['GET'])
-@authentication_classes([])
-@permission_classes([])
 def genre_sort(request, genre_pk):
     genre = get_object_or_404(Genre, pk=genre_pk)
     movies = genre.movies.all()
@@ -165,8 +157,8 @@ def genre_sort(request, genre_pk):
 
 
 @api_view(['POST'])
-@authentication_classes([])
-@permission_classes([])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def review_like(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     liked = 0
@@ -192,8 +184,8 @@ def review_like(request, review_pk):
 
 
 @api_view(['POST'])
-@authentication_classes([])
-@permission_classes([])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def review_dislike(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     liked = 0

@@ -40,6 +40,12 @@ class MovieSerializer(serializers.ModelSerializer):
 
 
 class ReviewsListSerializer(serializers.ModelSerializer):
+    comments = CommentSerializer(many=True, read_only=True)
+    comments_count = serializers.IntegerField(source='comments.count', read_only=True)
+    likes_count = serializers.IntegerField(source='like_users.count', read_only=True)
+    dislikes_count = serializers.IntegerField(source='dislike_users.count', read_only=True)
+    create_user = serializers.CharField(max_length=20, read_only=True, source='profile.name')
+    
     class Meta:
         model = Review
         fields = '__all__'
