@@ -29,19 +29,12 @@ def signup(request):
         return Response(u_serializer.data, status=status.HTTP_201_CREATED)
 
 
-@api_view(['POST'])
+@api_view(['GET','PUT'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def login(request):
-    profile = get_object_or_404(user = request.user)
-    serializer = ProfileSerializer(profile)
-    return Response(serializer.data)
-
-# @api_view(['GET'])
-# def profile(request, user_id):
-#     user = get_object_or_404(User, pk=user_id)
-#     profile = get_object_or_404(Profile, user=user)
-#     serializer = ProfileSerializer(profile)
-
-#     # if request.method == 'POST':
-#     #     user = get
+def profile(request,user_pk):
+    if request.method=='POST':
+        user=get_object_or_404(User,pk=user_pk)
+        profile = get_object_or_404(Profile, user=user)
+        serializer = ProfileSerializer(profile)
+        return Response(serializer.data)
