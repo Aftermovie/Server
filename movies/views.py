@@ -54,13 +54,16 @@ def movie_reviews(request, movie_pk):
         return Response(serializer.data)
     # 영화 리뷰 생성
     elif request.method == 'POST':
-        serializer = ReviewSerializer(data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            if request.user.profile.watch_movies.filter(pk=movie_pk).exists():
-                return 
-            request.user.profile.watch_movies.add(movie)
-            serializer.save(movie=movie, create_user=request.user)
-            return Response(serializer.data)
+        if request.user.is_authenticated:
+            serializer = ReviewSerializer(data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                if request.user.profile.watch_movies.filter(pk=movie_pk).exists():
+                    return JsonResponse( {'message': '리뷰는 하나만 작성 가능합니다.'}, status=status.HTTP_400_BAD_REQUEST)
+                request.user.profile.watch_movies.add(movie)
+                serializer.save(movie=movie, create_user=request.user)
+                return Response(serializer.data)
+        else:
+            return JsonResponse( {'message': '리뷰는 하나만 작성 가능합니다.'}, status=status.HTTP_403_FORBIDDEN)
 
 
 @api_view(['GET','PUT','DELETE'])
@@ -174,12 +177,12 @@ def review_like(request, review_pk):
     liked = 0
     disliked = 0
     # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
-    if review.dislike_users.filter(pk=request.user.pk).exists():
+    if review.dislike_users.filter(review_id=request.user.pk).exists():
         review.dislike_users.remove(request.user)
         review.like_users.add(request.user)
         disliked -= 1
         liked += 1
-    if review.like_users.filter(pk=request.user.pk).exists():
+    if review.like_users.filter(review_id=request.user.pk).exists():
         review.like_users.remove(request.user)
         liked -= 1
     else:
@@ -201,12 +204,12 @@ def review_dislike(request, review_pk):
     liked = 0
     disliked = 0
     # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
-    if review.like_users.filter(pk=request.user.pk).exists():
+    if review.like_users.filter(review_id=request.user.pk).exists():
         review.like_users.remove(request.user)
         review.dislike_users.add(request.user)
         liked -= 1
         disliked += 1
-    if review.dislike_users.filter(pk=request.user.pk).exists():
+    if review.dislike_users.filter(review_id=request.user.pk).exists():
         review.dislike_users.remove(request.user)
         disliked -= 1
     else:

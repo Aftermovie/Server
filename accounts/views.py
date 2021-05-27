@@ -18,7 +18,7 @@ def signup(request):
     u_serializer = UserSerializer(data=request.data)
 
     # validation 작업 진행
-    if u_serializer.is_valid(raise_exception=True):
+    if u_serializer.is_valid():
         user = u_serializer.save()
         # 비밀번호 해싱
         user.set_password(request.data.get('password'))
