@@ -23,14 +23,8 @@ from tmdb import URLMaker
 @permission_classes([])
 def movie_list(request):
     if request.method=='GET':
-        # 로그인 한 경우
-        if request.user.is_authenticated:
-            movies = Movie.objects.all().order_by('-tmdb_score')
-            serializer = MoviesListSerializer(movies, many=True)
-        # 하지 않은 경우
-        else:
-            movies = Movie.objects.all().order_by('-tmdb_score')[:20]
-            serializer = MoviesListSerializer(movies, many=True)
+        movies = Movie.objects.all().order_by('-tmdb_score')[:40]
+        serializer = MoviesListSerializer(movies, many=True)
         return Response(serializer.data)
     elif request.method=='POST':
         movies = Movie.objects.filter(title__icontains=request.data.get('target'))
