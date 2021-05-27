@@ -1,5 +1,7 @@
+from _typeshed import SupportsReadline
 from django.http.response import JsonResponse, Http404
 from django.shortcuts import get_object_or_404, get_list_or_404
+from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -188,7 +190,7 @@ def review_like(request, review_pk):
         'likeChange': liked,
         'dislikeChange': disliked,
     }
-    return JsonResponse(like_status)
+    return JsonResponse(like_status, status=status.HTTP_202_ACCEPTED)
 
 
 
@@ -215,7 +217,7 @@ def review_dislike(request, review_pk):
         'likeChange': liked,
         'dislikeChange': disliked,
     }
-    return JsonResponse(dislike_status)
+    return JsonResponse(dislike_status, status=status.HTTP_202_ACCEPTED)
 
 def get_data(request):
     my_url = URLMaker(TMDB_API_KEY)
