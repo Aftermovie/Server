@@ -27,7 +27,7 @@ def movie_list(request):
             movies = Movie.objects.all().order_by('-tmdb_score')
             serializer = MoviesListSerializer(movies, many=True)
         else:
-            movies = Movie.objects.all().order_by('-tmdb_score')
+            movies = Movie.objects.all().order_by('-tmdb_score')[:20]
             serializer = MoviesListSerializer(movies, many=True)
         return Response(serializer.data)
     elif request.method=='POST':
