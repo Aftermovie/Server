@@ -53,9 +53,11 @@ def movie_reviews(request, movie_pk):
         return Response(serializer.data)
     # 영화 리뷰 생성
     elif request.method == 'POST':
-        # user_pk = request.data.get('user_id'), 추후 수정
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
+            if request.user.profile.watch_movies.filter(pk=movie_pk).exist():
+                return 
+            request.user.profile.watch_movies.add(movie)
             serializer.save(movie=movie, create_user=request.user)
             return Response(serializer.data)
 
