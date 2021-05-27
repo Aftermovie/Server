@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404, get_list_or_404
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 from movies.serializers.common import (MovieSerializer, CommentsListSerializer,
@@ -121,7 +121,7 @@ def movie_comment_edit(request, comment_pk):
                 'success': True,
                 'message': f'{comment_pk}번 댓글 삭제'
             }
-            return Response(context, status=204)
+            return JsonResponse(context, status=status.HTTP_204_NO_CONTENT)
 
 
 @api_view(['GET','POST'])
@@ -169,57 +169,41 @@ def genre_sort(request, genre_pk):
     return Response(serializer.data)
 
 
-@api_view(['POST'])
+@api_view(['GET','POST'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def review_like(request, review_pk):
-    review = get_object_or_404(Review, pk=review_pk)
-    liked = 0
-    disliked = 0
-    # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
-    if review.dislike_users.filter(review_id=request.user.pk).exists():
-        review.dislike_users.remove(request.user)
-        review.like_users.add(request.user)
-        disliked -= 1
-        liked += 1
-    if review.like_users.filter(review_id=request.user.pk).exists():
-        review.like_users.remove(request.user)
-        liked -= 1
-    else:
-        review.like_users.add(request.user)
-        liked += 1
-    like_status = {
-        'likeChange': liked,
-        'dislikeChange': disliked,
-    }
-    return JsonResponse(like_status, status=status.HTTP_202_ACCEPTED)
+    if request.user.is_authenticated:
+        review = get_object_or_404(Review, pk=review_pk)
+        # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
+        if review.dislike_users.filter(id=request.user.pk).exists():
+            review.dislike_users.remove(request.user)
+            review.like_users.add(request.user)
+        if review.like_users.filter(id=request.user.pk).exists():
+            review.like_users.remove(request.user)
+        else:
+            review.like_users.add(request.user)
+        return Response(status=status.HTTP_202_ACCEPTED)
+    return JsonResponse({ 'message' : '로그인이 필요합니다.'}, status=status.HTTP_403_FORBIDDEN)
 
 
 
-@api_view(['POST'])
+@api_view(['GET','POST'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def review_dislike(request, review_pk):
-    review = get_object_or_404(Review, pk=review_pk)
-    liked = 0
-    disliked = 0
-    # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
-    if review.like_users.filter(review_id=request.user.pk).exists():
-        review.like_users.remove(request.user)
-        review.dislike_users.add(request.user)
-        liked -= 1
-        disliked += 1
-    if review.dislike_users.filter(review_id=request.user.pk).exists():
-        review.dislike_users.remove(request.user)
-        disliked -= 1
-    else:
-        review.dislike_users.add(request.user)
-        disliked += 1
-    dislike_status = {
-        'likeChange': liked,
-        'dislikeChange': disliked,
-    }
-    return JsonResponse(dislike_status, status=status.HTTP_202_ACCEPTED)
+    if request.user.is_authenticated:
+        review = get_object_or_404(Review, pk=review_pk)
+        # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
+        if review.like_users.filter(id=request.user.pk).exists():
+            review.like_users.remove(request.user)
+            review.dislike_users.add(request.user)
+        if review.dislike_users.filter(id=request.user.pk).exists():
+            review.dislike_users.remove(request.user)
+        else:
+            review.dislike_users.add(request.user)
+        return Response(status=status.HTTP_202_ACCEPTED)
+    return JsonResponse({ 'message' : '로그인이 필요합니다.'}, status=status.HTTP_403_FORBIDDEN)
 
 def get_data(request):
     my_url = URLMaker(TMDB_API_KEY)
