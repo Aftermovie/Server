@@ -19,7 +19,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
-    profile = ProfileSerializer(read_only=True)
+    profile = serializers.SlugRelatedField(read_only=True, slug_field='name')
 
     class Meta:
         model = User
