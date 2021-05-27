@@ -55,7 +55,7 @@ def movie_reviews(request, movie_pk):
     elif request.method == 'POST':
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            if request.user.profile.watch_movies.filter(pk=movie_pk).exist():
+            if request.user.profile.watch_movies.filter(pk=movie_pk).exists():
                 return 
             request.user.profile.watch_movies.add(movie)
             serializer.save(movie=movie, create_user=request.user)

@@ -1,9 +1,10 @@
 from accounts.models import Profile,User
-from movies.models import Movie, Review
+from movies.models import Movie, Review, Genre
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.response import Response
+from django.http.response import JsonResponse
 from .serializers import ProfileSerializer, UserSerializer
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated
@@ -25,8 +26,13 @@ def signup(request):
         # 해당 user의 profile 만들기
         userdata={'name':request.data.get('name')}
         p_serializer = ProfileSerializer(data=userdata)
-        if p_serializer.is_valid(raise_exception=True):
+        if p_serializer.is_valid():
             p_serializer.save(user=user)
+            for genre_id in request.data.get('genres'):
+                genre = Genre(pk=genre_id)
+                user.profile.prefer_genres.add(genre)
+        else:
+            return JsonResponse({ 'message': '이미 가입된 사용자입니다.'}, status=status.HTTP_400_BAD_REQUEST)
         return Response(u_serializer.data, status=status.HTTP_201_CREATED)
 
 
