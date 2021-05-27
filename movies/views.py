@@ -23,8 +23,12 @@ from tmdb import URLMaker
 @permission_classes([])
 def movie_list(request):
     if request.method=='GET':
-        movies = Movie.objects.all().order_by('-tmdb_score')
-        serializer = MoviesListSerializer(movies, many=True)
+        if request.user.is_authenticated:
+            movies = Movie.objects.all().order_by('-tmdb_score')
+            serializer = MoviesListSerializer(movies, many=True)
+        else:
+            movies = Movie.objects.all().order_by('-tmdb_score')
+            serializer = MoviesListSerializer(movies, many=True)
         return Response(serializer.data)
     elif request.method=='POST':
         movies = Movie.objects.filter(title__icontains=request.data.get('target'))
@@ -132,31 +136,25 @@ def review_comments(request, review_pk):
         serializer = CommentsListSerializer(comments, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
-        # user_pk = request.data.get('user_id'), 추후 수정
-        user = get_object_or_404(User, pk=1)
         serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(review_id=review, create_user=user)
+            serializer.save(review=review, create_user=request.user)
             return Response(serializer.data)
 
 
-@api_view(['PUT','DELETE'])
+@api_view(['DELETE'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def comment_edit(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
-    if request.method == 'PUT':
-        serializer = CommentSerializer(comment, data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            serializer.save()
-            return Response(serializer.data)
-    elif request.method == 'DELETE':
+    if request.user == comment.create_user:
         comment.delete()
         context = {
             'success': True,
             'message': f'{comment_pk}번 댓글 삭제'
         }
-        return Response(context, status=204)
+        return Response(context, status=status.HTTP_204_NO_CONTENT)
+    return JsonResponse({ 'message': '본인의 댓글만 삭제할 수 있습니다.'}, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['GET'])
