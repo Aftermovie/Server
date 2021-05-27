@@ -63,7 +63,7 @@ def movie_reviews(request, movie_pk):
                 serializer.save(movie=movie, create_user=request.user)
                 return Response(serializer.data)
         else:
-            return JsonResponse( {'message': '리뷰는 하나만 작성 가능합니다.'}, status=status.HTTP_403_FORBIDDEN)
+            return JsonResponse( {'message': '로그인이 필요합니다.'}, status=status.HTTP_403_FORBIDDEN)
 
 
 @api_view(['GET','PUT','DELETE'])
