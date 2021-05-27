@@ -66,7 +66,9 @@ def movie_reviews(request, movie_pk):
             return JsonResponse( {'message': '로그인이 필요합니다.'}, status=status.HTTP_403_FORBIDDEN)
 
 
-@api_view(['GET','PUT','DELETE'])
+@api_view(['GET','POST','DELETE'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def review_detail(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     # 리뷰 세부사항 조회
@@ -74,12 +76,29 @@ def review_detail(request, review_pk):
         serializer = ReviewSerializer(review)
         return Response(serializer.data)
     # 리뷰 수정
-    elif request.method == 'PUT':
-        # 일부 수정의 경우를 위해 partial=True parameter 추가
-        serializer = ReviewSerializer(review, data=request.data, partial=True)
-        if serializer.is_valid(raise_exception=True):
-            serializer.save()
-            return Response(serializer.data)
+    elif request.method == 'POST':
+        if request.data.get('target') == 'like':
+            review = get_object_or_404(Review, pk=review_pk)
+            # 싫어요를 이미 누른 경우 싫어요 목록에서 삭제, 좋아요 목록에 추가
+            if review.dislike_users.filter(id=request.user.pk).exists():
+                review.dislike_users.remove(request.user)
+                review.like_users.add(request.user)
+            if review.like_users.filter(id=request.user.pk).exists():
+                review.like_users.remove(request.user)
+            else:
+                review.like_users.add(request.user)
+            return Response(status=status.HTTP_202_ACCEPTED)
+        else:
+            review = get_object_or_404(Review, pk=review_pk)
+            # 좋아요를 이미 누른 경우 좋아요 목록에서 삭제, 싫어요 목록에 추가
+            if review.like_users.filter(id=request.user.pk).exists():
+                review.like_users.remove(request.user)
+                review.dislike_users.add(request.user)
+            if review.dislike_users.filter(id=request.user.pk).exists():
+                review.dislike_users.remove(request.user)
+            else:
+                review.dislike_users.add(request.user)
+            return Response(status=status.HTTP_202_ACCEPTED)
     # 리뷰 삭제
     elif request.method == 'DELETE':
         review.delete()
