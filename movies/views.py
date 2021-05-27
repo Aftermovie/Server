@@ -1,4 +1,3 @@
-from _typeshed import SupportsReadline
 from django.http.response import JsonResponse, Http404
 from django.shortcuts import get_object_or_404, get_list_or_404
 from rest_framework import status
@@ -221,15 +220,18 @@ def review_dislike(request, review_pk):
 
 def get_data(request):
     my_url = URLMaker(TMDB_API_KEY)
-    db_movie = get_list_or_404(Movie)
+    try:
+        db_movie = get_list_or_404(Movie)
+    except:
+        pass
     for i in range(1,1000):
         target = my_url.get_url(page=i, language='ko-KR')
         res = requests.get(target)
         movies = res.json().get('results')
         if movies:
             for movie in movies:
-                if db_movie.filter(movie_id=movie.get('id')).exists():
-                    continue
+                # if db_movie.filter(movie_id=movie.get('id')).exists():
+                #     continue
                 if movie.get('vote_average') >= 7.5 and movie.get('vote_count') >= 1500 and movie.get('overview') and movie.get('backdrop_path'):
                     data={
                         'movie_id' : movie.get('id'),
@@ -254,4 +256,4 @@ def get_data(request):
         else:
             break
 
-    return Response({'success': True})
+    return JsonResponse({'success': True})

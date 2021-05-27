@@ -28,12 +28,12 @@ def signup(request):
         p_serializer = ProfileSerializer(data=userdata)
         if p_serializer.is_valid():
             p_serializer.save(user=user)
-            for genre_id in request.data.get('genres'):
-                genre = Genre(pk=genre_id)
-                user.profile.prefer_genres.add(genre)
-        else:
-            return JsonResponse({ 'message': '이미 가입된 사용자입니다.'}, status=status.HTTP_400_BAD_REQUEST)
+            if request.data.get('genres'):
+                for genre_id in request.data.get('genres'):
+                    genre = Genre(pk=genre_id)
+                    user.profile.prefer_genres.add(genre)
         return Response(u_serializer.data, status=status.HTTP_201_CREATED)
+    return JsonResponse({ 'message': '이미 가입된 사용자입니다.'}, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['GET','POST'])
