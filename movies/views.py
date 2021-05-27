@@ -87,12 +87,6 @@ def review_detail(request, review_pk):
                 review.like_users.remove(request.user)
             else:
                 review.like_users.add(request.user)
-            data = {
-                'likeCnt': review.like_users.count(),
-                'dilikeCnt': review.dislike_users.count(),
-            }
-            print(data)
-            return JsonResponse(data, status=status.HTTP_202_ACCEPTED)
         else:
             review = get_object_or_404(Review, pk=review_pk)
             # 좋아요를 이미 누른 경우 좋아요 목록에서 삭제, 싫어요 목록에 추가
@@ -103,7 +97,11 @@ def review_detail(request, review_pk):
                 review.dislike_users.remove(request.user)
             else:
                 review.dislike_users.add(request.user)
-            return Response(status=status.HTTP_202_ACCEPTED)
+        data = {
+            'likeCnt': review.like_users.count(),
+            'dislikeCnt': review.dislike_users.count(),
+        }
+        return JsonResponse(data, status=status.HTTP_202_ACCEPTED)
     # 리뷰 삭제
     elif request.method == 'DELETE':
         review.delete()
