@@ -23,7 +23,7 @@ from tmdb import URLMaker
 @permission_classes([])
 def movie_list(request):
     if request.method=='GET':
-        movies = get_list_or_404(Movie)
+        movies = Movie.objects.all().order_by('-tmdb_score')
         serializer = MoviesListSerializer(movies, many=True)
         return Response(serializer.data)
     elif request.method=='POST':
