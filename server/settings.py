@@ -62,9 +62,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'https://jolly-pike-9f3308.netlify.app',
-]
+CORS_ALLOW_ALL_ORIGINS = True
+
+# CORS_ALLOWED_ORIGINS = [
+#     "https://jolly-pike-9f3308.netlify.app",
+# ]
+
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'server.urls'
 
