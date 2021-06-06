@@ -68,9 +68,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 #     "https://jolly-pike-9f3308.netlify.app",
 # ]
 
-CORS_ALLOW_CREDENTIALS = True
-
-
 CORS_ALLOW_METHODS = [
     "DELETE",
     "GET",
