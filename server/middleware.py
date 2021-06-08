@@ -8,4 +8,5 @@ class MyMiddleware:
         response['Access-Control-Allow-Origin'] = '*'
         response['Access-Control-Allow-Methods'] = 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
         response['Access-Control-Allow-Headers'] =  'Origin,Accept,X-Requested-With,Content-Type,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization'
+        response['Access-Control-Max-Age'] = 86400
         return response
